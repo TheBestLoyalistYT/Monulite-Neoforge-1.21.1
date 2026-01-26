@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      "loyalist_mod:monulite_ingot"
+    ],
+    [
+      "loyalist_mod:coin_mold"
+    ]
+  ],
+  "result": {
+    "id": "loyalist_mod:monulite_coin"
+  }
+}

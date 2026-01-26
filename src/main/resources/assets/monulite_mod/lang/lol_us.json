@@ -1,0 +1,12 @@
+{
+  "itemgroup.loyalistmod.monulite_items": "Methanol Items",
+
+  "item.loyalist_mod.coin_mold": "Coin Shapper",
+  "item.loyalist_mod.raw_monulite": "Raw Methanol",
+  "item.loyalist_mod.monulite_ooz": "Methanol Ooz",
+  "item.loyalist_mod.monulite_ingot": "Methanol Ingot",
+  "item.loyalist_mod.monulite_coin": "Methanol Coin",
+  "block.loyalist_mod.deepslate_monulite_ore_block": "Deep Methanol Portable Lab",
+  "block.loyalist_mod.monulite_ore_block": "Methanol Portable Lab Ore",
+  "block.loyalist_mod.monulite_block": "Meter By Meter Meth"
+}

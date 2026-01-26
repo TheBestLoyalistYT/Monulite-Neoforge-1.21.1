@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": "loyalist_mod:raw_acrote",
+  "result": {
+    "id": "loyalist_mod:acrote_ooz"
+  },
+  "experience": 10,
+  "cookingtime": 223
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "key": {
+    "#": [
+      "minecraft:iron_ingot"
+    ],
+    "$": [
+      "minecraft:blaze_powder"
+    ]
+  },
+  "result": {
+    "id": "loyalist_mod:coin_mold",
+    "count": 1
+  }
+}

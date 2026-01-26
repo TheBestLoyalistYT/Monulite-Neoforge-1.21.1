@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ASA",
+    "SMS",
+    "ASA"
+  ],
+  "key": {
+    "M": [
+      "loyalist_mod:monulite_ingot"
+    ],
+    "S": [
+      "minecraft:stone"
+    ],
+    "A": [
+      "loyalist_mod:raw_acrote"
+    ]
+  },
+  "result": {
+    "id": "loyalist_mod:acrote_fusion_reactor",
+    "count": 1
+  }
+}

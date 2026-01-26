@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NDN",
+    "DMD",
+    "NDN"
+  ],
+  "key": {
+    "M": [
+      "loyalist_mod:coin_mold"
+    ],
+    "D": [
+      "minecraft:dark_prismarine"
+    ],
+    "N": [
+      "minecraft:netherite"
+    ]
+  },
+  "result": {
+    "id": "loyalist_mod:moulite_coin_molder",
+    "count": 1
+  }
+}

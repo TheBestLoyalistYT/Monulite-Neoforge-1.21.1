@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "loyalist_mod:monulite_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "loyalist_mod:monulite_armor"
+      }
+    ]
+  }
+}

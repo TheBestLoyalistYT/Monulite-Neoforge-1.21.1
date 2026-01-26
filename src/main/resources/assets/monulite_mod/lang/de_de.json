@@ -1,0 +1,13 @@
+{
+  "itemgroup.loyalistmod.monulite_items": "Monulite Artikel",
+
+  "item.loyalist_mod.coin_mold": "Münzform",
+  "item.loyalist_mod.raw_monulite": "Roh Monulite",
+  "item.loyalist_mod.monulite_ingot": "Monulite Barren",
+  "item.loyalist_mod.monulite_ooz": "Monulite Sickern",
+  "item.loyalist_mod.monulite_coin": "Monulite Münze",
+  "block.loyalist_mod.deepslate_monulite_ore_block": "Tiefenschiefer Monulite Erz",
+  "block.loyalist_mod.monulite_ore_block": "Monulite Erz",
+  "block.loyalist_mod.monulite_block": "Monulite Block"
+
+}

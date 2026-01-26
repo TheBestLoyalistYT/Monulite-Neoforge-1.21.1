@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": "loyalist_mod:monulite_ingot",
+  "result": {
+    "id": "loyalist_mod:monulite_ooz"
+  },
+  "experience": 30,
+  "cookingtime": 345
+}

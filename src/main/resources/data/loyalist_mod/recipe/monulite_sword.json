@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " M ",
+    " M ",
+    " S "
+  ],
+  "key": {
+    "M": [
+      "loyalist_mod:monulite_ingot"
+    ],
+    "S": [
+      "minecraft:stick"
+    ]
+  },
+  "result": {
+    "id": "loyalist_mod:monulite_sword",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": "loyalist_mod:raw_acrote",
+  "result": {
+    "id": "loyalist_mod:acrote_ooz"
+  },
+  "experience": 15,
+  "cookingtime": 152
+}

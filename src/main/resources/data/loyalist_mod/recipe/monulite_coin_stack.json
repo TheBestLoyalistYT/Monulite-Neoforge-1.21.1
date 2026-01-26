@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      "loyalist_mod:monulite_coin"
+    ],
+    [
+      "loyalist_mod:monulite_coin"
+    ],
+    [
+      "loyalist_mod:monulite_coin"
+    ],
+    [
+      "loyalist_mod:monulite_coin"
+    ]
+  ],
+  "result": {
+    "id": "loyalist_mod:monulite_coin_stack"
+  }
+}
