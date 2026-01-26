@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "monulite_mod:block/deepslate_monulite_ore"
+  }
+}

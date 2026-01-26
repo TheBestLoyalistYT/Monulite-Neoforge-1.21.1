@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "monulite_mod:item/monulite_shovel"
+  }
+}
