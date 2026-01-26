@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "monulite_mod:block/deepslate_monulite_ore_block_top",
+    "side": "monulite_mod:block/deepslate_monulite_ore"
+  }
+}

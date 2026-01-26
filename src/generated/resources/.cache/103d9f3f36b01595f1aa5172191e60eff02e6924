@@ -1,0 +1,7 @@
+// 1.21.1	2026-01-26T14:16:43.6492138	Registries
+d3ab41b2815609b2a5b985d5bff1a910abe708e9 data/monulite_mod/neoforge/biome_modifier/add_acrote_ore.json
+ae47657688e5b6921a1da5734c7da6654941a544 data/monulite_mod/neoforge/biome_modifier/add_monulite_ore.json
+577cc5a0acb69d1f38f491c9edb65c0aa784825f data/monulite_mod/worldgen/configured_feature/acrote_ore.json
+6359cf94e07afedc2358df55729e9067ff80fa63 data/monulite_mod/worldgen/configured_feature/monulite_ore.json
+ac479f0d1ad06c34785e1ad785664f8efb383d3b data/monulite_mod/worldgen/placed_feature/acrote_ore_placed.json
+06b58c35ca9c23b2487f8dbf0a2b5f10972165a0 data/monulite_mod/worldgen/placed_feature/monulite_ore_placed.json
