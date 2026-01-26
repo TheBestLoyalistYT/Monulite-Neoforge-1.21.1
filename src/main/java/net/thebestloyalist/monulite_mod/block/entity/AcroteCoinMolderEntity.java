@@ -15,7 +15,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
@@ -24,9 +23,7 @@ import net.thebestloyalist.monulite_mod.item.ModItems;
 import net.thebestloyalist.monulite_mod.screen.custom.MonuliteCoinMolderMenu;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Optional;
-
-public class MonuliteCoinMolderEntity extends BlockEntity implements MenuProvider {
+public class AcroteCoinMolderEntity extends BlockEntity implements MenuProvider {
     public final ItemStackHandler itemHandler = new ItemStackHandler(2) {
         @Override
         protected void onContentsChanged(int slot) {
@@ -44,14 +41,14 @@ public class MonuliteCoinMolderEntity extends BlockEntity implements MenuProvide
     private int progress = 0;
     private int maxProgress = 144;
 
-    public MonuliteCoinMolderEntity(BlockPos pos, BlockState blockState) {
-        super(ModBlockEntities.MONULITE_COIN_MOLDER.get(), pos, blockState);
+    public AcroteCoinMolderEntity(BlockPos pos, BlockState blockState) {
+        super(ModBlockEntities.ACROTE_COIN_MOLDER.get(), pos, blockState);
         data = new ContainerData() {
             @Override
             public int get(int i) {
                 return switch (i) {
-                    case 0 -> MonuliteCoinMolderEntity.this.progress;
-                    case 1 -> MonuliteCoinMolderEntity.this.maxProgress;
+                    case 0 -> AcroteCoinMolderEntity.this.progress;
+                    case 1 -> AcroteCoinMolderEntity.this.maxProgress;
                     default -> 0;
                 };
             }
@@ -59,8 +56,8 @@ public class MonuliteCoinMolderEntity extends BlockEntity implements MenuProvide
             @Override
             public void set(int i, int value) {
                 switch (i) {
-                    case 0: MonuliteCoinMolderEntity.this.progress = value;
-                    case 1: MonuliteCoinMolderEntity.this.maxProgress = value;
+                    case 0: AcroteCoinMolderEntity.this.progress = value;
+                    case 1: AcroteCoinMolderEntity.this.maxProgress = value;
                 }
             }
 
@@ -73,7 +70,7 @@ public class MonuliteCoinMolderEntity extends BlockEntity implements MenuProvide
 
     @Override
     public Component getDisplayName() {
-        return Component.translatable("block.monulite_mod.monulite_coin_molder");
+        return Component.translatable("block.monulite_mod.acrote_coin_molder");
     }
 
     @Nullable
@@ -94,8 +91,8 @@ public class MonuliteCoinMolderEntity extends BlockEntity implements MenuProvide
     @Override
     protected void saveAdditional(CompoundTag pTag, HolderLookup.Provider pRegistries) {
         pTag.put("inventory", itemHandler.serializeNBT(pRegistries));
-        pTag.putInt("monulite_coin_molder.progress", progress);
-        pTag.putInt("monulite_coin_molder.max_progress", maxProgress);
+        pTag.putInt("acrote_coin_molder.progress", progress);
+        pTag.putInt("acrote_coin_molder.max_progress", maxProgress);
 
         super.saveAdditional(pTag, pRegistries);
     }
@@ -105,8 +102,8 @@ public class MonuliteCoinMolderEntity extends BlockEntity implements MenuProvide
         super.loadAdditional(pTag, pRegistries);
 
         itemHandler.deserializeNBT(pRegistries, pTag.getCompound("inventory"));
-        progress = pTag.getInt("monulite_coin_molder.progress");
-        maxProgress = pTag.getInt("monulite_coin_molder.max_progress");
+        progress = pTag.getInt("acrote_coin_molder.progress");
+        maxProgress = pTag.getInt("acrote_coin_molder.max_progress");
     }
 
     public void tick(Level level, BlockPos blockPos, BlockState blockState) {
@@ -124,7 +121,7 @@ public class MonuliteCoinMolderEntity extends BlockEntity implements MenuProvide
     }
 
     private void craftItem() {
-        ItemStack output = new ItemStack(ModItems.MONULITE_COIN.get(), 2);
+        ItemStack output = new ItemStack(ModItems.ACROTE_COIN.get(), 2);
 
         itemHandler.extractItem(INPUT_SLOT, 1, false);
         itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(output.getItem(),
@@ -145,9 +142,9 @@ public class MonuliteCoinMolderEntity extends BlockEntity implements MenuProvide
     }
 
     private boolean hasRecipe() {
-        ItemStack output = new ItemStack(ModItems.MONULITE_COIN.get(), 2);
+        ItemStack output = new ItemStack(ModItems.ACROTE_COIN.get(), 2);
 
-        return itemHandler.getStackInSlot(INPUT_SLOT).is(ModItems.MONULITE_OOZ) &&
+        return itemHandler.getStackInSlot(INPUT_SLOT).is(ModItems.ACROTE_OOZ) &&
                 canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
     }
 

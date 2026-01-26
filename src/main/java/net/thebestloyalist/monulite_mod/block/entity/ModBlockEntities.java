@@ -14,9 +14,13 @@ public class ModBlockEntities {
             DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, MonuliteMod.MOD_ID);
 
 
-    public static final Supplier<BlockEntityType<MonuliteCoinMolderEntity>> GROWTH_CHAMBER_BE =
-            BLOCK_ENTITIES.register("growth_chamber_be", () -> BlockEntityType.Builder.of(
+    public static final Supplier<BlockEntityType<MonuliteCoinMolderEntity>> MONULITE_COIN_MOLDER =
+            BLOCK_ENTITIES.register("monulite_coin_molder", () -> BlockEntityType.Builder.of(
                     MonuliteCoinMolderEntity::new, ModBlocks.MONULITE_COIN_MOLDER.get()).build(null));
+
+    public static final Supplier<BlockEntityType<AcroteCoinMolderEntity>> ACROTE_COIN_MOLDER =
+            BLOCK_ENTITIES.register("acrote_coin_molder", () -> BlockEntityType.Builder.of(
+                    AcroteCoinMolderEntity::new, ModBlocks.MONULITE_COIN_MOLDER.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

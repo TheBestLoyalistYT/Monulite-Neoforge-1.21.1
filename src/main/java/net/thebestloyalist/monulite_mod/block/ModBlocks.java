@@ -7,6 +7,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
+import net.thebestloyalist.monulite_mod.block.custom.AcroteCoinMolder;
 import net.thebestloyalist.monulite_mod.block.custom.MonuliteCoinMolder;
 import net.thebestloyalist.monulite_mod.item.ModItems;
 import java.util.function.Supplier;
@@ -21,8 +22,11 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(3, 6),
                     BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
-    public static final DeferredBlock<Block> MONULITE_COIN_MOLDER = registerBlock("growth_chamber",
+    public static final DeferredBlock<Block> MONULITE_COIN_MOLDER = registerBlock("monulite_coin_molder",
             () -> new MonuliteCoinMolder(BlockBehaviour.Properties.of()));
+
+    public static final DeferredBlock<Block> ACROTE_COIN_MOLDER = registerBlock("acrote_coin_molder",
+            () -> new AcroteCoinMolder(BlockBehaviour.Properties.of()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

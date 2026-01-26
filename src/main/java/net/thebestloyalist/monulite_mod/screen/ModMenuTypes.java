@@ -9,6 +9,7 @@ import net.neoforged.neoforge.network.IContainerFactory;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
+import net.thebestloyalist.monulite_mod.screen.custom.AcroteCoinMolderMenu;
 import net.thebestloyalist.monulite_mod.screen.custom.MonuliteCoinMolderMenu;
 
 public class ModMenuTypes {
@@ -16,7 +17,10 @@ public class ModMenuTypes {
             DeferredRegister.create(Registries.MENU, MonuliteMod.MOD_ID);
 
     public static final DeferredHolder<MenuType<?>, MenuType<MonuliteCoinMolderMenu>> MONULITE_COIN_MOLDER_MENU =
-            registerMenuType("growth_chamber_menu", MonuliteCoinMolderMenu::new);
+            registerMenuType("monulite_coin_molder_menu", MonuliteCoinMolderMenu::new);
+
+    public static final DeferredHolder<MenuType<?>, MenuType<AcroteCoinMolderMenu>> ACROTE_COIN_MOLDER_MENU =
+            registerMenuType("acrote_coin_molder_menu", AcroteCoinMolderMenu::new);
 
     private static <T extends AbstractContainerMenu>DeferredHolder<MenuType<?>, MenuType<T>> registerMenuType(String name,
                                                                                                               IContainerFactory<T> factory) {

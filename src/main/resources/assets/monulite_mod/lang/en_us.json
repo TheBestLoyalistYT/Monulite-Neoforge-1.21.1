@@ -1,36 +1,35 @@
 {
-  "itemgroup.loyalistmod.monulite_items": "Monulite Items",
+  "itemgroup.monulite_mod.monulite_items": "Monulite Items",
 
-  "item.loyalist_mod.coin_mold": "Coin Mold",
+  "item.monulite_mod.coin_mold": "Coin Mold",
 
-  "item.loyalist_mod.raw_monulite": "Raw Monulite",
-  "item.loyalist_mod.monulite_ingot": "Monulite Ingot",
-  "item.loyalist_mod.monulite_ooz": "Monulite Ooz",
+  "item.monulite_mod.raw_monulite": "Raw Monulite",
+  "item.monulite_mod.monulite_ingot": "Monulite Ingot",
+  "item.monulite_mod.monulite_ooz": "Monulite Ooz",
 
-  "item.loyalist_mod.raw_acrote": "Raw Acrote",
-  "item.loyalist_mod.acrote_ooz": "Acrote Ooz",
+  "item.monulite_mod.raw_acrote": "Raw Acrote",
+  "item.monulite_mod.acrote_ooz": "Acrote Ooz",
 
-  "item.loyalist_mod.monulite_coin": "Monulite Coin",
-  "item.loyalist_mod.acrote_coin": "Acrote Coin",
+  "item.monulite_mod.monulite_coin": "Monulite Coin",
+  "item.monulite_mod.acrote_coin": "Acrote Coin",
 
-  "item.loyalist_mod.monulite_sword": "Monulite Sword",
-  "item.loyalist_mod.monulite_pickaxe": "Monulite Pickaxe",
-  "item.loyalist_mod.monulite_shovel": "Monulite Shovel",
-  "item.loyalist_mod.monulite_axe": "Monulite Axe",
-  "item.loyalist_mod.monulite_hoe": "Monulite Hoe",
-  "item.loyalist_mod.monulite_spear": "Monulite Spear",
+  "item.monulite_mod.monulite_sword": "Monulite Sword",
+  "item.monulite_mod.monulite_pickaxe": "Monulite Pickaxe",
+  "item.monulite_mod.monulite_shovel": "Monulite Shovel",
+  "item.monulite_mod.monulite_axe": "Monulite Axe",
+  "item.monulite_mod.monulite_hoe": "Monulite Hoe",
+  "item.monulite_mod.monulite_spear": "Monulite Spear",
 
-  "item.loyalist_mod.monulite_helmet": "Monulite Helmet",
-  "item.loyalist_mod.monulite_chestplate": "Monulite Chestplate",
-  "item.loyalist_mod.monulite_leggings": "Monulite Leggings",
-  "item.loyalist_mod.monulite_boots": "Monulite Boots",
+  "item.monulite_mod.monulite_helmet": "Monulite Helmet",
+  "item.monulite_mod.monulite_chestplate": "Monulite Chestplate",
+  "item.monulite_mod.monulite_leggings": "Monulite Leggings",
+  "item.monulite_mod.monulite_boots": "Monulite Boots",
 
-  "block.loyalist_mod.deepslate_monulite_ore_block": "Deepslate Monulite Ore",
-  "block.loyalist_mod.monulite_ore_block": "Monulite Ore",
-  "block.loyalist_mod.monulite_block": "Monulite Block",
-  "block.loyalist_mod.monulite_coin_molder": "Monulite Coin Molder",
+  "block.monulite_mod.deepslate_monulite_ore_block": "Deepslate Monulite Ore",
+  "block.monulite_mod.monulite_ore_block": "Monulite Ore",
+  "block.monulite_mod.monulite_block": "Monulite Block",
+  "block.monulite_mod.monulite_coin_molder": "Monulite Coin Molder",
 
-  "block.loyalist_mod.acrote_ore_block": "Acrote Ore",
-  "block.loyalist_mod.acrote_fusion_reactor": "Acrote Coin Molder",
-  "block.loyalist_mod.acrotefusionreactor": "Acrote Coin Molder"
+  "block.monulite_mod.acrote_ore_block": "Acrote Ore",
+  "block.monulite_mod.acrote_coin_molder": "Acrote Coin Molder"
 }

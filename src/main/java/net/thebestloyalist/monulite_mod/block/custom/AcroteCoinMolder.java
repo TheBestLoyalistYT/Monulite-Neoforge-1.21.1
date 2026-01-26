@@ -5,7 +5,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.SimpleMenuProvider;
 import net.minecraft.world.entity.player.Player;
@@ -18,14 +17,15 @@ import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
+import net.thebestloyalist.monulite_mod.block.entity.AcroteCoinMolderEntity;
 import net.thebestloyalist.monulite_mod.block.entity.ModBlockEntities;
 import net.thebestloyalist.monulite_mod.block.entity.MonuliteCoinMolderEntity;
 import org.jetbrains.annotations.Nullable;
 
-public class MonuliteCoinMolder extends BaseEntityBlock {
-    public static final MapCodec<MonuliteCoinMolder> CODEC = simpleCodec(MonuliteCoinMolder::new);
+public class AcroteCoinMolder extends BaseEntityBlock {
+    public static final MapCodec<AcroteCoinMolder> CODEC = simpleCodec(AcroteCoinMolder::new);
 
-    public MonuliteCoinMolder(Properties properties) {
+    public AcroteCoinMolder(Properties properties) {
         super(properties);
     }
 
@@ -37,7 +37,7 @@ public class MonuliteCoinMolder extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-        return new MonuliteCoinMolderEntity(blockPos, blockState);
+        return new AcroteCoinMolderEntity(blockPos, blockState);
     }
 
     @Override
@@ -49,8 +49,8 @@ public class MonuliteCoinMolder extends BaseEntityBlock {
     public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
         if (pState.getBlock() != pNewState.getBlock()) {
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
-            if (blockEntity instanceof MonuliteCoinMolderEntity monuliteCoinMolderEntity) {
-                monuliteCoinMolderEntity.drops();
+            if (blockEntity instanceof AcroteCoinMolderEntity acroteCoinMolderEntity) {
+                acroteCoinMolderEntity.drops();
             }
         }
 
@@ -62,8 +62,8 @@ public class MonuliteCoinMolder extends BaseEntityBlock {
                                               Player pPlayer, InteractionHand pHand, BlockHitResult pHitResult) {
         if (!pLevel.isClientSide()) {
             BlockEntity entity = pLevel.getBlockEntity(pPos);
-            if(entity instanceof MonuliteCoinMolderEntity monuliteCoinMolderEntity) {
-                ((ServerPlayer) pPlayer).openMenu(new SimpleMenuProvider(monuliteCoinMolderEntity, Component.literal("Monulite Coin Molder")), pPos);
+            if(entity instanceof AcroteCoinMolderEntity acroteCoinMolderEntity) {
+                ((ServerPlayer) pPlayer).openMenu(new SimpleMenuProvider(acroteCoinMolderEntity, Component.literal("Acrote Coin Molder")), pPos);
             } else {
                 throw new IllegalStateException("Our Container provider is missing!");
             }
@@ -79,7 +79,7 @@ public class MonuliteCoinMolder extends BaseEntityBlock {
             return null;
         }
 
-        return createTickerHelper(blockEntityType, ModBlockEntities.MONULITE_COIN_MOLDER.get(),
+        return createTickerHelper(blockEntityType, ModBlockEntities.ACROTE_COIN_MOLDER.get(),
                 (level1, blockPos, blockState, blockEntity) -> blockEntity.tick(level1, blockPos, blockState));
     }
 }
