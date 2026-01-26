@@ -26,9 +26,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.DEEPSLATE_MONULITE_ORE);
 
-        blockWithItem( ModBlocks.MONULITE_COIN_MOLDER);
+        blockWithItem(ModBlocks.MONULITE_ORE);
+
+        blockWithItem(ModBlocks.ACROTE_ORE);
+
+        blockWithItem(ModBlocks.MONULITE_BLOCK);
+
+        blockWithItem(ModBlocks.MONULITE_COIN_MOLDER);
         blockWithItem(ModBlocks.ACROTE_COIN_MOLDER);
 
 

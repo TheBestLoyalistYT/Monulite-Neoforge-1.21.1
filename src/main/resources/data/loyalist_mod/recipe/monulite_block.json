@@ -6,9 +6,9 @@
     "MMM"
   ],
   "key": {
-    "M": [
-      "loyalist_mod:monulite_ingot"
-    ]
+    "M": {
+      "item": "monulite_mod:monulite_ingot"
+    }
   },
   "result": {
     "id": "loyalist_mod:monulite_block",

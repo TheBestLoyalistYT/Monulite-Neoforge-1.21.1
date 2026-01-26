@@ -1,5 +1,5 @@
 {
-  "itemgroup.monulite_mod.monulite_items": "Monulite Items",
+  "creativetab.monulite_mod.monulite_items": "Monulite Items",
 
   "item.monulite_mod.coin_mold": "Coin Mold",
 
@@ -18,18 +18,17 @@
   "item.monulite_mod.monulite_shovel": "Monulite Shovel",
   "item.monulite_mod.monulite_axe": "Monulite Axe",
   "item.monulite_mod.monulite_hoe": "Monulite Hoe",
-  "item.monulite_mod.monulite_spear": "Monulite Spear",
 
   "item.monulite_mod.monulite_helmet": "Monulite Helmet",
   "item.monulite_mod.monulite_chestplate": "Monulite Chestplate",
   "item.monulite_mod.monulite_leggings": "Monulite Leggings",
   "item.monulite_mod.monulite_boots": "Monulite Boots",
 
-  "block.monulite_mod.deepslate_monulite_ore_block": "Deepslate Monulite Ore",
-  "block.monulite_mod.monulite_ore_block": "Monulite Ore",
+  "block.monulite_mod.deepslate_monulite_ore": "Deepslate Monulite Ore",
+  "block.monulite_mod.monulite_ore": "Monulite Ore",
   "block.monulite_mod.monulite_block": "Monulite Block",
   "block.monulite_mod.monulite_coin_molder": "Monulite Coin Molder",
 
-  "block.monulite_mod.acrote_ore_block": "Acrote Ore",
+  "block.monulite_mod.acrote_ore": "Acrote Ore",
   "block.monulite_mod.acrote_coin_molder": "Acrote Coin Molder"
 }

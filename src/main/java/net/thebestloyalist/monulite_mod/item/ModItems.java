@@ -38,21 +38,21 @@ public class ModItems {
             () -> new SwordItem(ModToolTeirs.MONULITE_SWORD, new Item.Properties()
                     .attributes(SwordItem.createAttributes(ModToolTeirs.MONULITE_SWORD, 4, -2.4f))));
 
-    public static final DeferredItem<SwordItem> MONULITE_PICKAXE = ITEMS.register("monulite_pickaxe",
-            () -> new SwordItem(ModToolTeirs.MONULITE_PICKAXE, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(ModToolTeirs.MONULITE_PICKAXE, 2, -2.8f))));
+    public static final DeferredItem<PickaxeItem> MONULITE_PICKAXE = ITEMS.register("monulite_pickaxe",
+            () -> new PickaxeItem(ModToolTeirs.MONULITE_PICKAXE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTeirs.MONULITE_PICKAXE, 2, -2.8f))));
 
-    public static final DeferredItem<SwordItem> MONULITE_SHOVEL = ITEMS.register("monulite_shovel",
-            () -> new SwordItem(ModToolTeirs.MONULITE_SHOVEL, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(ModToolTeirs.MONULITE_SHOVEL, 2, -3.0f))));
+    public static final DeferredItem<ShovelItem> MONULITE_SHOVEL = ITEMS.register("monulite_shovel",
+            () -> new ShovelItem(ModToolTeirs.MONULITE_SHOVEL, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTeirs.MONULITE_SHOVEL, 2, -3.0f))));
 
-    public static final DeferredItem<SwordItem> MONULITE_AXE = ITEMS.register("monulite_axe",
-            () -> new SwordItem(ModToolTeirs.MONULITE_AXE, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(ModToolTeirs.MONULITE_AXE, 6, -3.0f))));
+    public static final DeferredItem<AxeItem> MONULITE_AXE = ITEMS.register("monulite_axe",
+            () -> new AxeItem(ModToolTeirs.MONULITE_AXE, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTeirs.MONULITE_AXE, 6, -3.0f))));
 
-    public static final DeferredItem<SwordItem> MONULITE_HOE = ITEMS.register("monulite_hoe",
-            () -> new SwordItem(ModToolTeirs.MONULITE_HOE, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(ModToolTeirs.MONULITE_HOE, 1, 0.0f))));
+    public static final DeferredItem<HoeItem> MONULITE_HOE = ITEMS.register("monulite_hoe",
+            () -> new HoeItem(ModToolTeirs.MONULITE_HOE, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTeirs.MONULITE_HOE, 1, 0.0f))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

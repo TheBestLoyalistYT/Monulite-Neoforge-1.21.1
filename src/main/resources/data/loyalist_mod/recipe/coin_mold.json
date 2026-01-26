@@ -6,12 +6,12 @@
     " # "
   ],
   "key": {
-    "#": [
-      "minecraft:iron_ingot"
-    ],
-    "$": [
-      "minecraft:blaze_powder"
-    ]
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "$": {
+      "item": "minecraft:blaze_powder"
+    }
   },
   "result": {
     "id": "loyalist_mod:coin_mold",

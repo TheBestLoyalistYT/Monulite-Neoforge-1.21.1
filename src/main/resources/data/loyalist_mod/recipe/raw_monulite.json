@@ -1,10 +1,10 @@
 {
   "type": "minecraft:blasting",
   "ingredient": {
-    "item": "monulite_mod:monulite_ingot"
+    "item": "monulite_mod:raw_monulite"
   },
   "result": {
-    "id": "monulite_mod:monulite_ooz",
+    "id": "monulite_mod:monulite_ingot",
     "count": 1
   },
   "experience": 30,

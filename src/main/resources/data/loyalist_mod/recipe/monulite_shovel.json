@@ -6,15 +6,15 @@
     " S "
   ],
   "key": {
-    "M": [
-      "loyalist_mod:monulite_ingot"
-    ],
-    "S": [
-      "minecraft:stick"
-    ]
+    "M": {
+      "item": "monulite_mod:monulite_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
-    "id": "loyalist_mod:monulite_shovel",
+    "id": "monulite_mod:monulite_shovel",
     "count": 1
   }
 }

@@ -6,18 +6,18 @@
     "NDN"
   ],
   "key": {
-    "M": [
-      "loyalist_mod:coin_mold"
-    ],
-    "D": [
-      "minecraft:dark_prismarine"
-    ],
-    "N": [
-      "minecraft:netherite"
-    ]
+    "M": {
+      "item": "monulite_mod:coin_mold"
+    },
+    "D": {
+      "item": "minecraft:dark_prismarine"
+    },
+    "N": {
+      "item": "minecraft:netherite"
+    }
   },
   "result": {
-    "id": "loyalist_mod:moulite_coin_molder",
+    "id": "monulite_mod:moulite_coin_molder",
     "count": 1
   }
 }

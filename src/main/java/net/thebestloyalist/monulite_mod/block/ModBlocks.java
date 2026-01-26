@@ -19,8 +19,15 @@ public class ModBlocks {
             DeferredRegister.createBlocks(MonuliteMod.MOD_ID);
 
     public static final DeferredBlock<net.minecraft.world.level.block.Block> DEEPSLATE_MONULITE_ORE = registerBlock("deepslate_monulite_ore",
-            () -> new DropExperienceBlock(UniformInt.of(3, 6),
-                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+            () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<net.minecraft.world.level.block.Block> MONULITE_ORE = registerBlock("monulite_ore",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<net.minecraft.world.level.block.Block> ACROTE_ORE = registerBlock("acrote_ore",
+            () -> new Block(BlockBehaviour.Properties.of().strength(2.7f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> MONULITE_BLOCK = registerBlock("monulite_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3.6f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
 
     public static final DeferredBlock<Block> MONULITE_COIN_MOLDER = registerBlock("monulite_coin_molder",
             () -> new MonuliteCoinMolder(BlockBehaviour.Properties.of()));

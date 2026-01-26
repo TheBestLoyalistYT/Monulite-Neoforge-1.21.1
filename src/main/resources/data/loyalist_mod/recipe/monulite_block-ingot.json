@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     [
-      "loyalist_mod:monulite_block"
+      "monulite_mod:monulite_block"
     ]
   ],
   "result": {
-    "id": "loyalist_mod:monulite_ingot",
+    "id": "monulite_mod:monulite_ingot",
     "count": 9
   }
 }

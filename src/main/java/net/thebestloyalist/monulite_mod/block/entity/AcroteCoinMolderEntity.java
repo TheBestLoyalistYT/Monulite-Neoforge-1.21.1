@@ -20,6 +20,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import net.thebestloyalist.monulite_mod.item.ModItems;
+import net.thebestloyalist.monulite_mod.screen.custom.AcroteCoinMolderMenu;
 import net.thebestloyalist.monulite_mod.screen.custom.MonuliteCoinMolderMenu;
 import org.jetbrains.annotations.Nullable;
 
@@ -76,7 +77,7 @@ public class AcroteCoinMolderEntity extends BlockEntity implements MenuProvider 
     @Nullable
     @Override
     public AbstractContainerMenu createMenu(int i, Inventory inventory, Player player) {
-        return new MonuliteCoinMolderMenu(i, inventory, this, this.data);
+        return new AcroteCoinMolderMenu(i, inventory, this, this.data);
     }
 
     public void drops() {

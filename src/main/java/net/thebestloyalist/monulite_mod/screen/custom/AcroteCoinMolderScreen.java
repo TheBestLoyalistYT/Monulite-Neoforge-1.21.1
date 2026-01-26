@@ -9,13 +9,13 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
 
-public class AcroteCoinMolderScreen extends AbstractContainerScreen<MonuliteCoinMolderMenu> {
+public class AcroteCoinMolderScreen extends AbstractContainerScreen<AcroteCoinMolderMenu> {
     private static final ResourceLocation GUI_TEXTURE =
             ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID,"textures/gui/acrotereactor/acrotereactor_gui.png");
     private static final ResourceLocation ARROW_TEXTURE =
             ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID,"textures/gui/arrow_progress.png");
 
-    public AcroteCoinMolderScreen(MonuliteCoinMolderMenu menu, Inventory playerInventory, Component title) {
+    public AcroteCoinMolderScreen(AcroteCoinMolderMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);
     }
 

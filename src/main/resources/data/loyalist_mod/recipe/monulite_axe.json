@@ -1,20 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "MM ",
-    "MS ",
+    "MMM",
+    " S ",
     " S "
   ],
   "key": {
-    "M": [
-      "loyalist_mod:monulite_ingot"
-    ],
-    "S": [
-      "minecraft:stick"
-    ]
+    "M": {
+      "item": "monulite_mod:monulite_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
   },
   "result": {
-    "id": "loyalist_mod:monulite_axe",
+    "id": "monulite_mod:monulite_axe",
     "count": 1
   }
 }

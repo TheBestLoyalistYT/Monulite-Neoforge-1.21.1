@@ -16,6 +16,16 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        basicItem(ModItems.COIN_MOLD.get());
+
+        basicItem(ModItems.RAW_MONULITE.get());
+        basicItem(ModItems.RAW_ACROTE.get());
+
+        basicItem(ModItems.MONULITE_OOZ.get());
+        basicItem(ModItems.ACROTE_OOZ.get());
+
+        basicItem(ModItems.MONULITE_INGOT.get());
+
         basicItem(ModItems.MONULITE_COIN.get());
         basicItem(ModItems.ACROTE_COIN.get());
 

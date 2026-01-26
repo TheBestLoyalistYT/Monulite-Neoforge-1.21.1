@@ -8,6 +8,7 @@ import net.thebestloyalist.monulite_mod.block.entity.ModBlockEntities;
 import net.thebestloyalist.monulite_mod.block.entity.MonuliteCoinMolderEntity;
 import net.thebestloyalist.monulite_mod.datagen.ModBlockStateProvider;
 import net.thebestloyalist.monulite_mod.datagen.ModItemModelProvider;
+import net.thebestloyalist.monulite_mod.item.ModCreativeModeTabs;
 import net.thebestloyalist.monulite_mod.item.ModItems;
 import net.thebestloyalist.monulite_mod.screen.ModMenuTypes;
 import org.slf4j.Logger;
@@ -30,6 +31,8 @@ public class MonuliteMod {
 
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
 

@@ -6,12 +6,12 @@
     "ASA"
   ],
   "key": {
-    "M": [
-      "loyalist_mod:monulite_ingot"
-    ],
-    "S": [
-      "minecraft:stone"
-    ],
+    "M": {
+      "item": "loyalist_mod:monulite_ingot"
+    },
+    "S": {
+      "item": "minecraft:stone"
+    },
     "A": [
       "loyalist_mod:raw_acrote"
     ]
