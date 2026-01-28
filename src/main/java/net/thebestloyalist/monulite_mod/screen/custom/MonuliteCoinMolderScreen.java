@@ -13,7 +13,7 @@ public class MonuliteCoinMolderScreen extends AbstractContainerScreen<MonuliteCo
     private static final ResourceLocation GUI_TEXTURE =
             ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID,"textures/gui/acrotereactor/acrotereactor_gui.png");
     private static final ResourceLocation ARROW_TEXTURE =
-            ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID,"textures/gui/arrow_progress.png");
+            ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID,"textures/gui/arrow_progress_monulite.png");
 
     public MonuliteCoinMolderScreen(MonuliteCoinMolderMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);

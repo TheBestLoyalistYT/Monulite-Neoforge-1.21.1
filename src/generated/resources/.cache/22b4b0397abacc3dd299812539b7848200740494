@@ -1,0 +1,5 @@
+// 1.21.1	2026-01-28T16:26:15.247539	Tags for minecraft:block mod id monulite_mod
+fd5162e4e6d8205a9050cfe4493ad048df71a463 data/minecraft/tags/block/mineable/pickaxe.json
+a9ddb668f1d18749716ea9e179153da8e3ac29a1 data/minecraft/tags/block/needs_diamond_tool.json
+e720f1582e031259392ed4592b2102f544547194 data/minecraft/tags/block/needs_iron_tool.json
+69a16b0aea395128e79272b433ae0bc89467b9a0 data/minecraft/tags/block/needs_stone_tool.json

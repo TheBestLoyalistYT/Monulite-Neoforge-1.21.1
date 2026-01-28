@@ -11,6 +11,7 @@ import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.thebestloyalist.monulite_mod.screen.ModMenuTypes;
+import net.thebestloyalist.monulite_mod.screen.custom.AcroteCoinMolderScreen;
 import net.thebestloyalist.monulite_mod.screen.custom.MonuliteCoinMolderScreen;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
@@ -35,6 +36,7 @@ public class MonuliteModClient {
     @SubscribeEvent
     public static void registerScreens(RegisterMenuScreensEvent event) {
         event.register(ModMenuTypes.MONULITE_COIN_MOLDER_MENU.get(), MonuliteCoinMolderScreen::new);
+        event.register(ModMenuTypes.ACROTE_COIN_MOLDER_MENU.get(), AcroteCoinMolderScreen::new);
 
     }
 }

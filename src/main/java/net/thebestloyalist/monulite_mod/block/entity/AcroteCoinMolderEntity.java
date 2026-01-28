@@ -122,7 +122,7 @@ public class AcroteCoinMolderEntity extends BlockEntity implements MenuProvider 
     }
 
     private void craftItem() {
-        ItemStack output = new ItemStack(ModItems.ACROTE_COIN.get(), 2);
+        ItemStack output = new ItemStack(ModItems.ACROTE_COIN.get(), 1);
 
         itemHandler.extractItem(INPUT_SLOT, 1, false);
         itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(output.getItem(),
@@ -143,7 +143,7 @@ public class AcroteCoinMolderEntity extends BlockEntity implements MenuProvider 
     }
 
     private boolean hasRecipe() {
-        ItemStack output = new ItemStack(ModItems.ACROTE_COIN.get(), 2);
+        ItemStack output = new ItemStack(ModItems.ACROTE_COIN.get(), 1);
 
         return itemHandler.getStackInSlot(INPUT_SLOT).is(ModItems.ACROTE_OOZ) &&
                 canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
