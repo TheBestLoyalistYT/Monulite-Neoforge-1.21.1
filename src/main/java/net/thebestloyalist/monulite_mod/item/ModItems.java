@@ -54,6 +54,23 @@ public class ModItems {
             () -> new HoeItem(ModToolTeirs.MONULITE_HOE, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTeirs.MONULITE_HOE, 1, 0.0f))));
 
+
+    public static final DeferredItem<ArmorItem> MONULITE_HELMET = ITEMS.register("monulite_helmet",
+            () -> new ArmorItem(ModArmorMaterials.MONULITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
+
+    public static final DeferredItem<ArmorItem> MONULITE_CHESTPLATE = ITEMS.register("monulite_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.MONULITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))));
+
+    public static final DeferredItem<ArmorItem> MONULITE_LEGGINGS = ITEMS.register("monulite_leggings",
+            () -> new ArmorItem(ModArmorMaterials.MONULITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))));
+
+    public static final DeferredItem<ArmorItem> MONULITE_BOOTS = ITEMS.register("monulite_boots",
+            () -> new ArmorItem(ModArmorMaterials.MONULITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

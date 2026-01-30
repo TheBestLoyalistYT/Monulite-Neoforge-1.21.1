@@ -1,0 +1,7 @@
+// 1.21.1	2026-01-30T12:39:05.7073592	Tags for minecraft:item mod id monulite_mod
+3c14d84f1b43854c00ef1748ce7ccc1e52c64318 data/minecraft/tags/item/axes.json
+0cd5c721ad592695404042e6fbf959e13a72112a data/minecraft/tags/item/hoes.json
+63e19e8526a387a6ad75fb6f123d2136f2bdef35 data/minecraft/tags/item/pickaxes.json
+4a110a9b9a3a4c4a596684ca4b367a052c044b1d data/minecraft/tags/item/shovels.json
+c2ae30f2598e6a148cc7848cd7bfeb66edb1cacb data/minecraft/tags/item/swords.json
+5a24755f0907c755c76fd2184d9dee56625e7159 data/minecraft/tags/item/trimmable_armor.json

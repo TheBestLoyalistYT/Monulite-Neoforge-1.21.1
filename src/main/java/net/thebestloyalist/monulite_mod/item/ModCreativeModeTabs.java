@@ -35,6 +35,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MONULITE_SHOVEL);
                         output.accept(ModItems.MONULITE_AXE);
                         output.accept(ModItems.MONULITE_HOE);
+                        output.accept(ModItems.MONULITE_HELMET);
+                        output.accept(ModItems.MONULITE_CHESTPLATE);
+                        output.accept(ModItems.MONULITE_LEGGINGS);
+                        output.accept(ModItems.MONULITE_BOOTS);
 
                     }).build());
 

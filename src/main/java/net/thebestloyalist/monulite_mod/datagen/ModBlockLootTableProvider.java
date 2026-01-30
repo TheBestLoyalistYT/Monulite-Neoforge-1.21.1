@@ -34,9 +34,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
 
         add(ModBlocks.MONULITE_ORE.get(),
-                block -> createOreDrop(ModBlocks.MONULITE_ORE.get(), ModItems.RAW_MONULITE.get()));
+                block -> createMultipleOreDrops(ModBlocks.MONULITE_ORE.get(), ModItems.RAW_MONULITE.get(), 0.6f, 1));
         add(ModBlocks.DEEPSLATE_MONULITE_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_MONULITE_ORE.get(), ModItems.RAW_MONULITE.get(), 0.4F, 1));
+                block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_MONULITE_ORE.get(), ModItems.RAW_MONULITE.get(), 0.6F, 1));
 
         add(ModBlocks.ACROTE_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.ACROTE_ORE.get(), ModItems.RAW_ACROTE.get(), 1, 1));

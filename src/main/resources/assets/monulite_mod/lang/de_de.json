@@ -1,13 +1,40 @@
 {
-  "itemgroup.loyalistmod.monulite_items": "Monulite Artikel",
 
-  "item.loyalist_mod.coin_mold": "Münzform",
-  "item.loyalist_mod.raw_monulite": "Roh Monulite",
-  "item.loyalist_mod.monulite_ingot": "Monulite Barren",
-  "item.loyalist_mod.monulite_ooz": "Monulite Sickern",
-  "item.loyalist_mod.monulite_coin": "Monulite Münze",
   "block.loyalist_mod.deepslate_monulite_ore_block": "Tiefenschiefer Monulite Erz",
   "block.loyalist_mod.monulite_ore_block": "Monulite Erz",
-  "block.loyalist_mod.monulite_block": "Monulite Block"
+  "block.loyalist_mod.monulite_block": "Monulite Block",
+
+  "creativetab.monulite_mod.monulite_items": "Monulite Artikel",
+
+  "item.monulite_mod.coin_mold": "Münzform",
+
+  "item.monulite_mod.raw_monulite": "Roh Monulite",
+  "item.monulite_mod.monulite_ingot": "Monulite Barren",
+  "item.monulite_mod.monulite_ooz": "Monulite Schlamm",
+
+  "item.monulite_mod.raw_acrote": "Roh Acrote",
+  "item.monulite_mod.acrote_ooz": "Acrote Schlamm",
+
+  "item.monulite_mod.monulite_coin": "Monulite Münze",
+  "item.monulite_mod.acrote_coin": "Acrote Münze",
+
+  "item.monulite_mod.monulite_sword": "Monulite Schwert",
+  "item.monulite_mod.monulite_pickaxe": "Monulite Spitzhacke",
+  "item.monulite_mod.monulite_shovel": "Monulite Schaufel",
+  "item.monulite_mod.monulite_axe": "Monulite Axt",
+  "item.monulite_mod.monulite_hoe": "Monulite Wie",
+
+  "item.monulite_mod.monulite_helmet": "Monulite Helm",
+  "item.monulite_mod.monulite_chestplate": "Monulite Brustpanzer",
+  "item.monulite_mod.monulite_leggings": "Monulite Gamaschen",
+  "item.monulite_mod.monulite_boots": "Monulite Stiefel",
+
+  "block.monulite_mod.deepslate_monulite_ore": "Tiefenschiefer Monulite Erz",
+  "block.monulite_mod.monulite_ore": "Monulite Erz",
+  "block.monulite_mod.monulite_block": "Monulite Block",
+  "block.monulite_mod.monulite_coin_molder": "Monulite Münzform",
+
+  "block.monulite_mod.acrote_ore": "Acrote Erz",
+  "block.monulite_mod.acrote_coin_molder": "Acrote Münzform"
 
 }
