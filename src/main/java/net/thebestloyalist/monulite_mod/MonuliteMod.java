@@ -38,6 +38,9 @@ public class MonuliteMod {
 
         ModMenuTypes.register(modEventBus);
 
+        MonuliteModStructures.DEFERRED_REGISTRY_STRUCTURE.register(modEventBus);
+        MonuliteModStructurePlacements.DEFERRED_REGISTRY_STRUCTURE_PLACEMENT_TYPE.register(modEventBus);
+
         LOGGER.info("Monulite Mod initialized");
     }
 }

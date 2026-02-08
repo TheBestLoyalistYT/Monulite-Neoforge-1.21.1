@@ -11,7 +11,6 @@ import net.thebestloyalist.monulite_mod.block.custom.AcroteCoinMolder;
 import net.thebestloyalist.monulite_mod.block.custom.MonuliteCoinMolder;
 import net.thebestloyalist.monulite_mod.item.ModItems;
 import java.util.function.Supplier;
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.*;
 
 public class ModBlocks {
@@ -34,7 +33,6 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> ACROTE_COIN_MOLDER = registerBlock("acrote_coin_molder",
             () -> new AcroteCoinMolder(BlockBehaviour.Properties.of()));
-
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
