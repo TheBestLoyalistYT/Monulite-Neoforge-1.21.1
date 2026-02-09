@@ -1,0 +1,21 @@
+{
+  "type": "monulite_mod:ocean_structures",
+
+  "start_pool": "monulite_mod:monulite_floating_island",
+  "size": 1,
+  "max_distance_from_center": 80,
+
+  "step": "surface_structures",
+
+  "biome_predicate": {
+    "type": "minecraft:tag",
+    "tag": "monulite_mod:has_structure/code_structure_monulite_floating_island_biomes"
+  },
+
+  "start_height": {
+    "absolute": 40
+  },
+
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "spawn_overrides": {}
+}

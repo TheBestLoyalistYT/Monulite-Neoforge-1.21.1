@@ -1,14 +1,14 @@
 {
   "structures": [
     {
-      "structure": "structure_tutorial:code_monulite_floating_island",
+      "structure": "monulite_mod:code_monulite_floating_island",
       "weight": 100
     }
   ],
   "placement": {
     "type": "minecraft:random_spread",
 
-    "salt": 93077681767811563,
+    "salt": 3927678,
 
     "spacing": 2,
 

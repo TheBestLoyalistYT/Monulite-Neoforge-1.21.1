@@ -6,7 +6,7 @@
       "weight": 1,
       "element": {
 
-        "location": "structure_tutorial:monulite_floating_island",
+        "location": "monulite_mod:monulite_floating_island",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
