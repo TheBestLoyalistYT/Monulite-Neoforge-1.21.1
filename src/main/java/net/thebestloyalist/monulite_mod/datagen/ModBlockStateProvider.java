@@ -33,7 +33,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.MONULITE_BLOCK);
 
-        blockWithItem(ModBlocks.MONULITE_COIN_MOLDER);
         blockWithItem(ModBlocks.ACROTE_COIN_MOLDER);
 
 
