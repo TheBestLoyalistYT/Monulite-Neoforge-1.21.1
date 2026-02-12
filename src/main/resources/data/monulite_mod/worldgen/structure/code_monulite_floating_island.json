@@ -1,5 +1,5 @@
 {
-  "type": "monulite_mod:ocean_structures",
+  "type": "minecraft:jigsaw",
 
   "start_pool": "monulite_mod:monulite_floating_island",
   "size": 1,
@@ -7,15 +7,15 @@
 
   "step": "surface_structures",
 
-  "biome_predicate": {
-    "type": "minecraft:tag",
-    "tag": "monulite_mod:has_structure/code_structure_monulite_floating_island_biomes"
-  },
+  "biomes": "#monulite_mod:has_structure/monulite_floating_island_biomes",
 
   "start_height": {
     "absolute": 40
   },
 
   "project_start_to_heightmap": "WORLD_SURFACE_WG",
+
+  "use_expansion_hack": false,
+
   "spawn_overrides": {}
 }

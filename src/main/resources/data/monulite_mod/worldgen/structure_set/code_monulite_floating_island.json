@@ -2,7 +2,7 @@
   "structures": [
     {
       "structure": "monulite_mod:code_monulite_floating_island",
-      "weight": 100
+      "weight": 10
     }
   ],
   "placement": {
@@ -10,8 +10,8 @@
 
     "salt": 3927678,
 
-    "spacing": 2,
+    "spacing": 67,
 
-    "separation": 1
+    "separation": 50
   }
 }
