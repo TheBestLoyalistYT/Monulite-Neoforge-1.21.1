@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "monulite_mod:raw_monulite"
+    },
+    "title": "Professional Geologist",
+    "description": "Mine a Monulite ore without shattering the ore inside"
+  },
+  "parent": "monulite_mod:custom/root",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "monulite_mod:raw_monulite"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "monulite_mod:raw_monulite",
+      "monulite_mod:monulite_ooz"
+    ]
+  }
+}

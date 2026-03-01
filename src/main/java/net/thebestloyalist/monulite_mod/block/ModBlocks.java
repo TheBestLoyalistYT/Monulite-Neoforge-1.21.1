@@ -12,6 +12,7 @@ import net.thebestloyalist.monulite_mod.block.custom.MonuliteCoinMolder;
 import net.thebestloyalist.monulite_mod.item.ModItems;
 import java.util.function.Supplier;
 import net.minecraft.world.level.block.*;
+import net.thebestloyalist.monulite_mod.sound.ModSounds;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
@@ -29,10 +30,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of().strength(3.6f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
 
     public static final DeferredBlock<Block> MONULITE_COIN_MOLDER = registerBlock("monulite_coin_molder",
-            () -> new MonuliteCoinMolder(BlockBehaviour.Properties.of()));
+            () -> new MonuliteCoinMolder(BlockBehaviour.Properties.of().strength(3.4f).sound(ModSounds.MONULITE_COIN_MOLDER_SOUND_GROUP)));
 
     public static final DeferredBlock<Block> ACROTE_COIN_MOLDER = registerBlock("acrote_coin_molder",
-            () -> new AcroteCoinMolder(BlockBehaviour.Properties.of()));
+            () -> new AcroteCoinMolder(BlockBehaviour.Properties.of().strength(2.4f)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

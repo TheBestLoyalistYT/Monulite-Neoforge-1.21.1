@@ -1,32 +1,32 @@
 {
   "monulite_coin_molder_break": {
-    "subtitle": "sounds.loyalist_mod.monulite_coin_molder_break",
+    "subtitle": "sounds.monulite_mod.monulite_coin_molder_break",
     "sounds": [
-      "loyalist_mod:monulite_coin_molder_break"
+      "monulite_mod:monulite_coin_molder_break"
     ]
   },
   "monulite_coin_molder_place": {
-    "subtitle": "sounds.loyalist_mod.monulite_coin_molder_place",
+    "subtitle": "sounds.monulite_mod.monulite_coin_molder_place",
     "sounds": [
-      "loyalist_mod:monulite_coin_molder_place"
+      "monulite_mod:monulite_coin_molder_place"
     ]
   },
   "monulite_coin_molder_step": {
-    "subtitle": "sounds.loyalist_mod.monulite_coin_molder_step",
+    "subtitle": "sounds.monulite_mod.monulite_coin_molder_step",
     "sounds": [
-      "loyalist_mod:monulite_coin_molder_step"
+      "monulite_mod:monulite_coin_molder_step"
     ]
   },
   "monulite_coin_molder_fall": {
-    "subtitle": "sounds.loyalist_mod.monulite_coin_molder_fall",
+    "subtitle": "sounds.monulite_mod.monulite_coin_molder_fall",
     "sounds": [
-      "loyalist_mod:monulite_coin_molder_fall"
+      "monulite_mod:monulite_coin_molder_fall"
     ]
   },
   "monulite_coin_molder_hit": {
-    "subtitle": "sounds.loyalist_mod.monulite_coin_molder_hit",
+    "subtitle": "sounds.monulite_mod.monulite_coin_molder_hit",
     "sounds": [
-      "loyalist_mod:monulite_coin_molder_hit"
+      "monulite_mod:monulite_coin_molder_hit"
     ]
   }
 }

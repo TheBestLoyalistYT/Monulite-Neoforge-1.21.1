@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "id": "monulite_mod:raw_acrote"
+    },
+    "title": "Penny Diver",
+    "description": "Mine a Raw Acrote"
+  },
+  "parent": "monulite_mod:custom/root",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "monulite_mod:raw_acrote"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "monulite_mod:acrote_ooz"
+    ]
+  }
+}

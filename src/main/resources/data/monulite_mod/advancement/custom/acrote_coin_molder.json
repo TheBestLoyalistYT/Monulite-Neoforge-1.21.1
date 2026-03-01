@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "monulite_mod:acrote_coin_molder"
+    },
+    "title": "Penny and Dime",
+    "description": "Get a Acrote Coin Molder"
+  },
+  "parent": "monulite_mod:custom/acrote_ooz",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "monulite_mod:acrote_coin_molder"
+          }
+        ]
+      }
+    }
+  }
+}

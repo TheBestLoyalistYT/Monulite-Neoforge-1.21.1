@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "id": "monulite_mod:acrote_ooz"
+    },
+    "title": "Acrote Ooz Acivement",
+    "description": "Smelt a Raw Acrote"
+  },
+  "parent": "monulite_mod:custom/raw_acrote",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "monulite_mod:acrote_ooz"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "monulite_mod:acrote_coin_molder"
+    ]
+  }
+}

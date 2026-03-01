@@ -34,9 +34,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
 
         add(ModBlocks.MONULITE_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.MONULITE_ORE.get(), ModItems.RAW_MONULITE.get(), 0.6f, 1));
+                block -> createMonuliteOreDrops(ModBlocks.MONULITE_ORE.get(), ModItems.RAW_MONULITE.get(), 0.9f, 1));
         add(ModBlocks.DEEPSLATE_MONULITE_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_MONULITE_ORE.get(), ModItems.RAW_MONULITE.get(), 0.6F, 1));
+                block -> createMonuliteOreDrops(ModBlocks.DEEPSLATE_MONULITE_ORE.get(), ModItems.RAW_MONULITE.get(),0.9f,1));
 
         add(ModBlocks.ACROTE_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.ACROTE_ORE.get(), ModItems.RAW_ACROTE.get(), 1, 1));
@@ -46,6 +46,13 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.ACROTE_COIN_MOLDER.get());
     }
 
+    protected LootTable.Builder createMonuliteOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
+        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
+        return this.createSilkTouchDispatchTable(pBlock,
+                this.applyExplosionDecay(pBlock, LootItem.lootTableItem(item)
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))));
+
+    }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
         HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);

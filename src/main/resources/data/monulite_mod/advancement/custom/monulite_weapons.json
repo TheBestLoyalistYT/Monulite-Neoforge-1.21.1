@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "monulite_mod:monulite_sword"
+    },
+    "title": "Its Show Time!",
+    "description": "Craft a Monulite Weapon"
+  },
+  "parent": "monulite_mod:custom/monulite_ingot",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "monulite_mod:monulite_sword"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

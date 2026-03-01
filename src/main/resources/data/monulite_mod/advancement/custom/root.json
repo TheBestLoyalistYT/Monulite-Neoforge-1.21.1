@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": {
+      "id": "monulite_mod:monulite_block"
+    },
+    "title": "Monulite Achivements",
+    "description": "The tab for Monulite Achivements!",
+    "background": "minecraft:textures/block/deepslate.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "monulite_mod:monulite_coin"
+    },
+    "title": "Its Not Counterfeit!",
+    "description": "Make your first Monulite Coin"
+  },
+  "parent": "monulite_mod:custom/monulite_coin_molder",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "monulite_mod:monulite_coin"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "monulite_mod:acrote_coin"
+    },
+    "title": "Spare Change?",
+    "description": "Make your first Acrote Coin"
+  },
+  "parent": "monulite_mod:custom/acrote_coin_molder",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "monulite_mod:acrote_coin"
+          }
+        ]
+      }
+    }
+  }
+}

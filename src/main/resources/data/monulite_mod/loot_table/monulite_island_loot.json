@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "monulite_mod:monulite_ingot",
+          "name": "monulite_mod:raw_monulite",
           "weight": 2,
           "conditions": []
         },

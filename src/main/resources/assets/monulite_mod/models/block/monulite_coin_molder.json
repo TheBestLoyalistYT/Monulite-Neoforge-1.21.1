@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_column",
   "textures": {
     "end": "monulite_mod:block/monulite_coin_molder_top",
     "side": "monulite_mod:block/monulite_coin_molder"

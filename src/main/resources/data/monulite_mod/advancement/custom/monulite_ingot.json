@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "id": "monulite_mod:monulite_ingot"
+    },
+    "title": "Melted Crystal",
+    "description": "Melt down a Raw Monulite to be more solid"
+  },
+  "parent": "monulite_mod:custom/raw_monulite",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "monulite_mod:monulite_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "monulite_mod:monulite_coin_molder"
+    ]
+  }
+}

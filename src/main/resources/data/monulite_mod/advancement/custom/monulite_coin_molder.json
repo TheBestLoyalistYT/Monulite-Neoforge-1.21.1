@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "monulite_mod:monulite_coin_molder"
+    },
+    "title": "Money Printer",
+    "description": "Get a Monulite Coin Molder"
+  },
+  "parent": "monulite_mod:custom/monulite_ooz",
+  "criteria": {
+    "c4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "monulite_mod:monulite_coin_molder"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "id": "monulite_mod:monulite_chestplate"
+    },
+    "title": "Feeling Buff",
+    "description": "Craft a piece of Monulite Armor"
+  },
+  "parent": "monulite_mod:custom/monulite_ingot",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "monulite_mod:monulite_helmet",
+              "monulite_mod:monulite_chestplate",
+              "monulite_mod:monulite_leggings",
+              "monulite_mod:monulite_boots"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
