@@ -43,5 +43,9 @@ public class FlightEffect extends MobEffect {
     @Override
     public void onMobRemoved(LivingEntity livingEntity, int amplifier, Entity.RemovalReason reason) {
         super.onMobRemoved(livingEntity, amplifier, reason);
+        if (livingEntity instanceof Player player) {
+            player.getAbilities().mayfly = false;
+            player.onUpdateAbilities();
+        }
     }
 }
