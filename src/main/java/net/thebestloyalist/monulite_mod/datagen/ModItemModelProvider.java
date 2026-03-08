@@ -44,6 +44,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RAW_MONULITE.get());
         basicItem(ModItems.RAW_ACROTE.get());
 
+        basicItem(ModItems.MONULITE_POWDER.get());
+
         basicItem(ModItems.MONULITE_OOZ.get());
         basicItem(ModItems.ACROTE_OOZ.get());
 
@@ -62,6 +64,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.MONULITE_CHESTPLATE);
         trimmedArmorItem(ModItems.MONULITE_LEGGINGS);
         trimmedArmorItem(ModItems.MONULITE_BOOTS);
+
+        basicItem(ModItems.MONULITE_INFUSED_STEAK.get());
     }
 
     private void trimmedArmorItem(DeferredItem<ArmorItem> itemDeferredItem) {

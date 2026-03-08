@@ -2,6 +2,7 @@ package net.thebestloyalist.monulite_mod.item;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
@@ -19,6 +20,8 @@ public class ModItems {
 
     public static final DeferredItem<Item> RAW_MONULITE = ITEMS.register("raw_monulite",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> MONULITE_POWDER = ITEMS.register("monulite_powder",
+            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> MONULITE_INGOT = ITEMS.register("monulite_ingot",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> MONULITE_OOZ = ITEMS.register("monulite_ooz",
@@ -32,6 +35,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ACROTE_COIN = ITEMS.register("acrote_coin",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> MONULITE_INFUSED_STEAK = ITEMS.register("monulite_infused_steak",
+    () -> new Item(new Item.Properties().food(ModFoodProperties.MONULITE_FLIGHT_FOOD)));
 
 
     public static final DeferredItem<SwordItem> MONULITE_SWORD = ITEMS.register("monulite_sword",

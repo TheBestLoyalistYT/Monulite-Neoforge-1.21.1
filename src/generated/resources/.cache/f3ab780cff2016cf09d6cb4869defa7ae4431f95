@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-30T12:28:11.9119824	Item Models: monulite_mod
+// 1.21.1	2026-03-08T14:07:01.4221767	Item Models: monulite_mod
 9d57814b9a610c14c6321628fc4b567a5e4b3fc8 assets/monulite_mod/models/item/acrote_coin.json
 0b8092c50b9bc5e556b662e3d26f1c705589a9f2 assets/monulite_mod/models/item/acrote_ooz.json
 e09477946606fea0ca5240be2f21062bee021cb0 assets/monulite_mod/models/item/coin_mold.json
@@ -38,6 +38,7 @@ e5b78e1143e1fce9f7e9ed6909d9efb44ed5328b assets/monulite_mod/models/item/monulit
 a2ccf5ef9f5ae729bd437fb4c169767500ea9ace assets/monulite_mod/models/item/monulite_helmet_quartz_trim.json
 81ce58a21973976e704e310284a9466e34023ffe assets/monulite_mod/models/item/monulite_helmet_redstone_trim.json
 98272d93f2c3f009c2e4d1ecbdae854b6eee301a assets/monulite_mod/models/item/monulite_hoe.json
+26ac8d51ca0513a8b6edcf0b1a0dedb7d15f1187 assets/monulite_mod/models/item/monulite_infused_steak.json
 de0f5350b93ffa831ecb191cd48bfcf9cd736a57 assets/monulite_mod/models/item/monulite_ingot.json
 539fa70131b33b0b6c153440a7c08e698484b51b assets/monulite_mod/models/item/monulite_leggings.json
 e781aa706bc581ab415cbb7375a931aa827e3774 assets/monulite_mod/models/item/monulite_leggings_amethyst_trim.json
@@ -52,6 +53,7 @@ e37c892cc669c8bd21f44e84c99996a8d74830e1 assets/monulite_mod/models/item/monulit
 824f3957241371a79a7ebe6c9d89e109c410b333 assets/monulite_mod/models/item/monulite_leggings_redstone_trim.json
 fb3d1655fc8ebb22df543affd68aa2edd1b7c376 assets/monulite_mod/models/item/monulite_ooz.json
 d7a1e79cfdb1ec3848209d8aae5393a400581ad6 assets/monulite_mod/models/item/monulite_pickaxe.json
+3db7173a304d1f25aa86e10e028e563388bbacbb assets/monulite_mod/models/item/monulite_powder.json
 0c36a5be771bd3b45edea0112624298521c2e51f assets/monulite_mod/models/item/monulite_shovel.json
 d8446b245308384ebaf5c4c16d4c7de9dcf7315a assets/monulite_mod/models/item/monulite_sword.json
 91167c71c7bf4f06a2ce99b1ac564bd4e75943b4 assets/monulite_mod/models/item/raw_acrote.json

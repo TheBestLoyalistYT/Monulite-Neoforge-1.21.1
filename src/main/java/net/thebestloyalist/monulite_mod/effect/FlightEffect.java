@@ -1,22 +1,12 @@
 package net.thebestloyalist.monulite_mod.effect;
 
-import net.minecraft.client.multiplayer.chat.report.ReportEnvironment;
-import net.minecraft.network.chat.Component;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Abilities;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.level.Level;
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
-import net.neoforged.neoforge.event.tick.LevelTickEvent;
-import net.neoforged.neoforge.event.tick.ServerTickEvent;
 
 public class FlightEffect extends MobEffect {
 
@@ -35,17 +25,19 @@ public class FlightEffect extends MobEffect {
             if (entity instanceof Player player) {
                 player.getAbilities().mayfly = true;
                 player.onUpdateAbilities();
+
+                MobEffectInstance effectInstance = player.getEffect(ModEffects.FLIGHT_EFFECT);
+                if (effectInstance == null) return false;
+
+                int duration = effectInstance.getDuration();
+
+                if (duration == 1)
+                {
+                    player.getAbilities().mayfly = false;
+                    player.onUpdateAbilities();
+                }
             }
         }
         return true;
-    }
-
-    @Override
-    public void onMobRemoved(LivingEntity livingEntity, int amplifier, Entity.RemovalReason reason) {
-        super.onMobRemoved(livingEntity, amplifier, reason);
-        if (livingEntity instanceof Player player) {
-            player.getAbilities().mayfly = false;
-            player.onUpdateAbilities();
-        }
     }
 }
