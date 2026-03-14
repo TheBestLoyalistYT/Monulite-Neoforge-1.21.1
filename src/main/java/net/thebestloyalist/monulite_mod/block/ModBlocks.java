@@ -8,6 +8,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
 import net.thebestloyalist.monulite_mod.block.custom.AcroteCoinMolder;
+import net.thebestloyalist.monulite_mod.block.custom.MagicInfuser;
 import net.thebestloyalist.monulite_mod.block.custom.MonuliteCoinMolder;
 import net.thebestloyalist.monulite_mod.item.ModItems;
 import java.util.function.Supplier;
@@ -31,6 +32,9 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> MONULITE_COIN_MOLDER = registerBlock("monulite_coin_molder",
             () -> new MonuliteCoinMolder(BlockBehaviour.Properties.of().strength(3.4f).sound(ModSounds.MONULITE_COIN_MOLDER_SOUND_GROUP)));
+
+    public static final DeferredBlock<Block> MAGIC_INFUSER = registerBlock("magic_infuser",
+            () -> new MagicInfuser(BlockBehaviour.Properties.of().strength(2.4f)));
 
     public static final DeferredBlock<Block> ACROTE_COIN_MOLDER = registerBlock("acrote_coin_molder",
             () -> new AcroteCoinMolder(BlockBehaviour.Properties.of().strength(2.4f)));

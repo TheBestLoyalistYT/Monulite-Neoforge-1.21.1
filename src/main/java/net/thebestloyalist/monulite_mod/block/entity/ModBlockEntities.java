@@ -18,6 +18,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("monulite_coin_molder", () -> BlockEntityType.Builder.of(
                     MonuliteCoinMolderEntity::new, ModBlocks.MONULITE_COIN_MOLDER.get()).build(null));
 
+    public static final Supplier<BlockEntityType<MagicInfuserEntity>> MAGIC_INFUSER =
+            BLOCK_ENTITIES.register("magic_infuser", () -> BlockEntityType.Builder.of(
+                    MagicInfuserEntity::new, ModBlocks.MAGIC_INFUSER.get()).build(null));
+
     public static final Supplier<BlockEntityType<AcroteCoinMolderEntity>> ACROTE_COIN_MOLDER =
             BLOCK_ENTITIES.register("acrote_coin_molder", () -> BlockEntityType.Builder.of(
                     AcroteCoinMolderEntity::new, ModBlocks.ACROTE_COIN_MOLDER.get()).build(null));
