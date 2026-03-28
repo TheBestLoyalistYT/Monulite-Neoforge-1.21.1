@@ -17,14 +17,19 @@ import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import net.thebestloyalist.monulite_mod.item.ModItems;
+import net.thebestloyalist.monulite_mod.recipe.MagicInfuserRecipe;
+import net.thebestloyalist.monulite_mod.recipe.MagicInfuserRecipeInput;
+import net.thebestloyalist.monulite_mod.recipe.ModRecipes;
 import net.thebestloyalist.monulite_mod.screen.custom.MagicInfuserMenu;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Optional;
 import java.util.stream.IntStream;
 
 public class MagicInfuserEntity extends BlockEntity implements MenuProvider {
@@ -38,7 +43,8 @@ public class MagicInfuserEntity extends BlockEntity implements MenuProvider {
         }
     };
 
-    private static final int[] INPUT_SLOT = IntStream.rangeClosed(0,1).toArray();
+    private static final int INPUT_SLOT = 0;
+    private static final int INPUT_SLOT1 = 1;
     private static final int OUTPUT_SLOT = 2;
 
     protected final ContainerData data;
@@ -80,7 +86,7 @@ public class MagicInfuserEntity extends BlockEntity implements MenuProvider {
     @Nullable
     @Override
     public AbstractContainerMenu createMenu(int i, Inventory inventory, Player player) {
-        return new MagicInfuserMenu(i, inventory, this, this.data);
+        return new MagicInfuserMenu(i, inventory, this, this.data, this.itemHandler);
     }
 
     public void drops() {
@@ -125,9 +131,10 @@ public class MagicInfuserEntity extends BlockEntity implements MenuProvider {
     }
 
     private void craftItem() {
-        ItemStack output = new ItemStack(ModItems.MONULITE_COIN.get(), 1);
+        ItemStack output = new ItemStack(ModItems.MONULITE_INFUSED_STEAK.get(), 1);
 
         itemHandler.extractItem(0, 1, false);
+        itemHandler.extractItem(1, 1, false);
         itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(output.getItem(),
                 itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + output.getCount()));
     }
@@ -146,9 +153,10 @@ public class MagicInfuserEntity extends BlockEntity implements MenuProvider {
     }
 
     private boolean hasRecipe() {
-        ItemStack output = new ItemStack(ModItems.MONULITE_COIN.get(), 1);
+        ItemStack output = new ItemStack(ModItems.MONULITE_INFUSED_STEAK.get(), 1);
 
-        return itemHandler.getStackInSlot(0).is(ModItems.MONULITE_POWDER) &&
+        return itemHandler.getStackInSlot(0).is(Items.COOKED_BEEF) &&
+                itemHandler.getStackInSlot(1).is(ModItems.MONULITE_POWDER) &&
                 canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
     }
 

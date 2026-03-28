@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "monulite_mod:the_monulite_music_disc"
+    },
+    "title": "Its the Super Monulite Super Show!",
+    "description": "Play a special music disc"
+  },
+  "parent": "monulite_mod:custom/monulite_powder",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [],
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "terms": [],
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:jukebox"
+                ]
+              }
+            }
+          }
+        ],
+        "item": {
+          "items": [
+            "monulite_mod:the_monulite_music_disc"
+          ]
+        }
+      }
+    }
+  }
+}

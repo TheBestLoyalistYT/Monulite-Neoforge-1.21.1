@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.monulite_mod.the_monulite_music_disc.desc"
+  },
+  "length_in_seconds": 41.0,
+  "sound_event": "monulite_mod:the_monulite"
+}

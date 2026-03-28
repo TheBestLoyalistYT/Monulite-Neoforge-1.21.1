@@ -41,6 +41,8 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         basicItem(ModItems.COIN_MOLD.get());
 
+        basicItem(ModItems.THE_MONULITE_MUSIC_DISC.get());
+
         basicItem(ModItems.RAW_MONULITE.get());
         basicItem(ModItems.RAW_ACROTE.get());
 

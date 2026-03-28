@@ -11,9 +11,9 @@ import net.thebestloyalist.monulite_mod.MonuliteMod;
 
 public class MagicInfuserScreen extends AbstractContainerScreen<MagicInfuserMenu> {
     private static final ResourceLocation GUI_TEXTURE =
-            ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID,"textures/gui/acrotereactor/acrotereactor_gui.png");
+            ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID,"textures/gui/acrotereactor/monulite_magic_infuser_gui.png");
     private static final ResourceLocation ARROW_TEXTURE =
-            ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID,"textures/gui/arrow_progress_monulite.png");
+            ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID,"textures/gui/monulite_infusion_arrow.png");
 
     public MagicInfuserScreen(MagicInfuserMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);
@@ -35,7 +35,7 @@ public class MagicInfuserScreen extends AbstractContainerScreen<MagicInfuserMenu
 
     private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y) {
         if(menu.isCrafting()) {
-            guiGraphics.blit(ARROW_TEXTURE,x + 73, y + 35, 0, 0, menu.getScaledArrowProgress(), 16, 24, 16);
+            guiGraphics.blit(ARROW_TEXTURE,x + 50, y + 33, 0, 0, menu.getScaledArrowProgress(), 16, 24, 16);
         }
     }
 

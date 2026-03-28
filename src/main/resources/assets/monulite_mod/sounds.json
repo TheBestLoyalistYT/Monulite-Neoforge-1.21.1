@@ -28,5 +28,13 @@
     "sounds": [
       "monulite_mod:monulite_coin_molder_hit"
     ]
+  },
+  "the_monulite": {
+    "sounds": [
+      {
+        "name": "monulite_mod:the_monulite",
+        "stream": true
+      }
+    ]
   }
 }

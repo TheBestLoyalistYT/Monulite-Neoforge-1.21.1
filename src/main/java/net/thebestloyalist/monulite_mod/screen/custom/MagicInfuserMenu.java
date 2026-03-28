@@ -7,6 +7,7 @@ import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.neoforged.neoforge.items.ItemStackHandler;
 import net.neoforged.neoforge.items.SlotItemHandler;
 import net.thebestloyalist.monulite_mod.block.ModBlocks;
 import net.thebestloyalist.monulite_mod.block.entity.MagicInfuserEntity;
@@ -18,10 +19,10 @@ public class MagicInfuserMenu extends AbstractContainerMenu {
     private final ContainerData data;
 
     public MagicInfuserMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
-        this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(3));
+        this(pContainerId, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(3), new ItemStackHandler(3));
     }
 
-    public MagicInfuserMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
+    public MagicInfuserMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data, ItemStackHandler beInventory) {
         super(ModMenuTypes.MAGIC_INFUSER_MENU.get(), pContainerId);
         this.blockEntity = ((MagicInfuserEntity) entity);
         this.level = inv.player.level();
@@ -30,8 +31,8 @@ public class MagicInfuserMenu extends AbstractContainerMenu {
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
 
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 0, 54, 44));
-        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 1, 54, 24));
+        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 0, 54, 49));
+        this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 1, 54, 19));
 
         this.addSlot(new SlotItemHandler(blockEntity.itemHandler, 2, 104, 34));
 
@@ -51,12 +52,6 @@ public class MagicInfuserMenu extends AbstractContainerMenu {
     }
 
     // CREDIT GOES TO: diesieben07 | https://github.com/diesieben07/SevenCommons
-    // must assign a slot number to each of the slots used by the GUI.
-    // For this container, we can see both the tile inventory's slots as well as the player inventory slots and the hotbar.
-    // Each time we add a Slot to the container, it automatically increases the slotIndex, which means
-    //  0 - 8 = hotbar slots (which will map to the InventoryPlayer slot numbers 0 - 8)
-    //  9 - 35 = player inventory slots (which map to the InventoryPlayer slot numbers 9 - 35)
-    //  36 - 44 = TileInventory slots, which map to our TileEntity slot numbers 0 - 8)
     private static final int HOTBAR_SLOT_COUNT = 9;
     private static final int PLAYER_INVENTORY_ROW_COUNT = 3;
     private static final int PLAYER_INVENTORY_COLUMN_COUNT = 9;

@@ -5,8 +5,10 @@ import net.neoforged.fml.ModLoadingContext;
 import net.thebestloyalist.monulite_mod.block.ModBlocks;
 import net.thebestloyalist.monulite_mod.block.entity.ModBlockEntities;
 import net.thebestloyalist.monulite_mod.effect.ModEffects;
+import net.thebestloyalist.monulite_mod.entity.ModEntities;
 import net.thebestloyalist.monulite_mod.item.ModCreativeModeTabs;
 import net.thebestloyalist.monulite_mod.item.ModItems;
+import net.thebestloyalist.monulite_mod.recipe.ModRecipes;
 import net.thebestloyalist.monulite_mod.screen.ModMenuTypes;
 import net.thebestloyalist.monulite_mod.sound.ModSounds;
 import org.slf4j.Logger;
@@ -34,10 +36,12 @@ public class MonuliteMod {
         ModSounds.register(modEventBus);
 
         ModEffects.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         ModCreativeModeTabs.register(modEventBus);
 
         ModBlockEntities.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         ModMenuTypes.register(modEventBus);
 

@@ -9,6 +9,7 @@ import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
+import net.thebestloyalist.monulite_mod.sound.ModSounds;
 
 import java.util.List;
 
@@ -39,6 +40,9 @@ public class ModItems {
     public static final DeferredItem<Item> MONULITE_INFUSED_STEAK = ITEMS.register("monulite_infused_steak",
     () -> new Item(new Item.Properties().food(ModFoodProperties.MONULITE_FLIGHT_FOOD)));
 
+
+    public static final DeferredItem<Item> THE_MONULITE_MUSIC_DISC = ITEMS.register("the_monulite_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.THE_MONULITE_KEY).stacksTo(1)));
 
     public static final DeferredItem<SwordItem> MONULITE_SWORD = ITEMS.register("monulite_sword",
             () -> new SwordItem(ModToolTeirs.MONULITE_SWORD, new Item.Properties()

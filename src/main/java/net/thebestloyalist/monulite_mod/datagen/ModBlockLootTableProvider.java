@@ -44,6 +44,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.MONULITE_BLOCK.get());
         dropSelf(ModBlocks.MONULITE_COIN_MOLDER.get());
         dropSelf(ModBlocks.ACROTE_COIN_MOLDER.get());
+        dropSelf(ModBlocks.MAGIC_INFUSER.get());
     }
 
     protected LootTable.Builder createMonuliteOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

@@ -1,7 +1,8 @@
-// 1.21.1	2026-03-08T13:58:39.958607	Loot Tables
+// 1.21.1	2026-03-24T20:58:10.5330693	Loot Tables
 c2c0cf1b781492ebeb04d0b2bb2064d7f76a344f data/monulite_mod/loot_table/blocks/acrote_coin_molder.json
 2d555c7e7edee5bccd4f978d03679dcb0dcde79c data/monulite_mod/loot_table/blocks/acrote_ore.json
 6968755abd363df6d0cafd3be304ed5bf23e9c16 data/monulite_mod/loot_table/blocks/deepslate_monulite_ore.json
+c5b4da03798043f9ac29ab4e09f1f280317e666a data/monulite_mod/loot_table/blocks/magic_infuser.json
 41e5edaae78bc52ba525e7b4684106cf29769a84 data/monulite_mod/loot_table/blocks/monulite_block.json
 d94d0c0ffd261519c95131a96145e49577f9cc71 data/monulite_mod/loot_table/blocks/monulite_coin_molder.json
 7c005e5e49b633d02ef703518afefd03e8e49529 data/monulite_mod/loot_table/blocks/monulite_ore.json
