@@ -1,15 +1,13 @@
 {
   "type": "monulite_mod:magic_infuser",
-  "ingredients": [
-    {
-      "item": "monulite_mod:monulite_boots"
-    },
-    {
-      "item": "minecraft:feather"
-    }
-  ],
-  "output": {
-    "item": "monulite_mod:cloud_boots",
+  "ingredient":{
+    "item": "minecraft:feather"
+  },
+  "ingredient2":{
+    "item": "monulite_mod:monulite_boots"
+  },
+  "result": {
+    "id": "monulite_mod:cloud_boots",
     "count": 1
   }
 }

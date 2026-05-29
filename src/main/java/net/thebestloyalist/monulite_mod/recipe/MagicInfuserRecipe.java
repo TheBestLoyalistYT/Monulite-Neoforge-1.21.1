@@ -13,7 +13,7 @@ import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 
-public record MagicInfuserRecipe(Ingredient inputItem, ItemStack output) implements Recipe<MagicInfuserRecipeInput> {
+public record MagicInfuserRecipe(Ingredient inputItem,Ingredient inputItem2, ItemStack output) implements Recipe<MagicInfuserRecipeInput> {
     // inputItem & output ==> Read From JSON File!
     // GrowthChamberRecipeInput --> INVENTORY of the Block Entity
 
@@ -21,6 +21,7 @@ public record MagicInfuserRecipe(Ingredient inputItem, ItemStack output) impleme
     public NonNullList<Ingredient> getIngredients() {
         NonNullList<Ingredient> list = NonNullList.create();
         list.add(inputItem);
+        list.add(inputItem2);
         return list;
     }
 
@@ -31,7 +32,7 @@ public record MagicInfuserRecipe(Ingredient inputItem, ItemStack output) impleme
         }
 
         return inputItem.test(magicInfuserRecipeInput.getItem(0)) &&
-                inputItem.test(magicInfuserRecipeInput.getItem(1));
+                inputItem2.test(magicInfuserRecipeInput.getItem(1));
     }
 
     @Override
@@ -62,12 +63,14 @@ public record MagicInfuserRecipe(Ingredient inputItem, ItemStack output) impleme
     public static class Serializer implements RecipeSerializer<MagicInfuserRecipe> {
         public static final MapCodec<MagicInfuserRecipe> CODEC = RecordCodecBuilder.mapCodec(inst -> inst.group(
                 Ingredient.CODEC_NONEMPTY.fieldOf("ingredient").forGetter(MagicInfuserRecipe::inputItem),
+                Ingredient.CODEC_NONEMPTY.fieldOf("ingredient2").forGetter(MagicInfuserRecipe::inputItem2),
                 ItemStack.CODEC.fieldOf("result").forGetter(MagicInfuserRecipe::output)
         ).apply(inst, MagicInfuserRecipe::new));
 
         public static final StreamCodec<RegistryFriendlyByteBuf, MagicInfuserRecipe> STREAM_CODEC =
                 StreamCodec.composite(
                         Ingredient.CONTENTS_STREAM_CODEC, MagicInfuserRecipe::inputItem,
+                        Ingredient.CONTENTS_STREAM_CODEC, MagicInfuserRecipe::inputItem2,
                         ItemStack.STREAM_CODEC, MagicInfuserRecipe::output,
                         MagicInfuserRecipe::new);
 

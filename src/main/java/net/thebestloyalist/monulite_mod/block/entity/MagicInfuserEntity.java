@@ -131,10 +131,11 @@ public class MagicInfuserEntity extends BlockEntity implements MenuProvider {
     }
 
     private void craftItem() {
-        ItemStack output = new ItemStack(ModItems.MONULITE_INFUSED_STEAK.get(), 1);
+        Optional<RecipeHolder<MagicInfuserRecipe>> recipe = getCurrentRecipe();
+        ItemStack output = recipe.get().value().output();
 
-        itemHandler.extractItem(0, 1, false);
-        itemHandler.extractItem(1, 1, false);
+        itemHandler.extractItem(INPUT_SLOT, 1, false);
+        itemHandler.extractItem(INPUT_SLOT1, 1, false);
         itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(output.getItem(),
                 itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + output.getCount()));
     }
@@ -153,11 +154,20 @@ public class MagicInfuserEntity extends BlockEntity implements MenuProvider {
     }
 
     private boolean hasRecipe() {
-        ItemStack output = new ItemStack(ModItems.MONULITE_INFUSED_STEAK.get(), 1);
+        Optional<RecipeHolder<MagicInfuserRecipe>> recipe = getCurrentRecipe();
+        if(recipe.isEmpty()) {
+            return false;
+        }
 
-        return itemHandler.getStackInSlot(0).is(Items.COOKED_BEEF) &&
-                itemHandler.getStackInSlot(1).is(ModItems.MONULITE_POWDER) &&
-                canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
+        ItemStack output = recipe.get().value().output();
+        return canInsertAmountIntoOutputSlot(output.getCount()) && canInsertItemIntoOutputSlot(output);
+    }
+
+    private Optional<RecipeHolder<MagicInfuserRecipe>> getCurrentRecipe() {
+        return this.level.getRecipeManager()
+                .getRecipeFor(ModRecipes.MAGIC_INFUSER_TYPE.get(), new MagicInfuserRecipeInput(
+                        itemHandler.getStackInSlot(INPUT_SLOT),
+                        itemHandler.getStackInSlot(INPUT_SLOT1)), level);
     }
 
     private boolean canInsertItemIntoOutputSlot(ItemStack output) {
