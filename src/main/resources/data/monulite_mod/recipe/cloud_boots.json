@@ -2,14 +2,14 @@
   "type": "monulite_mod:magic_infuser",
   "ingredients": [
     {
-      "item": "monulite_mod:monulite_powder"
+      "item": "monulite_mod:monulite_boots"
     },
     {
-      "item": "minecraft:cooked_beef"
+      "item": "minecraft:feather"
     }
   ],
   "output": {
-    "item": "monulite_mod:monulite_infused_steak",
+    "item": "monulite_mod:cloud_boots",
     "count": 1
   }
 }
