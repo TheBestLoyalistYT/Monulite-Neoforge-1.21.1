@@ -21,6 +21,13 @@ public class ModEffects {
     public static final Holder<MobEffect> FLIGHT_EFFECT = MOB_EFFECTS.register("flight",
             () -> new FlightEffect(MobEffectCategory.NEUTRAL, 0x36ebab));
 
+    public static final Holder<MobEffect> FLOAT_EFFECT = MOB_EFFECTS.register("float",
+            () -> new FloatEffect(MobEffectCategory.NEUTRAL, 0x36ebab).addAttributeModifier
+                    (Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID, "float"), -0.04f,
+                    AttributeModifier.Operation.ADD_VALUE).addAttributeModifier
+                    (Attributes.SAFE_FALL_DISTANCE, ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID, "float"), 2.0f,
+                    AttributeModifier.Operation.ADD_VALUE));
+
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }

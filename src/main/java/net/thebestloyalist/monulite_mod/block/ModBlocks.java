@@ -39,6 +39,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> ACROTE_COIN_MOLDER = registerBlock("acrote_coin_molder",
             () -> new AcroteCoinMolder(BlockBehaviour.Properties.of().strength(2.4f)));
 
+    public static final DeferredBlock<Block> CLOUD_BLOCK = registerBlock("cloud_block",
+            () -> new MonuliteCoinMolder(BlockBehaviour.Properties.of().strength(3.4f).sound(SoundType.WOOL)));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

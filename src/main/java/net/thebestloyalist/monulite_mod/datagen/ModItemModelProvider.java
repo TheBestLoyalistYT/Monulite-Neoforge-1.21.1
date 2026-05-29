@@ -67,6 +67,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.MONULITE_LEGGINGS);
         trimmedArmorItem(ModItems.MONULITE_BOOTS);
 
+        trimmedArmorItem(ModItems.CLOUD_BOOTS);
+
         basicItem(ModItems.MONULITE_INFUSED_STEAK.get());
     }
 

@@ -27,6 +27,11 @@ public class ModArmorMaterials {
                 attribute.put(ArmorItem.Type.BODY, 24);
             }), 51, 9f, 0.0f, () -> ModItems.MONULITE_INGOT.get());
 
+    public static final Holder<ArmorMaterial> CLOUD_BOOT_MATERIAL = register("cloud_boots",
+            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
+                attribute.put(ArmorItem.Type.BOOTS, 4);
+            }), 16, 2f, 0.0f, () -> ModItems.MONULITE_INGOT.get());
+
 
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
                                                   int enchantability, float toughness, float knockbackResistance,

@@ -21,9 +21,9 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.monulite_mod.monulite_items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RAW_MONULITE);
-                        output.accept(ModItems.RAW_ACROTE);
                         output.accept(ModItems.MONULITE_INGOT);
                         output.accept(ModItems.MONULITE_OOZ);
+                        output.accept(ModItems.RAW_ACROTE);
                         output.accept(ModItems.ACROTE_OOZ);
                         output.accept(ModItems.COIN_MOLD);
                         output.accept(ModItems.MONULITE_COIN);
@@ -39,6 +39,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MONULITE_CHESTPLATE);
                         output.accept(ModItems.MONULITE_LEGGINGS);
                         output.accept(ModItems.MONULITE_BOOTS);
+                        output.accept(ModItems.THE_MONULITE_MUSIC_DISC);
+                        output.accept(ModItems.MONULITE_INFUSED_STEAK);
 
                     }).build());
 

@@ -1,0 +1,15 @@
+{
+  "type": "monulite_mod:magic_infuser",
+  "ingredients": [
+    {
+      "item": "monulite_mod:monulite_powder"
+    },
+    {
+      "item": "minecraft:cooked_beef"
+    }
+  ],
+  "output": {
+    "item": "monulite_mod:monulite_infused_steak",
+    "count": 1
+  }
+}

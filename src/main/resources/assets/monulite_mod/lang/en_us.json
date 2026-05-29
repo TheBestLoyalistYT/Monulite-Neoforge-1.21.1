@@ -35,5 +35,8 @@
   "block.monulite_mod.monulite_coin_molder": "Monulite Coin Molder",
 
   "block.monulite_mod.acrote_ore": "Acrote Ore",
-  "block.monulite_mod.acrote_coin_molder": "Acrote Coin Molder"
+  "block.monulite_mod.acrote_coin_molder": "Acrote Coin Molder",
+
+  "effect.monulite_mod.flight": "Flight",
+  "effect.monulite_mod.float": "Float"
 }

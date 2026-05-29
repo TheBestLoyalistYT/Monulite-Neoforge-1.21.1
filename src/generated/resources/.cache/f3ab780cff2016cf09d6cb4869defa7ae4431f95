@@ -1,6 +1,17 @@
-// 1.21.1	2026-03-24T20:58:10.5310664	Item Models: monulite_mod
+// 1.21.1	2026-05-29T13:26:09.6618755	Item Models: monulite_mod
 9d57814b9a610c14c6321628fc4b567a5e4b3fc8 assets/monulite_mod/models/item/acrote_coin.json
 0b8092c50b9bc5e556b662e3d26f1c705589a9f2 assets/monulite_mod/models/item/acrote_ooz.json
+2e220987348fd39ef7ddc131a3bfdc40c61a1a15 assets/monulite_mod/models/item/cloud_boots.json
+0ba258652b565ac72d5e1482c2799471b4c2ad52 assets/monulite_mod/models/item/cloud_boots_amethyst_trim.json
+f05754eec75f8670bf4da7f917313fbb4af19b4e assets/monulite_mod/models/item/cloud_boots_copper_trim.json
+b7a29444bc6ad0e3c107a683158858bec58b00a0 assets/monulite_mod/models/item/cloud_boots_diamond_trim.json
+6145df8ed687834f796bf496b3c477da18cc6311 assets/monulite_mod/models/item/cloud_boots_emerald_trim.json
+609c66fb35832fde1a2020d7d08d16f0a1ee261d assets/monulite_mod/models/item/cloud_boots_gold_trim.json
+abab1d063729689261d35f14c1f4d8f019fd0bb6 assets/monulite_mod/models/item/cloud_boots_iron_trim.json
+29ab38e90a05430c187bae6f61dcee4f7cd6d77d assets/monulite_mod/models/item/cloud_boots_lapis_trim.json
+62f23958b38b663d06300681fdbe0fcdab33dc62 assets/monulite_mod/models/item/cloud_boots_netherite_trim.json
+f384a1e9e5ab2d21086b0b4cdc73aed17a9d0076 assets/monulite_mod/models/item/cloud_boots_quartz_trim.json
+c69f7bdf37a397a67b5b25b2616af6d3cafe8469 assets/monulite_mod/models/item/cloud_boots_redstone_trim.json
 e09477946606fea0ca5240be2f21062bee021cb0 assets/monulite_mod/models/item/coin_mold.json
 c737ad69bf75deb37a5e5dc24c89dd3678dc787c assets/monulite_mod/models/item/monulite_axe.json
 dfe3d4b55c6db01336f5330dc9059d91a6cb6fd0 assets/monulite_mod/models/item/monulite_boots.json

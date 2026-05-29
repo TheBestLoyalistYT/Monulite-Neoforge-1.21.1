@@ -9,6 +9,7 @@ import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
+import net.thebestloyalist.monulite_mod.item.custom.ModArmorItem;
 import net.thebestloyalist.monulite_mod.sound.ModSounds;
 
 import java.util.List;
@@ -79,6 +80,10 @@ public class ModItems {
 
     public static final DeferredItem<ArmorItem> MONULITE_BOOTS = ITEMS.register("monulite_boots",
             () -> new ArmorItem(ModArmorMaterials.MONULITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));
+
+    public static final DeferredItem<ArmorItem> CLOUD_BOOTS = ITEMS.register("cloud_boots",
+            () -> new ModArmorItem(ModArmorMaterials.CLOUD_BOOT_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));
 
     public static void register(IEventBus eventBus) {
