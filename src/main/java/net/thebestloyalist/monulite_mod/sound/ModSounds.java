@@ -31,6 +31,9 @@ public class ModSounds {
     public static final Supplier<SoundEvent> THE_MONULITE = registerSoundEvent("the_monulite");
     public static final ResourceKey<JukeboxSong> THE_MONULITE_KEY = createSong("the_monulite");
 
+    public static final Supplier<SoundEvent> ENDLESS_POSSIBILITY = registerSoundEvent("endless_possibility");
+    public static final ResourceKey<JukeboxSong> ENDLESS_POSSIBILITY_KEY = createSong("endless_possibility");
+
     private static ResourceKey<JukeboxSong> createSong(String name) {
         return ResourceKey.create(Registries.JUKEBOX_SONG, ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID, name));
     }

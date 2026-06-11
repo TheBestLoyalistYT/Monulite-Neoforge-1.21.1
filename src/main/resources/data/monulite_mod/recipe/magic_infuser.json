@@ -1,23 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "ASA",
-    "SMS",
-    "ASA"
+    "SSS",
+    "A A",
+    "AMA"
   ],
   "key": {
     "M": {
       "item": "monulite_mod:monulite_ingot"
     },
     "S": {
-      "item": "minecraft:stone"
+      "item": "minecraft:iron_bars"
     },
     "A": {
-      "item": "monulite_mod:raw_acrote"
+      "item": "minecraft:bricks"
     }
   },
   "result": {
-    "id": "monulite_mod:acrote_coin_molder",
+    "id": "monulite_mod:magic_infuser",
     "count": 1
   }
 }

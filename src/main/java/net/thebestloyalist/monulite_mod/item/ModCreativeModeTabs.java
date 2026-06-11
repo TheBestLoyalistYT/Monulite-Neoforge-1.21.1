@@ -25,11 +25,6 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MONULITE_OOZ);
                         output.accept(ModItems.RAW_ACROTE);
                         output.accept(ModItems.ACROTE_OOZ);
-                        output.accept(ModItems.COIN_MOLD);
-                        output.accept(ModItems.MONULITE_COIN);
-                        output.accept(ModItems.ACROTE_COIN);
-                        output.accept(ModBlocks.MONULITE_COIN_MOLDER);
-                        output.accept(ModBlocks.ACROTE_COIN_MOLDER);
                         output.accept(ModItems.MONULITE_SWORD);
                         output.accept(ModItems.MONULITE_PICKAXE);
                         output.accept(ModItems.MONULITE_SHOVEL);
@@ -39,6 +34,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MONULITE_CHESTPLATE);
                         output.accept(ModItems.MONULITE_LEGGINGS);
                         output.accept(ModItems.MONULITE_BOOTS);
+                        output.accept(ModItems.CLOUD_BOOTS);
+                        output.accept(ModItems.MONULITE_COIN);
+                        output.accept(ModItems.ACROTE_COIN);
+                        output.accept(ModItems.COIN_MOLD);
+                        output.accept(ModBlocks.MONULITE_COIN_MOLDER);
+                        output.accept(ModBlocks.ACROTE_COIN_MOLDER);
+                        output.accept(ModBlocks.MAGIC_INFUSER);
                         output.accept(ModItems.THE_MONULITE_MUSIC_DISC);
                         output.accept(ModItems.MONULITE_INFUSED_STEAK);
 

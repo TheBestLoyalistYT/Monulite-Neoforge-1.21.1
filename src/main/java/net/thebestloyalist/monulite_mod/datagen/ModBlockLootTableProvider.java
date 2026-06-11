@@ -10,6 +10,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
@@ -42,7 +43,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createMultipleOreDrops(ModBlocks.ACROTE_ORE.get(), ModItems.RAW_ACROTE.get(), 1, 1));
 
         dropSelf(ModBlocks.MONULITE_BLOCK.get());
-        dropSelf(ModBlocks.CLOUD_BLOCK.get());
+        dropOther(ModBlocks.CLOUD_BLOCK.get(), Blocks.AIR);
         dropSelf(ModBlocks.MONULITE_COIN_MOLDER.get());
         dropSelf(ModBlocks.ACROTE_COIN_MOLDER.get());
         dropSelf(ModBlocks.MAGIC_INFUSER.get());

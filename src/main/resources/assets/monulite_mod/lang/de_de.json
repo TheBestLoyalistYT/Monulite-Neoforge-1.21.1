@@ -9,6 +9,7 @@
   "item.monulite_mod.coin_mold": "Münzform",
 
   "item.monulite_mod.raw_monulite": "Roh Monulite",
+  "item.monulite_mod.monulite_powder": "Monulite Pulver",
   "item.monulite_mod.monulite_ingot": "Monulite Barren",
   "item.monulite_mod.monulite_ooz": "Monulite Schlamm",
 
@@ -35,6 +36,21 @@
   "block.monulite_mod.monulite_coin_molder": "Monulite Münzform",
 
   "block.monulite_mod.acrote_ore": "Acrote Erz",
-  "block.monulite_mod.acrote_coin_molder": "Acrote Münzform"
+  "block.monulite_mod.acrote_coin_molder": "Acrote Münzform",
+
+  "item.monulite_mod.the_monulite_music_disc": "Die Monulite",
+  "item.monulite_mod.the_monulite_music_disc.desc": "Die Monulite",
+  "item.monulite_mod.endless_possibility_disc": "Endlose Möglichkeiten",
+  "item.monulite_mod.endless_possibility_disc.desc": "Endlose Möglichkeiten",
+
+  "item.monulite_mod.monulite_infused_steak": "Mit Monulite Angereichertes Steak",
+  "item.monulite_mod.monulite_infused_golden_carrot": "Mit Monulite Angereichertes Goldene Karotte",
+
+  "item.monulite_mod.cloud_boots": "Wolkenstiefel",
+
+  "block.monulite_mod.magic_infuser": "Magic Infuser",
+
+  "effect.monulite_mod.flight": "Flight",
+  "effect.monulite_mod.float": "Float"
 
 }

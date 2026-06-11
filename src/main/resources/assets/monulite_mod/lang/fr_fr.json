@@ -1,0 +1,50 @@
+{
+  "creativetab.monulite_mod.monulite_items": "Monulite Articles",
+
+  "item.monulite_mod.coin_mold": "Moule à pièces de monnaie",
+
+  "item.monulite_mod.the_monulite_music_disc": "La Monulite",
+  "item.monulite_mod.the_monulite_music_disc.desc": "La Monulite",
+  "item.monulite_mod.endless_possibility_disc": "Possibilité infinie",
+  "item.monulite_mod.endless_possibility_disc.desc": "Possibilité infinie",
+
+  "item.monulite_mod.monulite_infused_steak": "Steak infusé à la monulite",
+  "item.monulite_mod.monulite_infused_golden_carrot": "Carotte dorée infusée à la monulite",
+
+  "item.monulite_mod.raw_monulite": "Brut Monulite",
+  "item.monulite_mod.monulite_powder": "Monulite Poudre",
+  "item.monulite_mod.monulite_ingot": "Monulite Lingot",
+  "item.monulite_mod.monulite_ooz": "Monulite Suintement",
+
+  "item.monulite_mod.raw_acrote": "Brute Acrote",
+  "item.monulite_mod.acrote_ooz": "Acrote Suintement",
+
+  "item.monulite_mod.monulite_coin": "Monulite Pièce de monnaie",
+  "item.monulite_mod.acrote_coin": "Acrote Pièce de monnaie",
+
+  "item.monulite_mod.monulite_sword": "Monulite épée",
+  "item.monulite_mod.monulite_pickaxe": "Monulite Pioche",
+  "item.monulite_mod.monulite_shovel": "Monulite Pelle",
+  "item.monulite_mod.monulite_axe": "Monulite Hache",
+  "item.monulite_mod.monulite_hoe": "Monulite Houe",
+
+  "item.monulite_mod.monulite_helmet": "Monulite Casque",
+  "item.monulite_mod.monulite_chestplate": "Monulite Plastron",
+  "item.monulite_mod.monulite_leggings": "Monulite Pentalon",
+  "item.monulite_mod.monulite_boots": "Monulite Botte",
+
+  "item.monulite_mod.cloud_boots": "Bottes de Nuage",
+
+  "block.monulite_mod.deepslate_monulite_ore": "Ardoise profonde Monulite Minerai",
+  "block.monulite_mod.monulite_ore": "Monulite Minerai",
+  "block.monulite_mod.monulite_block": "Monulite Bloc",
+  "block.monulite_mod.monulite_coin_molder": "Monulite Mouleur de pièces de monnaie",
+
+  "block.monulite_mod.magic_infuser": "Infuseur magique",
+
+  "block.monulite_mod.acrote_ore": "Acrote Minerai",
+  "block.monulite_mod.acrote_coin_molder": "Acrote Mouleur de pièces de monnaie",
+
+  "effect.monulite_mod.flight": "Vol",
+  "effect.monulite_mod.float": "Flotter"
+}

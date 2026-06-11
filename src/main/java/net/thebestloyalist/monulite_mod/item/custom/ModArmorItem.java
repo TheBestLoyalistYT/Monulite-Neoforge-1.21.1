@@ -2,8 +2,13 @@ package net.thebestloyalist.monulite_mod.item.custom;
 
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.core.BlockPos;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
+import net.thebestloyalist.monulite_mod.block.ModBlocks;
+import net.thebestloyalist.monulite_mod.block.custom.CloudBlock;
 import net.thebestloyalist.monulite_mod.effect.ModEffects;
 import net.thebestloyalist.monulite_mod.item.ModArmorMaterials;
 import net.minecraft.core.Holder;
@@ -48,7 +53,7 @@ public class ModArmorItem extends ArmorItem {
 
                         if (level.isEmptyBlock(pos)) {
 
-                            level.setBlockAndUpdate(pos, Blocks.WHITE_WOOL.defaultBlockState());
+                            level.setBlockAndUpdate(pos, ModBlocks.CLOUD_BLOCK.get().defaultBlockState());
                         }
                     }
                 }

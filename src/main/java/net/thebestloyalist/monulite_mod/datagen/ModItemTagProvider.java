@@ -37,5 +37,34 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.MONULITE_LEGGINGS.get())
                 .add(ModItems.MONULITE_BOOTS.get());
 
+        this.tag(ItemTags.MINING_ENCHANTABLE)
+                .add(ModItems.MONULITE_PICKAXE.get())
+                .add(ModItems.MONULITE_SHOVEL.get())
+                .add(ModItems.MONULITE_AXE.get())
+                .add(ModItems.MONULITE_HOE.get());
+
+        this.tag(ItemTags.SWORD_ENCHANTABLE)
+                .add(ModItems.MONULITE_SWORD.get())
+                .add(ModItems.MONULITE_AXE.get());
+
+        this.tag(ItemTags.ARMOR_ENCHANTABLE)
+                .add(ModItems.MONULITE_HELMET.get())
+                .add(ModItems.MONULITE_CHESTPLATE.get())
+                .add(ModItems.MONULITE_LEGGINGS.get())
+                .add(ModItems.MONULITE_BOOTS.get());
+
+        this.tag(ItemTags.HEAD_ARMOR_ENCHANTABLE)
+                .add(ModItems.MONULITE_HELMET.get());
+
+        this.tag(ItemTags.CHEST_ARMOR_ENCHANTABLE)
+                .add(ModItems.MONULITE_CHESTPLATE.get());
+
+        this.tag(ItemTags.LEG_ARMOR_ENCHANTABLE)
+                .add(ModItems.MONULITE_LEGGINGS.get());
+
+        this.tag(ItemTags.FOOT_ARMOR_ENCHANTABLE)
+                .add(ModItems.CLOUD_BOOTS.get())
+                .add(ModItems.MONULITE_BOOTS.get());
+
     }
 }

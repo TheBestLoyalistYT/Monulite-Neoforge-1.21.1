@@ -1,0 +1,13 @@
+{
+  "type": "monulite_mod:magic_infuser",
+  "ingredient":{
+    "item": "monulite_mod:the_monulite_music_disc"
+  },
+  "ingredient2":{
+    "item": "monulite_mod:monulite_powder"
+  },
+  "result": {
+    "id": "monulite_mod:endless_possibility_disc",
+    "count": 1
+  }
+}

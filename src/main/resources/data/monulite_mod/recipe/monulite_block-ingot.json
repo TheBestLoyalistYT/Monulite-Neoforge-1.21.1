@@ -1,9 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    [
-      "monulite_mod:monulite_block"
-    ]
+    {
+      "item": "monulite_mod:monulite_block"
+    }
   ],
   "result": {
     "id": "monulite_mod:monulite_ingot",

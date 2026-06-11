@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "monulite_mod:block/cloud_block"
+    }
+  }
+}

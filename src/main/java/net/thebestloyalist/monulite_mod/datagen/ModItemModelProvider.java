@@ -43,6 +43,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.THE_MONULITE_MUSIC_DISC.get());
 
+        basicItem(ModItems.ENDLESS_POSSIBILITY.get());
+
         basicItem(ModItems.RAW_MONULITE.get());
         basicItem(ModItems.RAW_ACROTE.get());
 
@@ -70,6 +72,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.CLOUD_BOOTS);
 
         basicItem(ModItems.MONULITE_INFUSED_STEAK.get());
+        basicItem(ModItems.MONULITE_INFUSED_GOLDEN_CARROT.get());
     }
 
     private void trimmedArmorItem(DeferredItem<ArmorItem> itemDeferredItem) {

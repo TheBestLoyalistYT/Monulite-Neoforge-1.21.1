@@ -1,20 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "MM ",
-    "MS ",
-    " S "
+    "MMM",
+    "M M",
+    "   "
   ],
   "key": {
     "M": {
       "item": "monulite_mod:monulite_ingot"
-    },
-    "S": {
-      "item": "minecraft:stick"
     }
   },
   "result": {
-    "id": "monulite_mod:monulite_axe",
+    "id": "monulite_mod:monulite_helmet",
     "count": 1
   }
 }

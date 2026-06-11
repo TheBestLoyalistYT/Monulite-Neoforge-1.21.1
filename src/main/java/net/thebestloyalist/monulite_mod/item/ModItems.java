@@ -1,5 +1,6 @@
 package net.thebestloyalist.monulite_mod.item;
 
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.food.Foods;
@@ -41,9 +42,15 @@ public class ModItems {
     public static final DeferredItem<Item> MONULITE_INFUSED_STEAK = ITEMS.register("monulite_infused_steak",
     () -> new Item(new Item.Properties().food(ModFoodProperties.MONULITE_FLIGHT_FOOD)));
 
+    public static final DeferredItem<Item> MONULITE_INFUSED_GOLDEN_CARROT = ITEMS.register("monulite_infused_golden_carrot",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.MONULITE_GOLDEN_CARROT_FOOD)));
+
 
     public static final DeferredItem<Item> THE_MONULITE_MUSIC_DISC = ITEMS.register("the_monulite_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.THE_MONULITE_KEY).stacksTo(1)));
+
+    public static final DeferredItem<Item> ENDLESS_POSSIBILITY = ITEMS.register("endless_possibility_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.ENDLESS_POSSIBILITY_KEY).stacksTo(1)));
 
     public static final DeferredItem<SwordItem> MONULITE_SWORD = ITEMS.register("monulite_sword",
             () -> new SwordItem(ModToolTeirs.MONULITE_SWORD, new Item.Properties()

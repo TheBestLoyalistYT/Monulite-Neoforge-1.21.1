@@ -36,5 +36,13 @@
         "stream": true
       }
     ]
+  },
+  "endless_possibility": {
+    "sounds": [
+      {
+        "name": "monulite_mod:endless_possibility",
+        "stream": true
+      }
+    ]
   }
 }

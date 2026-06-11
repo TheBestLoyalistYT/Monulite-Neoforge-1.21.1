@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "monulite_mod:block/magic_infuser_top",
+    "side": "monulite_mod:block/magic_infuser"
+  }
+}
