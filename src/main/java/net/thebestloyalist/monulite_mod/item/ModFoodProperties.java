@@ -12,5 +12,8 @@ public class ModFoodProperties {
             .effect(() -> new MobEffectInstance(ModEffects.FLIGHT_EFFECT, 600), 1.0f).build();
 
     public static final FoodProperties MONULITE_GOLDEN_CARROT_FOOD = new FoodProperties.Builder().nutrition(5).saturationModifier(1.00f).alwaysEdible()
-            .effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 600), 1.0f).build();
+            .effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 800), 1.0f).build();
+
+    public static final FoodProperties MONULITE_MUSHR0OM_FOOD = new FoodProperties.Builder().nutrition(1).saturationModifier(1.00f).alwaysEdible().fast()
+            .effect(() -> new MobEffectInstance(ModEffects.SHRINK_EFFECT, 3200), 1.0f).build();
 }

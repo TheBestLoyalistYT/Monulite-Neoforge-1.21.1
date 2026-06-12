@@ -1,12 +1,54 @@
 {
-  "itemgroup.loyalistmod.monulite_items": "Methanol Items",
+  "creativetab.monulite_mod.monulite_items": "Meth Items",
 
-  "item.loyalist_mod.coin_mold": "Coin Shapper",
-  "item.loyalist_mod.raw_monulite": "Raw Methanol",
-  "item.loyalist_mod.monulite_ooz": "Methanol Ooz",
-  "item.loyalist_mod.monulite_ingot": "Methanol Ingot",
-  "item.loyalist_mod.monulite_coin": "Methanol Coin",
-  "block.loyalist_mod.deepslate_monulite_ore_block": "Deep Methanol Portable Lab",
-  "block.loyalist_mod.monulite_ore_block": "Methanol Portable Lab Ore",
-  "block.loyalist_mod.monulite_block": "Meter By Meter Meth"
+  "item.monulite_mod.coin_mold": "Coin Shapper",
+
+  "item.monulite_mod.the_monulite_music_disc": "Blue Orb of Sound Making",
+  "item.monulite_mod.the_monulite_music_disc.desc": "The Mario? No, Monulite. I always mix it up!",
+  "item.monulite_mod.endless_possibility_disc": "No Possibility",
+  "item.monulite_mod.endless_possibility_disc.desc": "No Possibility",
+
+  "item.monulite_mod.monulite_infused_steak": "Walter White Steak",
+  "item.monulite_mod.monulite_infused_golden_carrot": "Walter White Golden Carrot",
+  "item.monulite_mod.monulite_infused_brown_mushroom": "Walter White Brown Mushroom",
+  "item.monulite_mod.monulite_infused_red_mushroom": "Walter White Red Mushroom",
+
+  "item.monulite_mod.raw_monulite": "Raw Meth",
+  "item.monulite_mod.monulite_powder": "Meth Powder",
+  "item.monulite_mod.monulite_ingot": "Meth Blue Ingot",
+  "item.monulite_mod.monulite_ooz": "Meth Ooz",
+
+  "item.monulite_mod.raw_acrote": "Raw Pastel Blue Ore",
+  "item.monulite_mod.acrote_ooz": "Pastel Blue Ooz",
+
+  "item.monulite_mod.monulite_coin": "Drug Money",
+  "item.monulite_mod.acrote_coin": "Crayon Coin",
+
+  "item.monulite_mod.monulite_sword": "The Better Blue Sword",
+  "item.monulite_mod.monulite_pickaxe": "The Better Blue Pickaxe",
+  "item.monulite_mod.monulite_shovel": "The Better Blue Shovel",
+  "item.monulite_mod.monulite_axe": "The Better Blue Axe",
+  "item.monulite_mod.monulite_hoe": "Hoe",
+
+  "item.monulite_mod.monulite_helmet": "The Better Blue Helmet",
+  "item.monulite_mod.monulite_chestplate": "The Better Blue Chestplate",
+  "item.monulite_mod.monulite_leggings": "The Better Blue Leggings",
+  "item.monulite_mod.monulite_boots": "The Better Blue Boots",
+
+  "item.monulite_mod.cloud_boots": "Heaven Boots",
+  "block.monulite_mod.cloud_block": "Bloc Nuage frfr",
+
+  "block.monulite_mod.deepslate_monulite_ore": "One of The Deepslate Orea",
+  "block.monulite_mod.monulite_ore": "An Ore",
+  "block.monulite_mod.monulite_block": "Meter By Meter Meth",
+  "block.monulite_mod.monulite_coin_molder": "Drug Money Printer",
+
+  "block.monulite_mod.magic_infuser": "Walter Whites Lab",
+
+  "block.monulite_mod.acrote_ore": "A Pastel Blue Ore",
+  "block.monulite_mod.acrote_coin_molder": "Crayon Drawing Printer",
+
+  "effect.monulite_mod.flight": "Angel Wings",
+  "effect.monulite_mod.float": "Float.",
+  "effect.monulite_mod.shrink": "Tiny Timmy Time (Tripple T)"
 }

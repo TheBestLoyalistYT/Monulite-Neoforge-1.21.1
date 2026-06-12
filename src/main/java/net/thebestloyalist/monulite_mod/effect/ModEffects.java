@@ -28,6 +28,26 @@ public class ModEffects {
                     (Attributes.SAFE_FALL_DISTANCE, ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID, "float"), 2.0f,
                     AttributeModifier.Operation.ADD_VALUE));
 
+    public static final Holder<MobEffect> SHRINK_EFFECT = MOB_EFFECTS.register("shrink",
+            () -> new FloatEffect(MobEffectCategory.NEUTRAL, 0x36ebab).addAttributeModifier
+                    (Attributes.SCALE, ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID, "shrink"), -0.65f,
+                            AttributeModifier.Operation.ADD_VALUE)
+                    .addAttributeModifier
+                            (Attributes.MAX_HEALTH, ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID, "shrink"), -10.00f,
+                                    AttributeModifier.Operation.ADD_VALUE)
+                    .addAttributeModifier
+                            (Attributes.FALL_DAMAGE_MULTIPLIER, ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID, "shrink"), -0.67f,
+                                    AttributeModifier.Operation.ADD_VALUE)
+                    .addAttributeModifier
+                            (Attributes.JUMP_STRENGTH, ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID, "shrink"), 0.40f,
+                                    AttributeModifier.Operation.ADD_VALUE)
+                    .addAttributeModifier
+                            (Attributes.MOVEMENT_SPEED, ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID, "shrink"), 0.035f,
+                                    AttributeModifier.Operation.ADD_VALUE)
+                    .addAttributeModifier
+                            (Attributes.SAFE_FALL_DISTANCE, ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID, "shrink"), 4.0f,
+                                    AttributeModifier.Operation.ADD_VALUE));
+
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }

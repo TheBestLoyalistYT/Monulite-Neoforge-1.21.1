@@ -45,12 +45,16 @@
 
   "item.monulite_mod.monulite_infused_steak": "Mit Monulite Angereichertes Steak",
   "item.monulite_mod.monulite_infused_golden_carrot": "Mit Monulite Angereichertes Goldene Karotte",
+  "item.monulite_mod.monulite_infused_brown_mushroom": "Mit Monulite angereicherter brauner Pilz",
+  "item.monulite_mod.monulite_infused_red_mushroom": "Mit Monulite angereicherter roter Pilz",
 
   "item.monulite_mod.cloud_boots": "Wolkenstiefel",
+  "block.monulite_mod.cloud_block": "Wolke Block",
 
   "block.monulite_mod.magic_infuser": "Magic Infuser",
 
   "effect.monulite_mod.flight": "Flight",
-  "effect.monulite_mod.float": "Float"
+  "effect.monulite_mod.float": "Float",
+  "effect.monulite_mod.shrink": "Schrumpfen"
 
 }

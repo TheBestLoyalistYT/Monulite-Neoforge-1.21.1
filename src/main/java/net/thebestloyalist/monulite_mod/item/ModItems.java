@@ -45,6 +45,12 @@ public class ModItems {
     public static final DeferredItem<Item> MONULITE_INFUSED_GOLDEN_CARROT = ITEMS.register("monulite_infused_golden_carrot",
             () -> new Item(new Item.Properties().food(ModFoodProperties.MONULITE_GOLDEN_CARROT_FOOD)));
 
+    public static final DeferredItem<Item> MONULITE_INFUSED_BROWN_MUSHROOM = ITEMS.register("monulite_infused_brown_mushroom",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.MONULITE_MUSHR0OM_FOOD)));
+
+    public static final DeferredItem<Item> MONULITE_INFUSED_RED_MUSHROOM = ITEMS.register("monulite_infused_red_mushroom",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.MONULITE_MUSHR0OM_FOOD)));
+
 
     public static final DeferredItem<Item> THE_MONULITE_MUSIC_DISC = ITEMS.register("the_monulite_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.THE_MONULITE_KEY).stacksTo(1)));

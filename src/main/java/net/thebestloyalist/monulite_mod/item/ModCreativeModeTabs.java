@@ -42,7 +42,16 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ACROTE_COIN_MOLDER);
                         output.accept(ModBlocks.MAGIC_INFUSER);
                         output.accept(ModItems.THE_MONULITE_MUSIC_DISC);
+                        output.accept(ModItems.MONULITE_POWDER);
                         output.accept(ModItems.MONULITE_INFUSED_STEAK);
+                        output.accept(ModItems.MONULITE_INFUSED_GOLDEN_CARROT);
+                        output.accept(ModItems.MONULITE_INFUSED_BROWN_MUSHROOM);
+                        output.accept(ModItems.MONULITE_INFUSED_RED_MUSHROOM);
+                        output.accept(ModBlocks.MONULITE_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_MONULITE_ORE);
+                        output.accept(ModBlocks.ACROTE_ORE);
+                        output.accept(ModBlocks.MONULITE_BLOCK);
+                        output.accept(ModBlocks.CLOUD_BLOCK);
 
                     }).build());
 

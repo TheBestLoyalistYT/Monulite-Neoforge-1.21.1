@@ -10,6 +10,8 @@
 
   "item.monulite_mod.monulite_infused_steak": "Monulite Infused Steak",
   "item.monulite_mod.monulite_infused_golden_carrot": "Monulite Infused Golden Carrot",
+  "item.monulite_mod.monulite_infused_brown_mushroom": "Monulite Infused Brown Mushroom",
+  "item.monulite_mod.monulite_infused_red_mushroom": "Monulite Infused Red Mushroom",
 
   "item.monulite_mod.raw_monulite": "Raw Monulite",
   "item.monulite_mod.monulite_powder": "Monulite Powder",
@@ -34,6 +36,7 @@
   "item.monulite_mod.monulite_boots": "Monulite Boots",
 
   "item.monulite_mod.cloud_boots": "Cloud Boots",
+  "block.monulite_mod.cloud_block": "Cloud Block",
 
   "block.monulite_mod.deepslate_monulite_ore": "Deepslate Monulite Ore",
   "block.monulite_mod.monulite_ore": "Monulite Ore",
@@ -46,5 +49,6 @@
   "block.monulite_mod.acrote_coin_molder": "Acrote Coin Molder",
 
   "effect.monulite_mod.flight": "Flight",
-  "effect.monulite_mod.float": "Float"
+  "effect.monulite_mod.float": "Float",
+  "effect.monulite_mod.shrink": "Shrink"
 }

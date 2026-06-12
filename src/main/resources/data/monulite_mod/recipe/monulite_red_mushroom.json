@@ -1,0 +1,13 @@
+{
+  "type": "monulite_mod:magic_infuser",
+  "ingredient":{
+    "item": "minecraft:red_mushroom"
+  },
+  "ingredient2":{
+    "item": "monulite_mod:monulite_powder"
+  },
+  "result": {
+    "id": "monulite_mod:monulite_infused_red_mushroom",
+    "count": 1
+  }
+}
