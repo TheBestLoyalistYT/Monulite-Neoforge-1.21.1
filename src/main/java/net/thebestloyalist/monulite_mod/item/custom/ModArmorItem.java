@@ -2,13 +2,7 @@ package net.thebestloyalist.monulite_mod.item.custom;
 
 import com.google.common.collect.ImmutableMap;
 import net.minecraft.core.BlockPos;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.util.RandomSource;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockState;
 import net.thebestloyalist.monulite_mod.block.ModBlocks;
-import net.thebestloyalist.monulite_mod.block.custom.CloudBlock;
 import net.thebestloyalist.monulite_mod.effect.ModEffects;
 import net.thebestloyalist.monulite_mod.item.ModArmorMaterials;
 import net.minecraft.core.Holder;
@@ -36,28 +30,46 @@ public class ModArmorItem extends ArmorItem {
 
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
-        if(entity instanceof Player player && !level.isClientSide()) {
+
+        if (entity instanceof Player player && !level.isClientSide()) {
             if (hasPlayerCorrectArmorOn(ModArmorMaterials.CLOUD_BOOT_MATERIAL, player)) {
                 evaluateArmorEffects(player);
 
                 if (player.isCrouching()) {
-
                     BlockPos center = player.blockPosition().below();
 
-                    List<Block> YesYesBlocks = List.of(Blocks.AIR);
+                    for (int x = -1; x <= 1; x++)
+                        for (int z = -1; z <= 1; z++) {
 
-                        for(int x = -1; x <= 1; x++)
-                        for(int z = -1; z <= 1; z++){
+                            BlockPos pos = center.offset(x, 0, z);
 
-                        BlockPos pos = center.offset(x, 0, z);
+                            if (level.isEmptyBlock(pos)) {
 
-                        if (level.isEmptyBlock(pos)) {
-
-                            level.setBlockAndUpdate(pos, ModBlocks.CLOUD_BLOCK.get().defaultBlockState());
+                                level.setBlockAndUpdate(pos, ModBlocks.CLOUD_BLOCK.get().defaultBlockState());
+                            }
                         }
                     }
                 }
-            }
+        }
+        if (entity instanceof Player player && level.isClientSide()) {
+            if (hasPlayerCorrectArmorOn(ModArmorMaterials.CLOUD_BOOT_MATERIAL, player)) {
+                evaluateArmorEffects(player);
+
+                if (player.isCrouching()) {
+                    BlockPos center = player.blockPosition().below();
+
+                    for (int x = 0; x <= 0; x++)
+                        for (int z = 0; z <= 0; z++) {
+
+                            BlockPos pos = center.offset(x, 0, z);
+
+                            if (level.isEmptyBlock(pos)) {
+
+                                level.setBlockAndUpdate(pos, ModBlocks.CLOUD_BLOCK.get().defaultBlockState());
+                            }
+                        }
+                    }
+                }
         }
     }
 

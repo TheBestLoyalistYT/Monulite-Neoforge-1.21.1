@@ -26,7 +26,7 @@ public class ModPlacedFeatures {
                 ModOrePlacement.commonOrePlacement(4, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(10))));
 
         register(context, ACROTE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ACROTE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(9, HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(87))));
+                ModOrePlacement.commonOrePlacement(7, HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(87))));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

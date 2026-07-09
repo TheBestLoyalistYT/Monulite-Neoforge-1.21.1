@@ -1,7 +1,11 @@
 package net.thebestloyalist.monulite_mod;
 
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.block.BlockRenderDispatcher;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.world.entity.Display;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -11,8 +15,8 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
-import net.thebestloyalist.monulite_mod.entity.ModEntities;
-import net.thebestloyalist.monulite_mod.entity.client.HiveRenderer;
+import net.thebestloyalist.monulite_mod.block.ModBlocks;
+import net.thebestloyalist.monulite_mod.client.KeyBinds;
 import net.thebestloyalist.monulite_mod.screen.ModMenuTypes;
 import net.thebestloyalist.monulite_mod.screen.custom.AcroteCoinMolderScreen;
 import net.thebestloyalist.monulite_mod.screen.custom.MagicInfuserScreen;
@@ -32,7 +36,6 @@ public class MonuliteModClient {
         MonuliteMod.LOGGER.info("HELLO FROM CLIENT SETUP");
         MonuliteMod.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
 
-        EntityRenderers.register(ModEntities.HIVE.get(), HiveRenderer::new);
         }
 
     @SubscribeEvent

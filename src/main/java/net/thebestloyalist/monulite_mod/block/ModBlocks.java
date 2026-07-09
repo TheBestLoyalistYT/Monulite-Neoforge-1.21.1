@@ -7,10 +7,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
-import net.thebestloyalist.monulite_mod.block.custom.AcroteCoinMolder;
-import net.thebestloyalist.monulite_mod.block.custom.CloudBlock;
-import net.thebestloyalist.monulite_mod.block.custom.MagicInfuser;
-import net.thebestloyalist.monulite_mod.block.custom.MonuliteCoinMolder;
+import net.thebestloyalist.monulite_mod.block.custom.*;
 import net.thebestloyalist.monulite_mod.item.ModItems;
 import java.util.function.Supplier;
 import net.minecraft.world.level.block.*;
@@ -42,6 +39,9 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> CLOUD_BLOCK = registerBlock("cloud_block",
             () -> new CloudBlock(BlockBehaviour.Properties.of().strength(0.005f).sound(SoundType.WOOL)));
+
+    public static final DeferredBlock<Block> CLIENT_CLOUD_BLOCK = registerBlock("client_cloud_block",
+            () -> new ClientCloudBlock(BlockBehaviour.Properties.of().strength(0.005f).sound(SoundType.WOOL)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

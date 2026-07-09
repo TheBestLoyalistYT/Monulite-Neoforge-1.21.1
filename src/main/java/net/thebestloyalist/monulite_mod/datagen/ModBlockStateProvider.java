@@ -37,6 +37,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.CLOUD_BLOCK);
 
+        blockWithItem(ModBlocks.CLIENT_CLOUD_BLOCK);
+
 
     }
 

@@ -36,7 +36,7 @@ public class ModConfiguredFeatures {
 
         register(context, MONULITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldMonuliteOres, 3));
 
-        register(context, ACROTE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldAcroteOres, 6));
+        register(context, ACROTE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldAcroteOres, 5));
 
     }
 

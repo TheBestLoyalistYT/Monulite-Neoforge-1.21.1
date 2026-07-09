@@ -13,11 +13,11 @@
       "item": "minecraft:dark_prismarine"
     },
     "N": {
-      "item": "minecraft:netherite"
+      "item": "minecraft:netherite_ingot"
     }
   },
   "result": {
-    "id": "monulite_mod:moulite_coin_molder",
+    "id": "monulite_mod:monulite_coin_molder",
     "count": 1
   }
 }

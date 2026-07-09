@@ -1,11 +1,10 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-    "item": "monulite_mod:raw_monulite"
-    }
-  ],
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+      "item": "monulite_mod:raw_monulite"
+    },
   "result": {
+    "count": 1,
     "id": "monulite_mod:monulite_powder"
   }
 }

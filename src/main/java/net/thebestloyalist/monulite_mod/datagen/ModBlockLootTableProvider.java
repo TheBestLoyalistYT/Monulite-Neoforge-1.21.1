@@ -44,6 +44,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         dropSelf(ModBlocks.MONULITE_BLOCK.get());
         dropOther(ModBlocks.CLOUD_BLOCK.get(), Blocks.AIR);
+        dropOther(ModBlocks.CLIENT_CLOUD_BLOCK.get(), Blocks.AIR);
         dropSelf(ModBlocks.MONULITE_COIN_MOLDER.get());
         dropSelf(ModBlocks.ACROTE_COIN_MOLDER.get());
         dropSelf(ModBlocks.MAGIC_INFUSER.get());
