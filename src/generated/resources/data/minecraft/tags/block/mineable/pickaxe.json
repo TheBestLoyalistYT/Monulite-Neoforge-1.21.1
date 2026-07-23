@@ -1,6 +1,7 @@
 {
   "values": [
     "monulite_mod:monulite_block",
+    "monulite_mod:monulite_cluster_block",
     "monulite_mod:deepslate_monulite_ore",
     "monulite_mod:monulite_ore",
     "monulite_mod:acrote_ore",

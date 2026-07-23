@@ -10,6 +10,7 @@ import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
+import net.thebestloyalist.monulite_mod.item.custom.FlingItem;
 import net.thebestloyalist.monulite_mod.item.custom.ModArmorItem;
 import net.thebestloyalist.monulite_mod.item.custom.ModChestFlyItem;
 import net.thebestloyalist.monulite_mod.sound.ModSounds;
@@ -21,6 +22,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> COIN_MOLD = ITEMS.register("coin_mold",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> GRAPPLE = ITEMS.register("grapple",
+            () -> new FlingItem(new Item.Properties()));
 
     public static final DeferredItem<Item> RAW_MONULITE = ITEMS.register("raw_monulite",
             () -> new Item(new Item.Properties()));

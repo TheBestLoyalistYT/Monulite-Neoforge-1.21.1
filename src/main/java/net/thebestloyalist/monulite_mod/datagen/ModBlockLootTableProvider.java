@@ -43,8 +43,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createMultipleOreDrops(ModBlocks.ACROTE_ORE.get(), ModItems.RAW_ACROTE.get(), 1, 1));
 
         dropSelf(ModBlocks.MONULITE_BLOCK.get());
+        dropSelf(ModBlocks.MONULITE_CLUSTER_BLOCK.get());
         dropOther(ModBlocks.CLOUD_BLOCK.get(), Blocks.AIR);
-        dropOther(ModBlocks.CLIENT_CLOUD_BLOCK.get(), Blocks.AIR);
         dropSelf(ModBlocks.MONULITE_COIN_MOLDER.get());
         dropSelf(ModBlocks.ACROTE_COIN_MOLDER.get());
         dropSelf(ModBlocks.MAGIC_INFUSER.get());

@@ -1,10 +1,10 @@
-// 1.21.1	2026-06-27T17:51:09.6696683	Loot Tables
+// 1.21.1	2026-07-19T19:38:35.598769	Loot Tables
 c2c0cf1b781492ebeb04d0b2bb2064d7f76a344f data/monulite_mod/loot_table/blocks/acrote_coin_molder.json
 2d555c7e7edee5bccd4f978d03679dcb0dcde79c data/monulite_mod/loot_table/blocks/acrote_ore.json
-e768b95509a603aa815d511bb5d2b2dd17e2c17e data/monulite_mod/loot_table/blocks/client_cloud_block.json
 a2cbc2aaf38c3f7409df0223a74ed91e56c156c8 data/monulite_mod/loot_table/blocks/cloud_block.json
 6968755abd363df6d0cafd3be304ed5bf23e9c16 data/monulite_mod/loot_table/blocks/deepslate_monulite_ore.json
 c5b4da03798043f9ac29ab4e09f1f280317e666a data/monulite_mod/loot_table/blocks/magic_infuser.json
 41e5edaae78bc52ba525e7b4684106cf29769a84 data/monulite_mod/loot_table/blocks/monulite_block.json
+3f7823e530ad3b06dc2bbf6af4ab02b14429b389 data/monulite_mod/loot_table/blocks/monulite_cluster_block.json
 d94d0c0ffd261519c95131a96145e49577f9cc71 data/monulite_mod/loot_table/blocks/monulite_coin_molder.json
 7c005e5e49b633d02ef703518afefd03e8e49529 data/monulite_mod/loot_table/blocks/monulite_ore.json

@@ -40,8 +40,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CLOUD_BLOCK = registerBlock("cloud_block",
             () -> new CloudBlock(BlockBehaviour.Properties.of().strength(0.005f).sound(SoundType.WOOL)));
 
-    public static final DeferredBlock<Block> CLIENT_CLOUD_BLOCK = registerBlock("client_cloud_block",
-            () -> new ClientCloudBlock(BlockBehaviour.Properties.of().strength(0.005f).sound(SoundType.WOOL)));
+    public static final DeferredBlock<Block> MONULITE_CLUSTER_BLOCK = registerBlock("monulite_cluster_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(3.6f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

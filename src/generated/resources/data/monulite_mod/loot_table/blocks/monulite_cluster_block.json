@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air"
+          "name": "monulite_mod:monulite_cluster_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "monulite_mod:blocks/client_cloud_block"
+  "random_sequence": "monulite_mod:blocks/monulite_cluster_block"
 }

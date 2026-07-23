@@ -20,6 +20,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 protected void addTags(HolderLookup.Provider provider) {
     tag(BlockTags.MINEABLE_WITH_PICKAXE)
             .add(ModBlocks.MONULITE_BLOCK.get())
+            .add(ModBlocks.MONULITE_CLUSTER_BLOCK.get())
             .add(ModBlocks.DEEPSLATE_MONULITE_ORE.get())
             .add(ModBlocks.MONULITE_ORE.get())
             .add(ModBlocks.ACROTE_ORE.get())
@@ -32,6 +33,7 @@ protected void addTags(HolderLookup.Provider provider) {
 
     tag(BlockTags.NEEDS_IRON_TOOL)
             .add(ModBlocks.MONULITE_BLOCK.get())
+            .add(ModBlocks.MONULITE_CLUSTER_BLOCK.get())
             .add(ModBlocks.MONULITE_COIN_MOLDER.get());
 
 
