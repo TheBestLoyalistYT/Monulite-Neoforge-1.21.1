@@ -6,13 +6,16 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
+import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
 import net.thebestloyalist.monulite_mod.item.custom.FlingItem;
 import net.thebestloyalist.monulite_mod.item.custom.ModArmorItem;
 import net.thebestloyalist.monulite_mod.item.custom.ModChestFlyItem;
+import net.thebestloyalist.monulite_mod.item.custom.TrelgnackItem;
 import net.thebestloyalist.monulite_mod.sound.ModSounds;
 
 import java.util.List;
@@ -25,6 +28,10 @@ public class ModItems {
 
     public static final DeferredItem<Item> GRAPPLE = ITEMS.register("grapple",
             () -> new FlingItem(new Item.Properties()));
+
+    public static final DeferredItem<Item> TRELGNACK = ITEMS.register("trelgnack",
+            () -> new TrelgnackItem(ModToolTeirs.MONULITE_SWORD, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTeirs.MONULITE_SWORD, 1, -2.4f))));
 
     public static final DeferredItem<Item> RAW_MONULITE = ITEMS.register("raw_monulite",
             () -> new Item(new Item.Properties()));
@@ -110,5 +117,9 @@ public class ModItems {
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
+
+        eventBus.addListener(FMLCommonSetupEvent.class, event -> {
+            NeoForge.EVENT_BUS.register(TRELGNACK.get());
+        });
     }
 }

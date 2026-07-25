@@ -19,6 +19,16 @@ public class FlightEffect extends MobEffect {
         return true;
     }
 
+
+    public void onEffectRemoved(LivingEntity entity, int amplifier) {
+        if (!entity.level().isClientSide) {
+            if (entity instanceof Player player) {
+                player.getAbilities().mayfly = false;
+                player.onUpdateAbilities();
+            }
+        }
+    }
+
     @Override
     public boolean applyEffectTick(LivingEntity entity, int amplifier) {
         if (!entity.level().isClientSide) {
