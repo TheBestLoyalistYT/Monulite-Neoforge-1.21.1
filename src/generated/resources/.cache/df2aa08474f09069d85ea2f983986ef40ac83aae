@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-12T17:27:25.1932986	Tags for minecraft:item mod id monulite_mod
+// 1.21.1	2026-07-27T11:08:21.85056	Tags for minecraft:item mod id monulite_mod
 3c14d84f1b43854c00ef1748ce7ccc1e52c64318 data/minecraft/tags/item/axes.json
 13417cbd279f90fdd22d9cfe21ba615453c869da data/minecraft/tags/item/enchantable/chest_armor.json
 8bfb45b2c4862b811f76ff4d5089e77d7c159f40 data/minecraft/tags/item/enchantable/durability.json
@@ -8,9 +8,9 @@ c2f069ca546f3b333327f482932fe48aaf038b91 data/minecraft/tags/item/enchantable/fo
 6f0b29a59d642c7bb8acb12d88ce8a7df174e433 data/minecraft/tags/item/enchantable/leg_armor.json
 5b6c40d46a7f6270d23c2d800a322957d5fb94f0 data/minecraft/tags/item/enchantable/mining.json
 3c14d84f1b43854c00ef1748ce7ccc1e52c64318 data/minecraft/tags/item/enchantable/sharp_weapon.json
-c2ae30f2598e6a148cc7848cd7bfeb66edb1cacb data/minecraft/tags/item/enchantable/sword.json
+661aef722437b356e091c57a752973b65b6f8038 data/minecraft/tags/item/enchantable/sword.json
 0cd5c721ad592695404042e6fbf959e13a72112a data/minecraft/tags/item/hoes.json
 63e19e8526a387a6ad75fb6f123d2136f2bdef35 data/minecraft/tags/item/pickaxes.json
 4a110a9b9a3a4c4a596684ca4b367a052c044b1d data/minecraft/tags/item/shovels.json
-c2ae30f2598e6a148cc7848cd7bfeb66edb1cacb data/minecraft/tags/item/swords.json
+661aef722437b356e091c57a752973b65b6f8038 data/minecraft/tags/item/swords.json
 5a24755f0907c755c76fd2184d9dee56625e7159 data/minecraft/tags/item/trimmable_armor.json

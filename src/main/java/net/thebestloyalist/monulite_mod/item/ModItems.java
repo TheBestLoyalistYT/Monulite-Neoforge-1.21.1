@@ -30,8 +30,8 @@ public class ModItems {
             () -> new FlingItem(new Item.Properties()));
 
     public static final DeferredItem<Item> TRELGNACK = ITEMS.register("trelgnack",
-            () -> new TrelgnackItem(ModToolTeirs.MONULITE_SWORD, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(ModToolTeirs.MONULITE_SWORD, 1, -2.4f))));
+            () -> new TrelgnackItem(ModToolTeirs.TRELGNACK_SWORDDDDDY, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTeirs.TRELGNACK_SWORDDDDDY, 3, -3.0f))));
 
     public static final DeferredItem<Item> RAW_MONULITE = ITEMS.register("raw_monulite",
             () -> new Item(new Item.Properties()));

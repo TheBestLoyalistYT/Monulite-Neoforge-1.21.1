@@ -21,4 +21,7 @@ public class ModToolTeirs {
     public static final Tier MONULITE_HOE = new SimpleTier(ModTags.Blocks.INCORRECT_FOR_MONULITE_TOOL,
             2721, 1.2f, 0.1f, 20, () -> Ingredient.of(ModItems.MONULITE_INGOT));
 
+    public static final Tier TRELGNACK_SWORDDDDDY = new SimpleTier(ModTags.Blocks.INCORRECT_FOR_TRELGNACK_TOOL,
+            1719, -2.0f, 2.5f, 25, () -> Ingredient.of(ModItems.MONULITE_INGOT));
+
 }

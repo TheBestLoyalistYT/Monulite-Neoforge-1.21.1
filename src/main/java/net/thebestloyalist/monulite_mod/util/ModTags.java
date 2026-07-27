@@ -12,6 +12,7 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> NEEDS_MONULITE_TOOL = createTag("needs_bismuth_tool");
         public static final TagKey<Block> INCORRECT_FOR_MONULITE_TOOL = createTag("incorrect_for_bismuth_tool");
+        public static final TagKey<Block> INCORRECT_FOR_TRELGNACK_TOOL = createTag("incorrect_for_trelgnack_tool");
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(MonuliteMod.MOD_ID, name));

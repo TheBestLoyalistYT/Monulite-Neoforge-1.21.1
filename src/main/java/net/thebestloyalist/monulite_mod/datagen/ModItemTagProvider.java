@@ -21,6 +21,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(ItemTags.SWORDS)
+                .add(ModItems.TRELGNACK.get())
                 .add(ModItems.MONULITE_SWORD.get());
         tag(ItemTags.PICKAXES)
                 .add(ModItems.MONULITE_PICKAXE.get());
@@ -44,6 +45,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.MONULITE_HOE.get());
 
         this.tag(ItemTags.SWORD_ENCHANTABLE)
+                .add(ModItems.TRELGNACK.get())
                 .add(ModItems.MONULITE_SWORD.get());
 
         this.tag(ItemTags.SHARP_WEAPON_ENCHANTABLE)
