@@ -58,6 +58,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.MONULITE_COIN.get());
         basicItem(ModItems.ACROTE_COIN.get());
 
+        basicItem(ModItems.TICK_CLOCK.get());
+
         handheldItem(ModItems.MONULITE_SWORD.getId());
         handheldItem(ModItems.MONULITE_PICKAXE.getId());
         handheldItem(ModItems.MONULITE_SHOVEL.getId());

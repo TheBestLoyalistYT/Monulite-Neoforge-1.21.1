@@ -24,6 +24,9 @@ public class ModSounds {
     public static final Supplier<SoundEvent> MONULITE_COIN_MOLDER_HIT = registerSoundEvent("monulite_coin_molder_hit");
     public static final Supplier<SoundEvent> MONULITE_COIN_MOLDER_FALL = registerSoundEvent("monulite_coin_molder_fall");
 
+    public static final Supplier<SoundEvent> TIME_STOP = registerSoundEvent("time_stop");
+    public static final Supplier<SoundEvent> TIME_RESUME = registerSoundEvent("time_resume");
+
     public static final DeferredSoundType MONULITE_COIN_MOLDER_SOUND_GROUP = new DeferredSoundType(1f, 1f,
             ModSounds.MONULITE_COIN_MOLDER_BREAK, ModSounds.MONULITE_COIN_MOLDER_STEP, ModSounds.MONULITE_COIN_MOLDER_PLACE,
             ModSounds.MONULITE_COIN_MOLDER_HIT, ModSounds.MONULITE_COIN_MOLDER_FALL);

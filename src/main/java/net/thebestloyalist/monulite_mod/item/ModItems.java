@@ -12,10 +12,7 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
-import net.thebestloyalist.monulite_mod.item.custom.FlingItem;
-import net.thebestloyalist.monulite_mod.item.custom.ModArmorItem;
-import net.thebestloyalist.monulite_mod.item.custom.ModChestFlyItem;
-import net.thebestloyalist.monulite_mod.item.custom.TrelgnackItem;
+import net.thebestloyalist.monulite_mod.item.custom.*;
 import net.thebestloyalist.monulite_mod.sound.ModSounds;
 
 import java.util.List;
@@ -29,9 +26,15 @@ public class ModItems {
     public static final DeferredItem<Item> GRAPPLE = ITEMS.register("grapple",
             () -> new FlingItem(new Item.Properties()));
 
+    public static final DeferredItem<Item> CUST_CLOCK = ITEMS.register("cust_clock",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> TICK_CLOCK = ITEMS.register("tick_clock",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> TRELGNACK = ITEMS.register("trelgnack",
             () -> new TrelgnackItem(ModToolTeirs.TRELGNACK_SWORDDDDDY, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(ModToolTeirs.TRELGNACK_SWORDDDDDY, 3, -3.0f))));
+                    .attributes(SwordItem.createAttributes(ModToolTeirs.TRELGNACK_SWORDDDDDY, 4, -3.0f))));
 
     public static final DeferredItem<Item> RAW_MONULITE = ITEMS.register("raw_monulite",
             () -> new Item(new Item.Properties()));

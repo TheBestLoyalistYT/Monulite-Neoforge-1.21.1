@@ -44,5 +44,15 @@
         "stream": true
       }
     ]
+  },
+  "time_stop": {
+    "sounds": [
+      "monulite_mod:time_stop"
+    ]
+  },
+  "time_resume": {
+    "sounds": [
+      "monulite_mod:time_resume"
+    ]
   }
 }
