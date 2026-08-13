@@ -21,7 +21,15 @@
   },
   "rewards": {
     "recipes": [
-      "monulite_mod:monulite_coin_molder"
+      "monulite_mod:monulite_sword",
+      "monulite_mod:monulite_pickaxe",
+      "monulite_mod:monulite_shovel",
+      "monulite_mod:monulite_axe",
+      "monulite_mod:monulite_hoe",
+      "monulite_mod:monulite_helmet",
+      "monulite_mod:monulite_chestplate",
+      "monulite_mod:monulite_leggings",
+      "monulite_mod:monulite_boots"
     ]
   }
 }

@@ -15,6 +15,7 @@ import net.thebestloyalist.monulite_mod.MonuliteMod;
 import net.thebestloyalist.monulite_mod.item.custom.*;
 import net.thebestloyalist.monulite_mod.sound.ModSounds;
 
+import javax.swing.*;
 import java.util.List;
 
 public class ModItems {
@@ -25,6 +26,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> GRAPPLE = ITEMS.register("grapple",
             () -> new FlingItem(new Item.Properties()));
+
+    public static final DeferredItem<Item> CONDENSED_MONULITE = ITEMS.register("condensed_monulite",
+            () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> CUST_CLOCK = ITEMS.register("cust_clock",
             () -> new Item(new Item.Properties()));
@@ -96,19 +100,19 @@ public class ModItems {
 
     public static final DeferredItem<ArmorItem> MONULITE_HELMET = ITEMS.register("monulite_helmet",
             () -> new ArmorItem(ModArmorMaterials.MONULITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(40))));
 
     public static final DeferredItem<ArmorItem> MONULITE_CHESTPLATE = ITEMS.register("monulite_chestplate",
             () -> new ArmorItem(ModArmorMaterials.MONULITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))));
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(40))));
 
     public static final DeferredItem<ArmorItem> MONULITE_LEGGINGS = ITEMS.register("monulite_leggings",
             () -> new ArmorItem(ModArmorMaterials.MONULITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
-                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(19))));
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(40))));
 
     public static final DeferredItem<ArmorItem> MONULITE_BOOTS = ITEMS.register("monulite_boots",
             () -> new ArmorItem(ModArmorMaterials.MONULITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
-                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(40))));
 
     public static final DeferredItem<ArmorItem> CLOUD_BOOTS = ITEMS.register("cloud_boots",
             () -> new ModArmorItem(ModArmorMaterials.CLOUD_BOOT_MATERIAL, ArmorItem.Type.BOOTS,
@@ -116,7 +120,7 @@ public class ModItems {
 
     public static final DeferredItem<ArmorItem> FLYING_CHESTPLATE = ITEMS.register("flying_chestplate",
             () -> new ModChestFlyItem(ModArmorMaterials.CLOUD_BOOT_MATERIAL, ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(19))));
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(25))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

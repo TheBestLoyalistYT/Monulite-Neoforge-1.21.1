@@ -21,6 +21,7 @@
   },
   "rewards": {
     "recipes": [
+      "monulite_mod:coin_mold",
       "monulite_mod:acrote_ooz"
     ]
   }

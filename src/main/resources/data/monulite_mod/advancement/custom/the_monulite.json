@@ -6,7 +6,7 @@
     "title": "Its the Super Monulite Super Show!",
     "description": "Play a special music disc"
   },
-  "parent": "monulite_mod:custom/monulite_powder",
+  "parent": "monulite_mod:custom/magic_infuser",
   "criteria": {
     "trigger": {
       "trigger": "minecraft:item_used_on_block",

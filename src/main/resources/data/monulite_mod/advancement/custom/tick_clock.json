@@ -1,0 +1,15 @@
+{
+  "display": {
+    "icon": {
+      "id": "monulite_mod:tick_clock"
+    },
+    "title": "THE WORLDO",
+    "description": "wait, thats just 'joe's normal commute'"
+  },
+  "parent": "monulite_mod:custom/magic_infuser",
+  "criteria": {
+    "worldo": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type":"monulite_mod:coin_atm",
+  "ingredient": {
+    "item": "monulite_mod:acrote_coin"
+  },
+  "count": 8,
+  "result": {
+    "id": "monulite_mod:monulite_coin",
+    "count": 1
+  }
+}

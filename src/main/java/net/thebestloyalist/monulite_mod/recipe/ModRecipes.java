@@ -24,6 +24,16 @@ public class ModRecipes {
                 }
             });
 
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<CoinATMRecipe>> COIN_ATM_SERIALIZER =
+            SERIALIZERS.register("coin_atm", CoinATMRecipe.Serializer::new);
+    public static final DeferredHolder<RecipeType<?>, RecipeType<CoinATMRecipe>> COIN_ATM_TYPE =
+            TYPES.register("coin_atm", () -> new RecipeType<CoinATMRecipe>() {
+                @Override
+                public String toString() {
+                    return "coin_atm";
+                }
+            });
+
 
     public static void register(IEventBus eventBus) {
         SERIALIZERS.register(eventBus);

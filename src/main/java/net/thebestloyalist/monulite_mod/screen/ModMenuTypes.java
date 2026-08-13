@@ -10,6 +10,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
 import net.thebestloyalist.monulite_mod.screen.custom.AcroteCoinMolderMenu;
+import net.thebestloyalist.monulite_mod.screen.custom.CoinATMMenu;
 import net.thebestloyalist.monulite_mod.screen.custom.MagicInfuserMenu;
 import net.thebestloyalist.monulite_mod.screen.custom.MonuliteCoinMolderMenu;
 
@@ -22,6 +23,9 @@ public class ModMenuTypes {
 
     public static final DeferredHolder<MenuType<?>, MenuType<MagicInfuserMenu>> MAGIC_INFUSER_MENU =
             registerMenuType("magic_infuser_menu", MagicInfuserMenu::new);
+
+    public static final DeferredHolder<MenuType<?>, MenuType<CoinATMMenu>> COIN_MOLDER_MENU =
+            registerMenuType("coin_molder_menu", CoinATMMenu::new);
 
     public static final DeferredHolder<MenuType<?>, MenuType<AcroteCoinMolderMenu>> ACROTE_COIN_MOLDER_MENU =
             registerMenuType("acrote_coin_molder_menu", AcroteCoinMolderMenu::new);

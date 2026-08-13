@@ -34,6 +34,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MAGIC_INFUSER = registerBlock("magic_infuser",
             () -> new MagicInfuser(BlockBehaviour.Properties.of().strength(2.4f)));
 
+    public static final DeferredBlock<Block> COIN_ATM = registerBlock("coin_atm",
+            () -> new CoinATM(BlockBehaviour.Properties.of().strength(2.4f)));
+
     public static final DeferredBlock<Block> ACROTE_COIN_MOLDER = registerBlock("acrote_coin_molder",
             () -> new AcroteCoinMolder(BlockBehaviour.Properties.of().strength(2.4f)));
 

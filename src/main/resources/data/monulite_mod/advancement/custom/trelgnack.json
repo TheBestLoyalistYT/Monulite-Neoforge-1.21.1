@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "monulite_mod:trelgnack"
+    },
+    "title": "We All Float!",
+    "description": "Just hit a mob or player and see..."
+  },
+  "parent": "monulite_mod:custom/magic_infuser",
+  "criteria": {
+    "trigger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "monulite_mod:trelgnack"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

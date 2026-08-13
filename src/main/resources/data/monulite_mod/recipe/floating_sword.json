@@ -1,0 +1,13 @@
+{
+  "type": "monulite_mod:magic_infuser",
+  "ingredient":{
+    "item": "minecraft:diamond_sword"
+  },
+  "ingredient2":{
+    "item": "monulite_mod:monulite_powder"
+  },
+  "result": {
+    "id": "monulite_mod:trelgnack",
+    "count": 1
+  }
+}

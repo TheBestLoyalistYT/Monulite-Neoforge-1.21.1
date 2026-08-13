@@ -21,7 +21,7 @@
   },
   "rewards": {
     "recipes": [
-      "monulite_mod:raw_monulite",
+      "monulite_mod:monulite_ingot",
       "monulite_mod:monulite_ooz"
     ]
   }

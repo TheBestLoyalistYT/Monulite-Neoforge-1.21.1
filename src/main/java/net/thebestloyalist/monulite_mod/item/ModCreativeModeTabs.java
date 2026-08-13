@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.monulite_mod.monulite_items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RAW_MONULITE);
+                        output.accept(ModItems.CONDENSED_MONULITE);
                         output.accept(ModItems.MONULITE_INGOT);
                         output.accept(ModItems.MONULITE_OOZ);
                         output.accept(ModItems.RAW_ACROTE);
@@ -40,6 +41,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.COIN_MOLD);
                         output.accept(ModBlocks.MONULITE_COIN_MOLDER);
                         output.accept(ModBlocks.ACROTE_COIN_MOLDER);
+                        output.accept(ModBlocks.COIN_ATM);
                         output.accept(ModBlocks.MAGIC_INFUSER);
                         output.accept(ModItems.THE_MONULITE_MUSIC_DISC);
                         output.accept(ModItems.MONULITE_POWDER);
@@ -47,10 +49,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MONULITE_INFUSED_GOLDEN_CARROT);
                         output.accept(ModItems.MONULITE_INFUSED_BROWN_MUSHROOM);
                         output.accept(ModItems.MONULITE_INFUSED_RED_MUSHROOM);
+                        output.accept(ModItems.TRELGNACK);
+                        output.accept(ModItems.CUST_CLOCK);
+                        output.accept(ModItems.TICK_CLOCK);
                         output.accept(ModBlocks.MONULITE_ORE);
                         output.accept(ModBlocks.DEEPSLATE_MONULITE_ORE);
                         output.accept(ModBlocks.ACROTE_ORE);
                         output.accept(ModBlocks.MONULITE_BLOCK);
+                        output.accept(ModBlocks.MONULITE_CLUSTER_BLOCK);
                         output.accept(ModBlocks.CLOUD_BLOCK);
 
                     }).build());

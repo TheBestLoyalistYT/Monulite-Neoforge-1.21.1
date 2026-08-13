@@ -63,7 +63,6 @@
     { "name": "Offset",      "type": "float",     "count": 3,  "values": [ 0.0, 0.0, 0.0 ] },
     { "name": "ColorScale",  "type": "float",     "count": 3,  "values": [ 1.0, 1.0, 1.0 ] },
     { "name": "Saturation",  "type": "float",     "count": 1,  "values": [ 0.35 ] },
-    { "name": "Folly",  "type": "float",     "count": 1,  "values": [ 0.0 ] },
-    { "name": "Darkness",  "type": "float",     "count": 1,  "values": [ 0.0 ] }
+    { "name": "Folly",  "type": "float",     "count": 1,  "values": [ 0.0 ] }
   ]
 }

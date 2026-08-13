@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SAS",
+    "AMA",
+    "SAS"
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:clock"
+    },
+    "S": {
+      "item": "minecraft:gold_ingot"
+    },
+    "A": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "id": "monulite_mod:cust_clock",
+    "count": 1
+  }
+}

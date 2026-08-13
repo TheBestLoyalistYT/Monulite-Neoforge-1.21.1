@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "monulite_mod:magic_infuser"
+    },
+    "title": "Hokus Pokus!",
+    "description": "Get a Magic Infuser"
+  },
+  "parent": "monulite_mod:custom/monulite_powder",
+  "criteria": {
+    "c4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "monulite_mod:magic_infuser"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -26,6 +26,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("acrote_coin_molder", () -> BlockEntityType.Builder.of(
                     AcroteCoinMolderEntity::new, ModBlocks.ACROTE_COIN_MOLDER.get()).build(null));
 
+    public static final Supplier<BlockEntityType<CoinATMEntity>> COIN_ATM =
+            BLOCK_ENTITIES.register("coin_atm", () -> BlockEntityType.Builder.of(
+                    CoinATMEntity::new, ModBlocks.COIN_ATM.get()).build(null));
+
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

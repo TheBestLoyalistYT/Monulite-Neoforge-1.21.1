@@ -15,7 +15,6 @@ uniform vec3 Offset;
 uniform vec3 ColorScale;
 uniform float Saturation;
 uniform float Folly;
-uniform float Darkness;
 
 out vec4 fragColor;
 

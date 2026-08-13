@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "monulite_mod:block/coin_atm_top",
+    "side": "monulite_mod:block/coin_atm"
+  }
+}

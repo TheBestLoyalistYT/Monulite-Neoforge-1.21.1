@@ -18,5 +18,10 @@
         ]
       }
     }
+  },
+  "rewards": {
+    "recipes": [
+      "monulite_mod:magic_infuser"
+    ]
   }
 }
