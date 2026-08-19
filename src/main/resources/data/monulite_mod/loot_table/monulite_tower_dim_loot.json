@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "monulite_mod:condensed_monulite",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "monulite_mod:monulite_cluster_block",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "monulite_mod:cust_clock",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "monulite_mod:raw_monulite",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "monulite_mod:trelgnack",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:oak_log",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sweet_berries",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": 7
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:limit_count",
+              "limit": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

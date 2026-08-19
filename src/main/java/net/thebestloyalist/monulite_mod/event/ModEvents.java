@@ -4,9 +4,16 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ElytraItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -21,11 +28,15 @@ import net.thebestloyalist.monulite_mod.MonuliteMod;
 import net.thebestloyalist.monulite_mod.block.ModBlocks;
 import net.thebestloyalist.monulite_mod.client.Clientbs;
 import net.thebestloyalist.monulite_mod.client.KeyBinds;
+import net.thebestloyalist.monulite_mod.enchantment.ModEnchantments;
 import net.thebestloyalist.monulite_mod.event.item_event_logic.ZWorldoLog;
 import net.thebestloyalist.monulite_mod.item.ModItems;
 import net.thebestloyalist.monulite_mod.item.custom.TickClock;
+import net.thebestloyalist.monulite_mod.network.DoubleJumoPacket;
 import net.thebestloyalist.monulite_mod.network.FlingPacket;
 import net.thebestloyalist.monulite_mod.network.GreyShaderPacket;
+
+import java.awt.font.LineMetrics;
 import java.util.ArrayList;
 import java.util.Set;
 
@@ -35,6 +46,11 @@ import static net.thebestloyalist.monulite_mod.event.item_event_logic.ZWorldoLog
 public class ModEvents {
 
     private static boolean shaderLoaded = false;
+    public static final ResourceKey<Level> MONULITE_DIMENSION =
+            ResourceKey.create(
+                    Registries.DIMENSION,
+                    ResourceLocation.fromNamespaceAndPath("monulite_mod", "monulite_dim")
+            );
 
     @SubscribeEvent
     public static void onRightClick(PlayerInteractEvent.RightClickItem event) {
@@ -59,6 +75,12 @@ public class ModEvents {
     @SubscribeEvent
     public static void onPlayerTick(PlayerTickEvent.Post event) {
         Player player = event.getEntity();
+
+        if (player.level().dimension() == MONULITE_DIMENSION) {
+            if (player.isInWater()) {
+                player.hurt(player.level().damageSources().sonicBoom(player), 1.0f);
+            }
+        }
         if (player.getInventory().hasAnyOf(Set.of(ModItems.CONDENSED_MONULITE.get(), ModBlocks.MONULITE_CLUSTER_BLOCK.asItem()))) {
             for (int i = 1; i <= 7; i++) {
                 BlockPos blockPos = player.blockPosition().below(i);
@@ -113,6 +135,35 @@ public class ModEvents {
         if (KeyBinds.MON_KEY_1.isDown()) {
             if (mc.player.isHolding(ModItems.GRAPPLE.get())) {
                 PacketDistributor.sendToServer(new FlingPacket());
+            }
+        }
+
+
+        if (!mc.player.onGround()) {
+            if (!mc.options.keyJump.isDown()) {
+                mc.player.getPersistentData().putBoolean("monulite_mod_jumpReleased", true);
+            }
+        } else {
+            mc.player.getPersistentData().putBoolean("monulite_mod_can_dd", true);
+            mc.player.getPersistentData().putBoolean("monulite_mod_jumpReleased", false);
+        }
+
+        if (mc.options.keyJump.isDown() && !mc.player.onGround() && mc.player.getPersistentData().getBoolean("monulite_mod_jumpReleased")) {
+            ItemStack boots = mc.player.getItemBySlot(EquipmentSlot.FEET);
+            ItemStack chest = mc.player.getItemBySlot(EquipmentSlot.CHEST);
+            if (!chest.isEmpty() && chest.is(Items.ELYTRA)) {
+                mc.player.getPersistentData().putBoolean("monulite_mod_can_dd", false);
+                return;
+            }
+
+            if (!boots.isEmpty() && boots.getEnchantmentLevel(mc.player.level().registryAccess()
+                    .registryOrThrow(Registries.ENCHANTMENT)
+                    .getHolderOrThrow(ModEnchantments.DOUBLE_JUMP)) > 0) {
+                if (mc.player.getPersistentData().getBoolean("monulite_mod_can_dd")) {
+                    mc.player.getPersistentData().putBoolean("monulite_mod_can_dd", false);
+                    mc.player.getPersistentData().putBoolean("monulite_mod_jumpReleased", false);
+                    PacketDistributor.sendToServer(new DoubleJumoPacket());
+                }
             }
         }
 

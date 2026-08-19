@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "monulite_mod:code_monulite_tower_dim",
+      "weight": 10
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+
+    "salt": 397676767,
+
+    "spacing": 67,
+
+    "separation": 50
+  }
+}

@@ -20,6 +20,7 @@ import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> MONULITE_ORE_KEY = registerKey("monulite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MONULITEDIM_ORE_KEY = registerKey("monulitedim_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ACROTE_ORE_KEY = registerKey("acrote_ore");
 
 
@@ -33,6 +34,11 @@ public class ModConfiguredFeatures {
         List<OreConfiguration.TargetBlockState> overworldMonuliteOres = List.of(
                 OreConfiguration.target(stoneReplaceables, ModBlocks.MONULITE_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_MONULITE_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> dimMonuliteOres = List.of(
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_MONULITE_ORE.get().defaultBlockState()));
+
+        register(context, MONULITEDIM_ORE_KEY, Feature.ORE, new OreConfiguration(dimMonuliteOres, 4));
 
         register(context, MONULITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldMonuliteOres, 3));
 

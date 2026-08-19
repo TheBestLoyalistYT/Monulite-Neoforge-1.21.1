@@ -7,6 +7,7 @@ import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
+import net.thebestloyalist.monulite_mod.enchantment.ModEnchantments;
 import net.thebestloyalist.monulite_mod.worldgen.ModBiomeModifiers;
 import net.thebestloyalist.monulite_mod.worldgen.ModConfiguredFeatures;
 import net.thebestloyalist.monulite_mod.worldgen.ModPlacedFeatures;
@@ -19,7 +20,8 @@ public class ModDatapackProvider extends DatapackBuiltinEntriesProvider {
 
             .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
-            .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap);
+            .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap)
+            .add(Registries.ENCHANTMENT, ModEnchantments::bootstrap);
 
     public ModDatapackProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER, Set.of(MonuliteMod.MOD_ID));

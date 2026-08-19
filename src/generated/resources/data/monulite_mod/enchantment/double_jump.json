@@ -1,0 +1,30 @@
+{
+  "anvil_cost": 2,
+  "description": {
+    "translate": "enchantment.monulite_mod.double_jump"
+  },
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "monulite_mod:double_jump"
+        }
+      }
+    ]
+  },
+  "exclusive_set": "#minecraft:exclusive_set/boots",
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 7
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 7
+  },
+  "slots": [
+    "feet"
+  ],
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 5
+}

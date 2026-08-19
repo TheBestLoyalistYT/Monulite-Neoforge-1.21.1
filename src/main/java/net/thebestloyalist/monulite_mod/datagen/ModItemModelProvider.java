@@ -78,6 +78,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.MONULITE_INFUSED_GOLDEN_CARROT.get());
         basicItem(ModItems.MONULITE_INFUSED_BROWN_MUSHROOM.get());
         basicItem(ModItems.MONULITE_INFUSED_RED_MUSHROOM.get());
+
+        basicItem(ModItems.CONDENSED_MONULITE.get());
     }
 
     private void trimmedArmorItem(DeferredItem<ArmorItem> itemDeferredItem) {

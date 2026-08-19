@@ -10,11 +10,9 @@ import net.neoforged.neoforge.event.tick.LevelTickEvent;
 import java.util.logging.Level;
 
 public abstract class CustItem extends Item {
-    private final String id;
 
-    public CustItem(String id, Properties properties) {
+    public CustItem(Properties properties) {
         super(properties);
-        this.id = id;
     }
     public void onAttackerDeath(LivingDeathEvent event){
     }

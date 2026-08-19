@@ -11,6 +11,7 @@ import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 import net.thebestloyalist.monulite_mod.block.ModBlocks;
 import net.thebestloyalist.monulite_mod.block.entity.ModBlockEntities;
 import net.thebestloyalist.monulite_mod.effect.ModEffects;
+import net.thebestloyalist.monulite_mod.enchantment.ModEnchantmentEffects;
 import net.thebestloyalist.monulite_mod.event.ModEvents;
 import net.thebestloyalist.monulite_mod.item.ModCreativeModeTabs;
 import net.thebestloyalist.monulite_mod.item.ModItems;
@@ -46,6 +47,8 @@ public class MonuliteMod {
 
         ModEffects.register(modEventBus);
         ModRecipes.register(modEventBus);
+
+        ModEnchantmentEffects.register(modEventBus);
 
         ModCreativeModeTabs.register(modEventBus);
 

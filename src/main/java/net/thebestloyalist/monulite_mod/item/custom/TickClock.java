@@ -20,8 +20,8 @@ import java.util.ArrayList;
 import static net.thebestloyalist.monulite_mod.event.item_event_logic.ZWorldoLog.wldoData;
 
 public class TickClock extends CustItem {
-    public TickClock(String id, Properties properties) {
-        super(id, properties);
+    public TickClock(Properties properties) {
+        super(properties);
     }
 
     public static void onRightClick(Player player, Level level) {

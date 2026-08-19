@@ -1,0 +1,255 @@
+{
+  "sea_level": 67,
+  "disable_mob_generation": true,
+  "ore_veins_enabled": false,
+  "aquifers_enabled": false,
+  "legacy_random_source": false,
+  "default_block": {
+    "Name": "minecraft:deepslate"
+  },
+  "default_fluid": {
+    "Name": "minecraft:water"
+  },
+  "spawn_target": [],
+  "noise": {
+    "min_y": -48,
+    "height": 256,
+    "size_horizontal": 4,
+    "size_vertical": 1
+  },
+  "noise_router": {
+    "initial_density_without_jaggedness": 0.0,
+    "barrier": 0.0,
+    "fluid_level_floodedness": 0.0,
+    "fluid_level_spread": 0.0,
+    "lava": 0.0,
+    "vein_toggle": 0.0,
+    "vein_ridged": 0.0,
+    "vein_gap": 0.0,
+    "veininess": 0.0,
+    "temperature": {
+      "type": "noise",
+      "noise": "monulite_mod:tempnoise",
+      "xz_scale": 1,
+      "y_scale": 0
+    },
+    "vegetation": 0.0,
+    "continents": 0.0,
+    "erosion": {
+      "type": "noise",
+      "noise": "monulite_mod:errosion",
+      "xz_scale": 1,
+      "y_scale": 0
+    },
+    "depth": 0.0,
+    "ridges": 0.0,
+    "final_density": {
+      "type": "range_choice",
+      "input": {
+        "type": "y_clamped_gradient",
+        "from_y": -48,
+        "to_y": 160,
+        "from_value": -48,
+        "to_value": 160
+      },
+      "when_in_range": {
+        "type": "add",
+        "argument1": {
+          "type": "y_clamped_gradient",
+          "from_y": 32,
+          "to_y": 160,
+          "from_value": 1.1,
+          "to_value": -1.1
+        },
+        "argument2": {
+          "type": "noise",
+          "noise": "monulite_mod:mon_noise",
+          "xz_scale": 1,
+          "y_scale": 1.2
+        }
+      },
+      "when_out_of_range": {
+        "type": "add",
+        "argument1": {
+          "type": "y_clamped_gradient",
+          "from_y": -48,
+          "to_y": 32,
+          "from_value": -1.1,
+          "to_value": 1.1
+        },
+        "argument2": {
+          "type": "noise",
+          "noise": "monulite_mod:mon_noise",
+          "xz_scale": 0.9,
+          "y_scale": -1.1
+        }
+      },
+      "min_inclusive": 32,
+      "max_exclusive": 161
+    }
+  },
+  "surface_rule": {
+    "type": "sequence",
+    "sequence" : [
+      {
+        "type": "condition",
+        "if_true": {
+          "type": "biome",
+          "biome_is": [
+            "monulite_mod:crystal_forest"
+          ]
+        },
+        "then_run": {
+          "type": "condition",
+          "if_true": {
+            "type": "noise_threshold",
+            "noise": "monulite_mod:dirtsurfnoise",
+            "min_threshold": 0.0,
+            "max_threshold": 100
+          },
+          "then_run": {
+            "type": "condition",
+            "if_true": {
+              "type": "stone_depth",
+              "offset": 0,
+              "add_surface_depth": false,
+              "secondary_depth_range": 0,
+              "surface_type": "floor"
+            },
+            "then_run": {
+              "type": "block",
+              "result_state": {
+                "Name": "minecraft:grass_block"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "condition",
+        "if_true": {
+          "type": "biome",
+          "biome_is": [
+            "monulite_mod:crystal_forest"
+          ]
+        },
+        "then_run": {
+          "type": "condition",
+          "if_true": {
+            "type": "noise_threshold",
+            "noise": "monulite_mod:dirtsurfnoise",
+            "min_threshold": 0.0,
+            "max_threshold": 100
+          },
+          "then_run": {
+            "type": "condition",
+            "if_true": {
+              "type": "stone_depth",
+              "offset": 1,
+              "add_surface_depth": false,
+              "secondary_depth_range": 1,
+              "surface_type": "floor"
+            },
+            "then_run": {
+              "type": "block",
+              "result_state": {
+                "Name": "minecraft:dirt"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "condition",
+        "if_true": {
+          "type": "biome",
+          "biome_is": [
+            "monulite_mod:flatlands"
+          ]
+        },
+        "then_run": {
+          "type": "condition",
+          "if_true": {
+            "type": "stone_depth",
+            "surface_type": "floor",
+            "offset": 0,
+            "add_surface_depth": false,
+            "secondary_depth_range": 0
+          },
+          "then_run": {
+            "type": "block",
+            "result_state": {
+              "Name": "minecraft:grass_block"
+            }
+          }
+        }
+      },
+      {
+        "type": "condition",
+        "if_true": {
+          "type": "biome",
+          "biome_is": [
+            "monulite_mod:flatlands"
+          ]
+        },
+        "then_run": {
+          "type": "condition",
+          "if_true": {
+            "type": "stone_depth",
+            "surface_type": "floor",
+            "offset": 1,
+            "add_surface_depth": false,
+            "secondary_depth_range": 1
+          },
+          "then_run": {
+            "type": "block",
+            "result_state": {
+              "Name": "minecraft:dirt"
+            }
+          }
+        }
+      },
+      {
+        "type": "condition",
+        "if_true": {
+          "type": "biome",
+          "biome_is": [
+            "monulite_mod:green_rolling_hills_zone"
+          ]
+        },
+        "then_run": {
+          "type": "condition",
+          "if_true": {
+            "type": "stone_depth",
+            "surface_type": "floor",
+            "offset": 0,
+            "add_surface_depth": true,
+            "secondary_depth_range": 0
+          },
+          "then_run": {
+            "type": "block",
+            "result_state": {
+              "Name": "minecraft:moss_block"
+            }
+          }
+        }
+      },
+      {
+        "type": "condition",
+        "if_true": {
+          "type": "stone_depth",
+          "surface_type": "floor",
+          "offset": 0,
+          "add_surface_depth": true,
+          "secondary_depth_range": 1
+        },
+        "then_run": {
+          "type": "block",
+          "result_state": {
+            "Name": "monulite_mod:monulite_cluster_block"
+          }
+        }
+      }
+    ]
+  }
+}

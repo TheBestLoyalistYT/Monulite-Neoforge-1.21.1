@@ -16,6 +16,7 @@ import java.util.List;
 
 public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> MONULITE_ORE_PLACED_KEY = registerKey("monulite_ore_placed");
+    public static final ResourceKey<PlacedFeature> MONULITEDIM_ORE_PLACED_KEY = registerKey("monulitedim_ore_placed");
     public static final ResourceKey<PlacedFeature> ACROTE_ORE_PLACED_KEY = registerKey("acrote_ore_placed");
 
 
@@ -24,6 +25,10 @@ public class ModPlacedFeatures {
 
         register(context, MONULITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MONULITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(4, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(10))));
+
+        register(context, MONULITEDIM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MONULITEDIM_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(8, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(90))));
+
 
         register(context, ACROTE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ACROTE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(7, HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(87))));

@@ -34,7 +34,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> TICK_CLOCK = ITEMS.register("tick_clock",
-            () -> new Item(new Item.Properties()));
+            () -> new TickClock(new Item.Properties()));
 
     public static final DeferredItem<Item> TRELGNACK = ITEMS.register("trelgnack",
             () -> new TrelgnackItem(ModToolTeirs.TRELGNACK_SWORDDDDDY, new Item.Properties()

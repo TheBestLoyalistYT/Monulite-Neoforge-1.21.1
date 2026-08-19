@@ -21,10 +21,11 @@ import net.neoforged.neoforge.event.level.LevelEvent;
 import net.neoforged.neoforge.event.tick.LevelTickEvent;
 import net.thebestloyalist.monulite_mod.item.ModItems;
 import net.minecraft.world.level.portal.DimensionTransition;
+import net.thebestloyalist.monulite_mod.item.custom.itemtypes.CustWeaponItem;
 
 import java.util.*;
 
-public class TrelgnackItem extends SwordItem {
+public class TrelgnackItem extends CustWeaponItem {
     private int DURATION = 200;
     private int COOLDWN = 1000;
     public double rando = 0.0;

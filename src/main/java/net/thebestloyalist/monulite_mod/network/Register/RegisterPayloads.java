@@ -11,6 +11,7 @@ import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
 import net.thebestloyalist.monulite_mod.item.ModItems;
 import net.thebestloyalist.monulite_mod.item.custom.FlingItem;
+import net.thebestloyalist.monulite_mod.network.DoubleJumoPacket;
 import net.thebestloyalist.monulite_mod.network.FlingPacket;
 import net.thebestloyalist.monulite_mod.network.GreyShaderPacket;
 
@@ -20,6 +21,7 @@ public class RegisterPayloads {
     @SubscribeEvent
     public static void register(final RegisterPayloadHandlersEvent event) {
         PayloadRegistrar registrarFling = event.registrar("monulite_mod");
+        PayloadRegistrar registerDD = event.registrar("monulite_mod");
 
         registrarFling.playToServer(FlingPacket.TYPE, FlingPacket.CODEC,
                 (packet, context) -> {
@@ -31,6 +33,15 @@ public class RegisterPayloads {
                     }
                 });
         });
+
+        registerDD.playToServer(DoubleJumoPacket.TYPE, DoubleJumoPacket.CODEC,
+                ((doubleJumoPacket, iPayloadContext) -> {
+                    iPayloadContext.enqueueWork(() -> {
+                        Player player = iPayloadContext.player();
+                        player.setDeltaMovement(player.getDeltaMovement().x * 2.5, 0.67, player.getDeltaMovement().z * 2.5);
+                        player.hurtMarked = true;
+                    });
+                }));
 
         final PayloadRegistrar registrar = event.registrar("1");
         registrar.playBidirectional(

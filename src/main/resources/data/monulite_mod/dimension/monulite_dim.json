@@ -1,0 +1,66 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+    "type": "noise",
+    "biome_source": {
+      "type": "multi_noise",
+      "biomes": [
+        {
+          "biome": "monulite_mod:crystal_forest",
+          "parameters": {
+            "temperature": [
+            0.0,
+            0.0
+            ],
+            "humidity": 0.0,
+            "continentalness": 0.0,
+            "erosion": [
+              -0.5,
+              1.0
+            ],
+            "weirdness": 0.0,
+            "depth": 0.0,
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "monulite_mod:flatlands",
+          "parameters": {
+            "temperature": [
+              0.0,
+              0.0
+            ],
+            "humidity": 0.0,
+            "continentalness": 0.0,
+            "erosion": [
+              -1.0,
+              -0.2
+            ],
+            "weirdness": 0.0,
+            "depth": 0.0,
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "monulite_mod:green_rolling_hills_zone",
+          "parameters": {
+            "temperature": [
+              0.0,
+              0.0
+            ],
+            "humidity": 0.0,
+            "continentalness": 0.0,
+            "erosion": [
+              -0.2,
+              -0.1
+            ],
+            "weirdness": 0.0,
+            "depth": 0.0,
+            "offset": 0.0
+          }
+        }
+      ]
+    },
+    "settings": "monulite_mod:settings"
+  }
+}
