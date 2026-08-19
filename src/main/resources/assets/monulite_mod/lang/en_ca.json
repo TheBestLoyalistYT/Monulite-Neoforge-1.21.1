@@ -49,6 +49,9 @@
   "block.monulite_mod.magic_infuser": "Magic Infuser",
   "block.monulite_mod.coin_atm": "Coin ATM",
 
+  "block.monulite_mod.monulite_cluster_block": "Monulite Cluster Block",
+  "item.monulite_mod.condensed_monulite": "Condensed Monulite",
+
   "block.monulite_mod.acrote_ore": "Acrote Ore",
   "block.monulite_mod.acrote_coin_molder": "Acrote Coin Molder",
 

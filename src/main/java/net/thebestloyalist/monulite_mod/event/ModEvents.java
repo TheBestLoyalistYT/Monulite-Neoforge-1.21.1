@@ -78,7 +78,7 @@ public class ModEvents {
 
         if (player.level().dimension() == MONULITE_DIMENSION) {
             if (player.isInWater()) {
-                player.hurt(player.level().damageSources().sonicBoom(player), 1.0f);
+                player.hurt(player.level().damageSources().sonicBoom(player), 0.5f);
             }
         }
         if (player.getInventory().hasAnyOf(Set.of(ModItems.CONDENSED_MONULITE.get(), ModBlocks.MONULITE_CLUSTER_BLOCK.asItem()))) {
