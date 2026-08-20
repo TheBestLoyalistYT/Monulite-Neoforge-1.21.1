@@ -7,10 +7,14 @@
     "fog_color": 9818046,
     "sky_color": 3468226,
     "water_color": 5221296,
-    "water_fog_color": 3371358
+    "water_fog_color": 861214
   },
   "carvers": {
-    "air": []
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
   },
   "features": [
     [],
@@ -37,8 +41,7 @@
     [
       "minecraft:glow_lichen",
       "minecraft:patch_tall_grass_2",
-      "minecraft:trees_plains",
-      "minecraft:trees_taiga",
+      "monulite_mod:litetree_placed",
       "minecraft:patch_grass_plain",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal"

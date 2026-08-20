@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "monulite_mod:block/lite_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "monulite_mod:block/lite_log"
+    },
+    "axis=z": {
+      "model": "monulite_mod:block/lite_log_horizontal",
+      "x": 90
+    }
+  }
+}

@@ -5,16 +5,23 @@ import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
-import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
+import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.BushFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
 import net.thebestloyalist.monulite_mod.block.ModBlocks;
+import net.thebestloyalist.monulite_mod.custTreeTrunkPlacer;
 
 import java.util.List;
 
@@ -22,6 +29,9 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> MONULITE_ORE_KEY = registerKey("monulite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MONULITEDIM_ORE_KEY = registerKey("monulitedim_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ACROTE_ORE_KEY = registerKey("acrote_ore");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LITEWOOD_KEY = registerKey("litewood");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LITEWOOD_GRHZ_KEY = registerKey("litewood_grhz");
 
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
@@ -43,6 +53,25 @@ public class ModConfiguredFeatures {
         register(context, MONULITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldMonuliteOres, 3));
 
         register(context, ACROTE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldAcroteOres, 5));
+
+        register(context, LITEWOOD_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.LITE_LOG.get()),
+                new custTreeTrunkPlacer(2, 1, 3),
+
+                BlockStateProvider.simple(ModBlocks.LITE_LEAVES.get()),
+                new RandomSpreadFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), ConstantInt.of(2), 38),
+
+                new TwoLayersFeatureSize(1, 1, 2)).build());
+
+
+        register(context, LITEWOOD_GRHZ_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.LITE_LOG.get()),
+                new custTreeTrunkPlacer(2, 1, 3),
+
+                BlockStateProvider.simple(ModBlocks.LITE_LEAVES.get()),
+                new RandomSpreadFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), ConstantInt.of(2), 38),
+
+                new TwoLayersFeatureSize(1, 1, 2)).build());
 
     }
 

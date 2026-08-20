@@ -1,8 +1,12 @@
 package net.thebestloyalist.monulite_mod.block;
 
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -12,6 +16,7 @@ import net.thebestloyalist.monulite_mod.item.ModItems;
 import java.util.function.Supplier;
 import net.minecraft.world.level.block.*;
 import net.thebestloyalist.monulite_mod.sound.ModSounds;
+import net.thebestloyalist.monulite_mod.worldgen.tree.ModTreeGrowers;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
@@ -45,6 +50,30 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> MONULITE_CLUSTER_BLOCK = registerBlock("monulite_cluster_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(3.6f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+
+    public static final DeferredBlock<Block> LITE_LOG = registerBlock("lite_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+
+    public static final DeferredBlock<Block> LITE_LEAVES = registerBlock("lite_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 60;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 30;
+                }
+            });
+
+    public static final DeferredBlock<Block> LITEWOOD_SAPLING = registerBlock("litewood_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.LITEWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

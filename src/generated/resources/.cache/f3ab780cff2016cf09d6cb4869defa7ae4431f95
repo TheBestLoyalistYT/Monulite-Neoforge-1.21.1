@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-19T12:53:12.4623991	Item Models: monulite_mod
+// 1.21.1	2026-08-20T18:22:47.5432723	Item Models: monulite_mod
 9d57814b9a610c14c6321628fc4b567a5e4b3fc8 assets/monulite_mod/models/item/acrote_coin.json
 0b8092c50b9bc5e556b662e3d26f1c705589a9f2 assets/monulite_mod/models/item/acrote_ooz.json
 2e220987348fd39ef7ddc131a3bfdc40c61a1a15 assets/monulite_mod/models/item/cloud_boots.json
@@ -16,6 +16,7 @@ e09477946606fea0ca5240be2f21062bee021cb0 assets/monulite_mod/models/item/coin_mo
 7312e0d499071631b58a0f4a92c021d2624dfa75 assets/monulite_mod/models/item/condensed_monulite.json
 2045f20d8b5a13fd24d7e2a06a3bac55daa5d502 assets/monulite_mod/models/item/cust_clock.json
 0063769a6fb662a67d65bf637dc41376411cf9aa assets/monulite_mod/models/item/endless_possibility_disc.json
+110580511d35b496cc088b82cf148d9f494bfb57 assets/monulite_mod/models/item/litewood_sapling.json
 c737ad69bf75deb37a5e5dc24c89dd3678dc787c assets/monulite_mod/models/item/monulite_axe.json
 dfe3d4b55c6db01336f5330dc9059d91a6cb6fd0 assets/monulite_mod/models/item/monulite_boots.json
 817660495f5ee72ba2e459c867ce0100b21b1af0 assets/monulite_mod/models/item/monulite_boots_amethyst_trim.json

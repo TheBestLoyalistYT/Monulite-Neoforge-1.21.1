@@ -49,6 +49,11 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.MONULITE_COIN_MOLDER.get());
         dropSelf(ModBlocks.ACROTE_COIN_MOLDER.get());
         dropSelf(ModBlocks.MAGIC_INFUSER.get());
+        dropSelf(ModBlocks.LITEWOOD_SAPLING.get());
+        dropSelf(ModBlocks.LITE_LOG.get());
+
+        this.add(ModBlocks.LITE_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.LITEWOOD_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
     }
 
     protected LootTable.Builder createMonuliteOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

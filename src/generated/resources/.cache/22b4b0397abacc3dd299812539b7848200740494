@@ -1,4 +1,6 @@
-// 1.21.1	2026-07-19T19:38:35.5957701	Tags for minecraft:block mod id monulite_mod
+// 1.21.1	2026-08-20T17:46:25.968697	Tags for minecraft:block mod id monulite_mod
+a55da1651d68a1816057743ab668703d698b64de data/minecraft/tags/block/logs.json
+a55da1651d68a1816057743ab668703d698b64de data/minecraft/tags/block/logs_that_burn.json
 72849af4dbc93437ae3de763dd80508cda44398a data/minecraft/tags/block/mineable/pickaxe.json
 a9ddb668f1d18749716ea9e179153da8e3ac29a1 data/minecraft/tags/block/needs_diamond_tool.json
 538a649dbf0308d107b8020325c758539100571e data/minecraft/tags/block/needs_iron_tool.json

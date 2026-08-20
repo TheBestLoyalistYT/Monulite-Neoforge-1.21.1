@@ -37,9 +37,11 @@
     [
       "minecraft:glow_lichen",
       "minecraft:patch_tall_grass_2",
+      "monulite_mod:litetree_grhz_placed",
       "minecraft:patch_grass_plain",
       "minecraft:patch_berry_common",
-      "minecraft:flower_forest_flowers"
+      "minecraft:flower_forest_flowers",
+      "minecraft:flower_plains"
     ]
   ],
   "spawners": {},

@@ -5,6 +5,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.armortrim.TrimMaterial;
 import net.minecraft.world.item.armortrim.TrimMaterials;
 import net.minecraft.world.level.block.Block;
@@ -14,6 +15,7 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
+import net.thebestloyalist.monulite_mod.block.ModBlocks;
 import net.thebestloyalist.monulite_mod.item.ModItems;
 
 import java.util.LinkedHashMap;
@@ -80,6 +82,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.MONULITE_INFUSED_RED_MUSHROOM.get());
 
         basicItem(ModItems.CONDENSED_MONULITE.get());
+        basicItem(Item.byBlock(ModBlocks.LITEWOOD_SAPLING.get()));
     }
 
     private void trimmedArmorItem(DeferredItem<ArmorItem> itemDeferredItem) {

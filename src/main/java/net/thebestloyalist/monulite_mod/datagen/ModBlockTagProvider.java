@@ -3,6 +3,7 @@ package net.thebestloyalist.monulite_mod.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
@@ -40,6 +41,12 @@ protected void addTags(HolderLookup.Provider provider) {
     tag(BlockTags.NEEDS_DIAMOND_TOOL)
             .add(ModBlocks.DEEPSLATE_MONULITE_ORE.get())
             .add(ModBlocks.MONULITE_ORE.get());
+
+    tag(BlockTags.LOGS_THAT_BURN)
+            .add(ModBlocks.LITE_LOG.get());
+
+        tag(BlockTags.LOGS)
+                .add(ModBlocks.LITE_LOG.get());
 
     }
 }
