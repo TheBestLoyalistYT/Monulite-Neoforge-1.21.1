@@ -1,16 +1,21 @@
 package net.thebestloyalist.monulite_mod.worldgen;
 
+import net.minecraft.core.HolderSet;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.LakeFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.SpringConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
@@ -19,6 +24,8 @@ import net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFol
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.Fluids;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
 import net.thebestloyalist.monulite_mod.block.ModBlocks;
 import net.thebestloyalist.monulite_mod.custTreeTrunkPlacer;
@@ -33,6 +40,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> LITEWOOD_KEY = registerKey("litewood");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LITEWOOD_GRHZ_KEY = registerKey("litewood_grhz");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CRYST_LQD_KEY = registerKey("crystal_liquid_key");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -72,6 +80,17 @@ public class ModConfiguredFeatures {
                 new RandomSpreadFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), ConstantInt.of(2), 38),
 
                 new TwoLayersFeatureSize(1, 1, 2)).build());
+
+        HolderSet<Block> cryst_lqd_blocks = HolderSet.direct(
+                BuiltInRegistries.BLOCK.getHolderOrThrow(Blocks.DEEPSLATE.builtInRegistryHolder().key()),
+                BuiltInRegistries.BLOCK.getHolderOrThrow(Blocks.NETHERRACK.builtInRegistryHolder().key()));
+
+        register(context, CRYST_LQD_KEY, Feature.SPRING, new SpringConfiguration(Fluids.WATER.defaultFluidState(),
+                false,
+                2,
+                1,
+                cryst_lqd_blocks
+                ));
 
     }
 

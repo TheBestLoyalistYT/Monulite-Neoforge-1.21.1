@@ -15,7 +15,7 @@
             "humidity": 0.0,
             "continentalness": 0.0,
             "erosion": [
-              -0.5,
+              0.1,
               1.0
             ],
             "weirdness": 0.0,
@@ -27,14 +27,14 @@
           "biome": "monulite_mod:flatlands",
           "parameters": {
             "temperature": [
-              -1.0,
-              1.0
+              -0.8,
+              0.8
             ],
             "humidity": 0.0,
             "continentalness": 0.0,
             "erosion": [
               -1.0,
-              -0.2
+              -0.4
             ],
             "weirdness": 0.0,
             "depth": 0.0,
@@ -45,14 +45,32 @@
           "biome": "monulite_mod:green_rolling_hills_zone",
           "parameters": {
             "temperature": [
-              0.8,
+              0.7,
+              0.8
+            ],
+            "humidity": 0.0,
+            "continentalness": 0.0,
+            "erosion": [
+              0.9,
+              1.0
+            ],
+            "weirdness": 0.0,
+            "depth": 0.0,
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "monulite_mod:crystalized_dread",
+          "parameters": {
+            "temperature": [
+              0.7,
               1.0
             ],
             "humidity": 0.0,
             "continentalness": 0.0,
             "erosion": [
               -0.2,
-              0.0
+              0.4
             ],
             "weirdness": 0.0,
             "depth": 0.0,

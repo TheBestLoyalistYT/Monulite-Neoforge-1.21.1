@@ -59,10 +59,6 @@ public class custTreeTrunkPlacer extends TrunkPlacer {
 
         for (int extension = 0; extension < extensionCount; extension++) {
 
-            // ALWAYS start from the main trunk
-            int extensionX = mainTopX;
-            int extensionZ = mainTopZ;
-
             // Pick a different direction for each extension
             Direction extensionDirection = switch (extension) {
                 case 0 -> Direction.NORTH;
@@ -72,8 +68,8 @@ public class custTreeTrunkPlacer extends TrunkPlacer {
             };
 
             // Move ONE block away from the main trunk
-            extensionX += extensionDirection.getStepX();
-            extensionZ += extensionDirection.getStepZ();
+            mainTopX += extensionDirection.getStepX();
+            mainTopZ += extensionDirection.getStepZ();
 
             // Each extension gets its own random height
             int extensionHeight = 1 + random.nextInt(3);
@@ -89,9 +85,9 @@ public class custTreeTrunkPlacer extends TrunkPlacer {
                         blockSetter,
                         random,
                         blockpos$mutableblockpos.set(
-                                extensionX,
+                                mainTopX,
                                 extensionY,
-                                extensionZ
+                                mainTopZ
                         ),
                         config
                 )) {
@@ -102,9 +98,9 @@ public class custTreeTrunkPlacer extends TrunkPlacer {
             if (extensionTop.isPresent()) {
                 list.add(new FoliagePlacer.FoliageAttachment(
                         new BlockPos(
-                                extensionX,
+                                mainTopX,
                                 extensionTop.getAsInt(),
-                                extensionZ
+                                mainTopZ
                         ),
                         0,
                         false

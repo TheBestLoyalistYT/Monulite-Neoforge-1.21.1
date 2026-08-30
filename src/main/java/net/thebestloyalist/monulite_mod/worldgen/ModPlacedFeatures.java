@@ -9,9 +9,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.placement.HeightRangePlacement;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
-import net.minecraft.world.level.levelgen.placement.PlacementModifier;
+import net.minecraft.world.level.levelgen.placement.*;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
 import net.thebestloyalist.monulite_mod.block.ModBlocks;
 
@@ -24,6 +22,8 @@ public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> LITETREE_PLACED_KEY = registerKey("litetree_placed");
     public static final ResourceKey<PlacedFeature> LITETREE_GRHZ_PLACED_KEY = registerKey("litetree_grhz_placed");
+
+    public static final ResourceKey<PlacedFeature> CRYSL_LQD_PLACED_KEY = registerKey("crystal_liquid_placed_key");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -45,6 +45,14 @@ public class ModPlacedFeatures {
         register(context, LITETREE_GRHZ_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.LITEWOOD_GRHZ_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(1, 0.25f, 2),
                         ModBlocks.LITEWOOD_SAPLING.get()));
+
+        register(context, CRYSL_LQD_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CRYST_LQD_KEY),
+                List.of(CountPlacement.of(30),
+                        InSquarePlacement.spread(),
+                        HeightRangePlacement.uniform(
+                                VerticalAnchor.absolute(55),
+                                VerticalAnchor.absolute(170)
+                        )));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

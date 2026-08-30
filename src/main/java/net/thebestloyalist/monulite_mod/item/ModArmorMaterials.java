@@ -10,6 +10,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.thebestloyalist.monulite_mod.MonuliteMod;
 
@@ -30,7 +31,16 @@ public class ModArmorMaterials {
     public static final Holder<ArmorMaterial> CLOUD_BOOT_MATERIAL = register("cloud_boots",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.BOOTS, 2);
-            }), 16, 2f, 0.0f, () -> ModItems.MONULITE_INGOT.get());
+            }), 16, 2f, 0.0f, () -> Items.FEATHER);
+
+    public static final Holder<ArmorMaterial> ANTI_ACID_MATERIAL = register("anti_acid_material",
+            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
+                attribute.put(ArmorItem.Type.BOOTS, 3);
+                attribute.put(ArmorItem.Type.LEGGINGS, 5);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 6);
+                attribute.put(ArmorItem.Type.HELMET, 3);
+                attribute.put(ArmorItem.Type.BODY, 17);
+            }), 32, 2f, 1.0f, () -> ModItems.MONULITE_INGOT.get());
 
 
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,

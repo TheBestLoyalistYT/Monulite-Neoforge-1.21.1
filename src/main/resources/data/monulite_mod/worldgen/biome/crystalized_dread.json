@@ -1,0 +1,66 @@
+{
+  "has_precipitation": false,
+  "temperature": 2.0,
+  "temperature_modifier": "none",
+  "downfall": 0.4,
+  "effects": {
+    "fog_color": 9818046,
+    "sky_color": 3468226,
+    "water_color": 8306083,
+    "water_fog_color": 861214
+  },
+  "carvers": {
+    "air": []
+  },
+  "features": [
+    [],
+    [],
+    [
+      "minecraft:patch_fire",
+      "minecraft:ore_gravel_nether",
+      "minecraft:ore_blackstone"
+    ],
+    [
+      "minecraft:red_mushroom_normal",
+      "minecraft:warped_forest_vegetation"
+    ],
+    [],
+    [],
+    [],
+    [],
+    [
+      "monulite_mod:crystal_liquid_placed_key"
+    ]
+  ],
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "minecraft:strider",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 60
+      }
+    ],
+    "misc": [],
+    "monster": [
+      {
+        "type": "minecraft:ghast",
+        "maxCount": 2,
+        "minCount": 1,
+        "weight": 1
+      },
+      {
+        "type": "minecraft:piglin",
+        "maxCount": 3,
+        "minCount": 1,
+        "weight": 5
+      }
+    ],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "spawn_costs": {}
+}

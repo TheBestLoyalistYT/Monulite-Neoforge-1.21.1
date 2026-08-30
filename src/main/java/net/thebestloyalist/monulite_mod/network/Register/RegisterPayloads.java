@@ -4,6 +4,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
@@ -38,7 +39,9 @@ public class RegisterPayloads {
                 ((doubleJumoPacket, iPayloadContext) -> {
                     iPayloadContext.enqueueWork(() -> {
                         Player player = iPayloadContext.player();
-                        player.setDeltaMovement(player.getDeltaMovement().x * 2.5, 0.67, player.getDeltaMovement().z * 2.5);
+                        Vec3 look = player.getLookAngle();
+                        Vec3 velocity = look.scale(0.48);
+                        player.setDeltaMovement(player.getDeltaMovement().x + velocity.x, velocity.y + 0.60, player.getDeltaMovement().z + velocity.z);
                         player.hurtMarked = true;
                     });
                 }));

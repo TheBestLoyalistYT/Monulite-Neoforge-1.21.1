@@ -70,6 +70,9 @@ public class ModItems {
     public static final DeferredItem<Item> MONULITE_INFUSED_RED_MUSHROOM = ITEMS.register("monulite_infused_red_mushroom",
             () -> new Item(new Item.Properties().food(ModFoodProperties.MONULITE_MUSHR0OM_FOOD)));
 
+    public static final DeferredItem<Item> CUST_SHIELD = ITEMS.register("cust_shield",
+            () -> new custsheild_test(new Item.Properties().durability(168)));
+
 
     public static final DeferredItem<Item> THE_MONULITE_MUSIC_DISC = ITEMS.register("the_monulite_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.THE_MONULITE_KEY).stacksTo(1)));
@@ -121,6 +124,22 @@ public class ModItems {
     public static final DeferredItem<ArmorItem> FLYING_CHESTPLATE = ITEMS.register("flying_chestplate",
             () -> new ModChestFlyItem(ModArmorMaterials.CLOUD_BOOT_MATERIAL, ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(25))));
+
+    public static final DeferredItem<ArmorItem> ANTI_ACID_HELMET = ITEMS.register("anti_acid_helmet",
+            () -> new ArmorItem(ModArmorMaterials.ANTI_ACID_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(38))));
+
+    public static final DeferredItem<ArmorItem> ANTI_ACID_CHESTPLATE = ITEMS.register("anti_acid_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.ANTI_ACID_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(39))));
+
+    public static final DeferredItem<ArmorItem> ANTI_ACID_LEGGINGS = ITEMS.register("anti_acid_leggings",
+            () -> new ArmorItem(ModArmorMaterials.ANTI_ACID_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(39))));
+
+    public static final DeferredItem<ArmorItem> ANTI_ACID_BOOTS = ITEMS.register("anti_acid_boots",
+            () -> new ArmorItem(ModArmorMaterials.ANTI_ACID_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(38))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -13,7 +13,7 @@
   "spawn_target": [],
   "noise": {
     "min_y": -48,
-    "height": 256,
+    "height": 240,
     "size_horizontal": 4,
     "size_vertical": 1
   },
@@ -37,13 +37,13 @@
     "continents": 0.0,
     "erosion": {
       "type": "noise",
-      "noise": "monulite_mod:errosion",
+      "noise": "monulite_mod:mon_noise",
       "xz_scale": 1,
-      "y_scale": 0
+      "y_scale": 1
     },
     "depth": 0.0,
     "ridges": 0.0,
-    "final_density": {
+    "final_density": { "type": "min", "argument1" : {
       "type": "range_choice",
       "input": {
         "type": "y_clamped_gradient",
@@ -86,11 +86,26 @@
       },
       "min_inclusive": 32,
       "max_exclusive": 161
+    },
+      "argument2": {
+        "type": "mul",
+        "argument1": -1,
+        "argument2": {
+          "type": "add",
+          "argument1": {
+            "type": "noise",
+            "noise": "monulite_mod:errosion",
+            "xz_scale": 0.5,
+            "y_scale": 1
+          },
+          "argument2": -0.5
+        }
+      }
     }
   },
   "surface_rule": {
     "type": "sequence",
-    "sequence" : [
+    "sequence": [
       {
         "type": "condition",
         "if_true": {
@@ -117,9 +132,20 @@
               "surface_type": "floor"
             },
             "then_run": {
-              "type": "block",
-              "result_state": {
-                "Name": "minecraft:grass_block"
+              "type": "condition",
+              "if_true": {
+                "type": "minecraft:y_above",
+                "anchor": {
+                  "absolute": 66
+                },
+                "surface_depth_multiplier": 0,
+                "add_stone_depth": false
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "minecraft:grass_block"
+                }
               }
             }
           }
@@ -214,6 +240,56 @@
         "if_true": {
           "type": "biome",
           "biome_is": [
+            "monulite_mod:crystalized_dread"
+          ]
+        },
+        "then_run": {
+          "type": "condition",
+          "if_true": {
+            "type": "stone_depth",
+            "surface_type": "floor",
+            "offset": 0,
+            "add_surface_depth": false,
+            "secondary_depth_range": 0
+          },
+          "then_run": {
+            "type": "block",
+            "result_state": {
+              "Name": "minecraft:warped_nylium"
+            }
+          }
+        }
+      },
+      {
+        "type": "condition",
+        "if_true": {
+          "type": "biome",
+          "biome_is": [
+            "monulite_mod:crystalized_dread"
+          ]
+        },
+        "then_run": {
+          "type": "condition",
+          "if_true": {
+            "type": "stone_depth",
+            "surface_type": "floor",
+            "offset": 1,
+            "add_surface_depth": false,
+            "secondary_depth_range": 1
+          },
+          "then_run": {
+            "type": "block",
+            "result_state": {
+              "Name": "minecraft:netherrack"
+            }
+          }
+        }
+      },
+      {
+        "type": "condition",
+        "if_true": {
+          "type": "biome",
+          "biome_is": [
             "monulite_mod:green_rolling_hills_zone"
           ]
         },
@@ -238,15 +314,26 @@
         "type": "condition",
         "if_true": {
           "type": "stone_depth",
-          "surface_type": "floor",
           "offset": 0,
           "add_surface_depth": true,
-          "secondary_depth_range": 1
+          "secondary_depth_range": 0,
+          "surface_type": "floor"
         },
         "then_run": {
-          "type": "block",
-          "result_state": {
-            "Name": "monulite_mod:monulite_cluster_block"
+          "type": "condition",
+          "if_true": {
+            "type": "minecraft:y_above",
+            "anchor": {
+              "absolute": 66
+            },
+            "surface_depth_multiplier": 0,
+            "add_stone_depth": false
+          },
+          "then_run": {
+            "type": "block",
+            "result_state": {
+              "Name": "monulite_mod:monulite_cluster_block"
+            }
           }
         }
       }

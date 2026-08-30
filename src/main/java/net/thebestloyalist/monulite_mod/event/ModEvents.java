@@ -17,8 +17,10 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
+import net.neoforged.neoforge.event.entity.living.LivingShieldBlockEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.level.LevelEvent;
 import net.neoforged.neoforge.event.tick.LevelTickEvent;
@@ -32,6 +34,7 @@ import net.thebestloyalist.monulite_mod.enchantment.ModEnchantments;
 import net.thebestloyalist.monulite_mod.event.item_event_logic.ZWorldoLog;
 import net.thebestloyalist.monulite_mod.item.ModItems;
 import net.thebestloyalist.monulite_mod.item.custom.TickClock;
+import net.thebestloyalist.monulite_mod.item.custom.custsheild_test;
 import net.thebestloyalist.monulite_mod.network.DoubleJumoPacket;
 import net.thebestloyalist.monulite_mod.network.FlingPacket;
 import net.thebestloyalist.monulite_mod.network.GreyShaderPacket;
@@ -78,9 +81,18 @@ public class ModEvents {
 
         if (player.level().dimension() == MONULITE_DIMENSION) {
             if (player.isInWater()) {
-                player.hurt(player.level().damageSources().sonicBoom(player), 0.5f);
+                ItemStack boots = player.getItemBySlot(EquipmentSlot.FEET);
+                ItemStack leg = player.getItemBySlot(EquipmentSlot.LEGS);
+                ItemStack chest = player.getItemBySlot(EquipmentSlot.CHEST);
+                ItemStack head = player.getItemBySlot(EquipmentSlot.HEAD);
+                if (head.is(ModItems.ANTI_ACID_HELMET) && chest.is(ModItems.ANTI_ACID_CHESTPLATE) && leg.is(ModItems.ANTI_ACID_LEGGINGS) && boots.is(ModItems.ANTI_ACID_BOOTS)) {
+
+                } else {
+                    player.hurt(player.level().damageSources().magic(), 0.5f);
+                }
             }
         }
+
         if (player.getInventory().hasAnyOf(Set.of(ModItems.CONDENSED_MONULITE.get(), ModBlocks.MONULITE_CLUSTER_BLOCK.asItem()))) {
             for (int i = 1; i <= 7; i++) {
                 BlockPos blockPos = player.blockPosition().below(i);
@@ -94,7 +106,6 @@ public class ModEvents {
                 } else if (!player.level().getBlockState(blockPos).isAir()) {
                     player.setDeltaMovement(player.getDeltaMovement().with(Direction.Axis.Y, 0.1));
                     player.hurtMarked = true;
-
                 }
             }
         }
@@ -153,6 +164,10 @@ public class ModEvents {
             ItemStack chest = mc.player.getItemBySlot(EquipmentSlot.CHEST);
             if (!chest.isEmpty() && chest.is(Items.ELYTRA)) {
                 mc.player.getPersistentData().putBoolean("monulite_mod_can_dd", false);
+                return;
+            }
+
+            if (mc.player.isCreative() || mc.player.isSpectator()) {
                 return;
             }
 
