@@ -4,23 +4,29 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ElytraItem;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
-import net.neoforged.neoforge.event.entity.living.LivingShieldBlockEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.level.LevelEvent;
 import net.neoforged.neoforge.event.tick.LevelTickEvent;
@@ -34,16 +40,15 @@ import net.thebestloyalist.monulite_mod.enchantment.ModEnchantments;
 import net.thebestloyalist.monulite_mod.event.item_event_logic.ZWorldoLog;
 import net.thebestloyalist.monulite_mod.item.ModItems;
 import net.thebestloyalist.monulite_mod.item.custom.TickClock;
-import net.thebestloyalist.monulite_mod.item.custom.custsheild_test;
+import net.thebestloyalist.monulite_mod.network.Cust_Sld_Packet;
 import net.thebestloyalist.monulite_mod.network.DoubleJumoPacket;
 import net.thebestloyalist.monulite_mod.network.FlingPacket;
 import net.thebestloyalist.monulite_mod.network.GreyShaderPacket;
 
-import java.awt.font.LineMetrics;
-import java.util.ArrayList;
-import java.util.Set;
+import java.util.*;
 
 import static net.thebestloyalist.monulite_mod.event.item_event_logic.ZWorldoLog.wldoData;
+import static net.thebestloyalist.monulite_mod.item.custom.custsheild_test.custSldt;
 
 @EventBusSubscriber(modid = MonuliteMod.MOD_ID)
 public class ModEvents {
@@ -90,8 +95,7 @@ public class ModEvents {
                 } else {
                     player.hurt(player.level().damageSources().magic(), 0.5f);
                 }
-            }
-        }
+            }}
 
         if (player.getInventory().hasAnyOf(Set.of(ModItems.CONDENSED_MONULITE.get(), ModBlocks.MONULITE_CLUSTER_BLOCK.asItem()))) {
             for (int i = 1; i <= 7; i++) {
@@ -106,6 +110,46 @@ public class ModEvents {
                 } else if (!player.level().getBlockState(blockPos).isAir()) {
                     player.setDeltaMovement(player.getDeltaMovement().with(Direction.Axis.Y, 0.1));
                     player.hurtMarked = true;
+                }
+            }}}
+
+
+    @SubscribeEvent
+    public static void onPlayerDeath(LivingDeathEvent event) {
+        LivingEntity deadentity = event.getEntity();
+        if (deadentity instanceof Player player) {
+            if (player.getMainHandItem().is(ModItems.TOTEM) || player.getOffhandItem().is(ModItems.TOTEM)) {
+                event.setCanceled(true);
+                player.setHealth(1);
+
+                player.getInventory().clearOrCountMatchingItems(itemStack -> itemStack.is(ModItems.TOTEM.get()),
+                        1, player.inventoryMenu.getCraftSlots());
+
+                ServerLevel deathsDoor = player.getServer().getLevel(
+                        ResourceKey.create(
+                                Registries.DIMENSION,
+                                ResourceLocation.fromNamespaceAndPath("monulite_mod", "deaths_door_dim")
+                        )
+                );
+
+                player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 250, 0, false, false));
+
+                if (player instanceof ServerPlayer serverPlayer) {
+                    serverPlayer.teleportTo(
+                            deathsDoor,
+                            serverPlayer.getX(),
+                            64,
+                            serverPlayer.getZ(),
+                            serverPlayer.getYRot(), serverPlayer.getXRot());
+
+                    deathsDoor.playSound(null, serverPlayer.getX(), 64, serverPlayer.getZ(), SoundEvents.TOTEM_USE, SoundSource.PLAYERS,
+                            1.0f, 1.0f);
+
+                    deathsDoor.sendParticles(ParticleTypes.TOTEM_OF_UNDYING,
+                            serverPlayer.getX(),
+                            serverPlayer.getY(),
+                            serverPlayer.getZ(),
+                            25, 1, 1, 1, 1.0);
                 }
             }
         }
@@ -125,8 +169,28 @@ public class ModEvents {
                 for (ZWorldoLog.WorldoData data : new ArrayList<>(wldoData.values())) {
                     data.tickTime = 990;
                 }
-            }
+            }}}
+
+    public static void movement(Entity attacker, Player player) {
+        Vec3 look = player.getLookAngle();
+        Vec3 velocity = look.scale(1.6);
+
+        System.out.println("movement hehehe");
+
+        if (attacker != null) {
+            attacker.setDeltaMovement(player.getDeltaMovement().x + velocity.x, velocity.y + 0.60, player.getDeltaMovement().z + velocity.z);
+            attacker.hurtMarked = true;
+            System.out.println("can you see the sunshine bitch?");
+            custSldt.remove(player.getUUID());
         }
+    }
+
+    @SubscribeEvent
+    public static void onCustSldPunch(PlayerInteractEvent.LeftClickEmpty event) {
+        Player player = event.getEntity();
+
+        System.out.println("punch in air");
+        PacketDistributor.sendToServer(new Cust_Sld_Packet());
     }
 
     @SubscribeEvent

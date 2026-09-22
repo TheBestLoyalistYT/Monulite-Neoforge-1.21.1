@@ -72,6 +72,9 @@ public class ModBlocks {
                 }
             });
 
+    public static final DeferredBlock<Block> DEATHS_DOOR_PORTAL = registerBlock("deaths_door_portal",
+            () -> new DeathsDoorPortalBlock(BlockBehaviour.Properties.of().strength(99.99f).noCollission()));
+
     public static final DeferredBlock<Block> LITEWOOD_SAPLING = registerBlock("litewood_sapling",
             () -> new SaplingBlock(ModTreeGrowers.LITEWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 

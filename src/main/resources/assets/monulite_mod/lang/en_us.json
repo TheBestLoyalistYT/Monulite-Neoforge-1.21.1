@@ -12,9 +12,10 @@
   "item.monulite_mod.monulite_infused_golden_carrot": "Monulite Infused Golden Carrot",
   "item.monulite_mod.monulite_infused_brown_mushroom": "Monulite Infused Brown Mushroom",
   "item.monulite_mod.monulite_infused_red_mushroom": "Monulite Infused Red Mushroom",
-  "item.monulite.mod.trelgnack": "Trelgnack",
-  "item.monulite.mod.cust_clock": "Custom Clock",
-  "item.monulite.mod.tick_clock": "Tick Clock",
+  "item.monulite_mod.trelgnack": "Trelgnack",
+  "item.monulite_mod.cust_clock": "Custom Clock",
+  "item.monulite_mod.tick_clock": "Tick Clock",
+  "item.monulite_mod.totem": "Totem of Undying",
 
   "item.monulite_mod.raw_monulite": "Raw Monulite",
   "item.monulite_mod.monulite_powder": "Monulite Powder",

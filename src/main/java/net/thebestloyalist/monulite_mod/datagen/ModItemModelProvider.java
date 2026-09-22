@@ -60,6 +60,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.MONULITE_COIN.get());
         basicItem(ModItems.ACROTE_COIN.get());
 
+        basicItem(ModItems.TOTEM.get());
+        basicItem(ModItems.TOTEM_SHELL.get());
+
         basicItem(ModItems.CUST_CLOCK.get());
         basicItem(ModItems.TICK_CLOCK.get());
 

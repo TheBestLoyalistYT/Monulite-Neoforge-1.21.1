@@ -52,12 +52,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TRELGNACK);
                         output.accept(ModItems.CUST_CLOCK);
                         output.accept(ModItems.TICK_CLOCK);
+                        output.accept(ModItems.TOTEM_SHELL);
+                        output.accept(ModItems.TOTEM);
                         output.accept(ModBlocks.MONULITE_ORE);
                         output.accept(ModBlocks.DEEPSLATE_MONULITE_ORE);
                         output.accept(ModBlocks.ACROTE_ORE);
                         output.accept(ModBlocks.MONULITE_BLOCK);
                         output.accept(ModBlocks.MONULITE_CLUSTER_BLOCK);
                         output.accept(ModBlocks.CLOUD_BLOCK);
+                        output.accept(ModBlocks.DEATHS_DOOR_PORTAL);
 
                     }).build());
 

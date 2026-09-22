@@ -40,6 +40,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.CLOUD_BLOCK);
 
+        blockWithItem(ModBlocks.DEATHS_DOOR_PORTAL);
+
         logBlock(((RotatedPillarBlock) ModBlocks.LITE_LOG.get()));
         blockItem(ModBlocks.LITE_LOG);
 

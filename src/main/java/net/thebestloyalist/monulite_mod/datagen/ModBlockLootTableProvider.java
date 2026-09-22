@@ -51,6 +51,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.MAGIC_INFUSER.get());
         dropSelf(ModBlocks.LITEWOOD_SAPLING.get());
         dropSelf(ModBlocks.LITE_LOG.get());
+        add(ModBlocks.DEATHS_DOOR_PORTAL.get(), noDrop());
 
         this.add(ModBlocks.LITE_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.LITEWOOD_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));

@@ -1,7 +1,8 @@
-// 1.21.1	2026-08-20T18:22:47.5472702	Block States: monulite_mod
+// 1.21.1	2026-09-22T16:44:09.9796213	Block States: monulite_mod
 f51ae58b8360ff1e4ed00e87c07dd46064714389 assets/monulite_mod/blockstates/acrote_coin_molder.json
 b59f4021f2fb4ea191480cb1b317148d90065187 assets/monulite_mod/blockstates/acrote_ore.json
 ae3cada129caa3ca06643193a921586e957e0044 assets/monulite_mod/blockstates/cloud_block.json
+9d4180f79dc5768b8cad2cf489ae3d3806f43c3c assets/monulite_mod/blockstates/deaths_door_portal.json
 4765b943816c4fe58186d083e44b60c8ee283329 assets/monulite_mod/blockstates/litewood_sapling.json
 d2bbae25b02011795710686ecbbe286f1431dbb4 assets/monulite_mod/blockstates/lite_leaves.json
 33f1f94a75010503c49cd5cd9e1a932fdd813d40 assets/monulite_mod/blockstates/lite_log.json
@@ -11,6 +12,7 @@ aa37e0629625563ba8d26176f69cc937286a717b assets/monulite_mod/blockstates/monulit
 e1b3a60965dffd7ffdc346f422d622d368938f8a assets/monulite_mod/models/block/acrote_coin_molder.json
 aaa5efdf69e7183681de7895f34822fc4009a883 assets/monulite_mod/models/block/acrote_ore.json
 4e93513ee47590773424b50c1c9e711436799ca6 assets/monulite_mod/models/block/cloud_block.json
+829318afeaa74990231c6c77ab0ef3f8628fa34a assets/monulite_mod/models/block/deaths_door_portal.json
 671c723b64b2075a0a43590e996115f489bc2187 assets/monulite_mod/models/block/litewood_sapling.json
 0aa2eafc9e5ccbc6e6f883793971cbcd19e84c06 assets/monulite_mod/models/block/lite_leaves.json
 24d1699078a5d12e98dc7d4ef84fa2c9dc5c5805 assets/monulite_mod/models/block/lite_log.json
@@ -21,6 +23,7 @@ c042edb58c4b48c92cf6e41008303ed55aaf8bca assets/monulite_mod/models/block/monuli
 7c9594711ccd223b9825fbb5b91f70c27c5e951b assets/monulite_mod/models/item/acrote_coin_molder.json
 7cd6d1ee235293967042290ca302786ee77bf4ea assets/monulite_mod/models/item/acrote_ore.json
 441b60375c1c684322416a97b01ca8e81b212bc7 assets/monulite_mod/models/item/cloud_block.json
+e9b0b7d77e945250b2e6ba9ec035453f8cdf155a assets/monulite_mod/models/item/deaths_door_portal.json
 af4059e67ee0eba59a70eea5c471f83f767c47f2 assets/monulite_mod/models/item/lite_leaves.json
 a022f625585c55317b5e9c044e8370b9270e4879 assets/monulite_mod/models/item/lite_log.json
 4d2c07ba4ebeafc8d92825379b79af49c2f24001 assets/monulite_mod/models/item/monulite_block.json

@@ -1,8 +1,9 @@
-// 1.21.1	2026-08-20T18:04:18.9863846	Loot Tables
+// 1.21.1	2026-09-22T16:44:09.978623	Loot Tables
 c2c0cf1b781492ebeb04d0b2bb2064d7f76a344f data/monulite_mod/loot_table/blocks/acrote_coin_molder.json
 2d555c7e7edee5bccd4f978d03679dcb0dcde79c data/monulite_mod/loot_table/blocks/acrote_ore.json
 a2cbc2aaf38c3f7409df0223a74ed91e56c156c8 data/monulite_mod/loot_table/blocks/cloud_block.json
 237a4650dac911f80d733870f997769c4e8377bc data/monulite_mod/loot_table/blocks/coin_atm.json
+7462f8c4f7b39e23f117a7479302af7d30e89cdb data/monulite_mod/loot_table/blocks/deaths_door_portal.json
 6968755abd363df6d0cafd3be304ed5bf23e9c16 data/monulite_mod/loot_table/blocks/deepslate_monulite_ore.json
 194f7bfa1b6990a00e7b3a4e0023e1920b29db54 data/monulite_mod/loot_table/blocks/litewood_sapling.json
 10fbe717e160d04731b6fb150bff9ca5fc7cb5cb data/monulite_mod/loot_table/blocks/lite_leaves.json

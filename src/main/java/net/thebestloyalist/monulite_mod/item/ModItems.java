@@ -25,19 +25,25 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> GRAPPLE = ITEMS.register("grapple",
-            () -> new FlingItem(new Item.Properties()));
+            () -> new FlingItem(new Item.Properties().stacksTo(1)));
 
     public static final DeferredItem<Item> CONDENSED_MONULITE = ITEMS.register("condensed_monulite",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> CUST_CLOCK = ITEMS.register("cust_clock",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().stacksTo(1)));
+
+    public static final DeferredItem<Item> TOTEM = ITEMS.register("totem",
+            () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
+
+    public static final DeferredItem<Item> TOTEM_SHELL = ITEMS.register("totem_shell",
+            () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static final DeferredItem<Item> TICK_CLOCK = ITEMS.register("tick_clock",
-            () -> new TickClock(new Item.Properties()));
+            () -> new TickClock(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)));
 
     public static final DeferredItem<Item> TRELGNACK = ITEMS.register("trelgnack",
-            () -> new TrelgnackItem(ModToolTeirs.TRELGNACK_SWORDDDDDY, new Item.Properties()
+            () -> new TrelgnackItem(ModToolTeirs.TRELGNACK_SWORDDDDDY, new Item.Properties().rarity(Rarity.EPIC)
                     .attributes(SwordItem.createAttributes(ModToolTeirs.TRELGNACK_SWORDDDDDY, 4, -3.0f))));
 
     public static final DeferredItem<Item> RAW_MONULITE = ITEMS.register("raw_monulite",
@@ -71,14 +77,14 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.MONULITE_MUSHR0OM_FOOD)));
 
     public static final DeferredItem<Item> CUST_SHIELD = ITEMS.register("cust_shield",
-            () -> new custsheild_test(new Item.Properties().durability(168)));
+            () -> new custsheild_test(new Item.Properties().durability(168).rarity(Rarity.UNCOMMON)));
 
 
     public static final DeferredItem<Item> THE_MONULITE_MUSIC_DISC = ITEMS.register("the_monulite_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.THE_MONULITE_KEY).stacksTo(1)));
 
     public static final DeferredItem<Item> ENDLESS_POSSIBILITY = ITEMS.register("endless_possibility_disc",
-            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.ENDLESS_POSSIBILITY_KEY).stacksTo(1)));
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.ENDLESS_POSSIBILITY_KEY).stacksTo(1).rarity(Rarity.EPIC)));
 
     public static final DeferredItem<SwordItem> MONULITE_SWORD = ITEMS.register("monulite_sword",
             () -> new SwordItem(ModToolTeirs.MONULITE_SWORD, new Item.Properties()

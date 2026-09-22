@@ -1,4 +1,4 @@
-// 1.21.1	2026-08-20T18:22:47.5432723	Item Models: monulite_mod
+// 1.21.1	2026-09-22T17:14:29.8661659	Item Models: monulite_mod
 9d57814b9a610c14c6321628fc4b567a5e4b3fc8 assets/monulite_mod/models/item/acrote_coin.json
 0b8092c50b9bc5e556b662e3d26f1c705589a9f2 assets/monulite_mod/models/item/acrote_ooz.json
 2e220987348fd39ef7ddc131a3bfdc40c61a1a15 assets/monulite_mod/models/item/cloud_boots.json
@@ -78,3 +78,5 @@ d8446b245308384ebaf5c4c16d4c7de9dcf7315a assets/monulite_mod/models/item/monulit
 22e71b11572e85c00ad31b4017e09003209f9213 assets/monulite_mod/models/item/raw_monulite.json
 b0d957253b27d4c1412510c07f4e1e6fe9116f0d assets/monulite_mod/models/item/the_monulite_music_disc.json
 00314ad3be1b9af887780cb5b0e667dc50b692e0 assets/monulite_mod/models/item/tick_clock.json
+086bb6b49d1db0861784acac88d6cbf1f3d711b7 assets/monulite_mod/models/item/totem.json
+94cea3aea452c2635865d4a762776fc1ae9b4399 assets/monulite_mod/models/item/totem_shell.json

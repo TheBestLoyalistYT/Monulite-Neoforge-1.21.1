@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "monulite_mod:code_death_rift",
+      "weight": 10
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+
+    "salt": 31696786868,
+
+    "spacing": 20,
+
+    "separation": 15
+  }
+}
