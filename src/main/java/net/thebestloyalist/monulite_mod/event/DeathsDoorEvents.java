@@ -34,13 +34,19 @@ public class DeathsDoorEvents {
                         player.getX(),
                         player.getY(),
                         player.getZ(),
-                        32, 15, 15, 15, 0.01);
+                        64, 15, 15, 15, 0.01);
+
+                serverLevel.sendParticles(ParticleTypes.END_ROD,
+                        player.getX(),
+                        player.getY(),
+                        player.getZ(),
+                        5, 18, 18, 18, 0.01);
 
                 serverLevel.sendParticles(ParticleTypes.PORTAL,
                         player.getX(),
                         player.getY(),
                         player.getZ(),
-                        10, 17, 17, 17, 0.01);
+                        15, 17, 17, 17, 0.01);
             }
         }
     }

@@ -1,5 +1,5 @@
 {
-  "sea_level": -64,
+  "sea_level": 0,
   "disable_mob_generation": true,
   "ore_veins_enabled": false,
   "aquifers_enabled": false,
@@ -8,12 +8,12 @@
     "Name": "minecraft:barrier"
   },
   "default_fluid": {
-    "Name": "minecraft:lava"
+    "Name": "minecraft:water"
   },
   "spawn_target": [],
   "noise": {
-    "min_y": 0,
-    "height": 16,
+    "min_y": -16,
+    "height": 32,
     "size_horizontal": 1,
     "size_vertical": 1
   },
@@ -30,12 +30,7 @@
     "temperature": 0.0,
     "vegetation": 0.0,
     "continents": 0.0,
-    "erosion": {
-      "type": "noise",
-      "noise": "monulite_mod:mon_noise",
-      "xz_scale": 1,
-      "y_scale": 1
-    },
+    "erosion": 0.0,
     "depth": 0.0,
     "ridges": 0.0,
     "final_density": {
@@ -48,22 +43,7 @@
   },
   "surface_rule": {
     "type": "sequence",
-    "sequence": [
-      {
-        "type": "condition",
-        "if_true": {
-          "type": "biome",
-          "biome_is": [
-            "monulite_mod:crystal_forest"
-          ]
-        },
-        "then_run": {
-          "type": "block",
-          "result_state": {
-            "Name": "minecraft:dirt"
-          }
-        }
-      }
-    ]
+    "sequence": []
   }
 }
+

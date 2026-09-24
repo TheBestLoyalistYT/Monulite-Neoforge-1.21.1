@@ -6,8 +6,8 @@
   "effects": {
     "fog_color": 9818046,
     "sky_color": 3468226,
-    "water_color": 5221296,
-    "water_fog_color": 861214
+    "water_color": 4280165160,
+    "water_fog_color": 4280165160
   },
   "carvers": {
     "air": []
